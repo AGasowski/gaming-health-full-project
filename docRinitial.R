@@ -1,5 +1,3 @@
-setwd("C:/Users/Alexandre/Desktop/ENSAI/Projet_Stat")
-
 install.packages("dplyr")
 library(dplyr)
 
