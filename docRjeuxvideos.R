@@ -8,6 +8,8 @@ library(dplyr)
 
 # Lire le fichier CSV
 datainitial <- read.csv2("Enquête 2022-20250104/bdd_2022.csv", header = TRUE)
+datainitial <- datainitial %>% 
+  filter(!is.na(QB01A) & !is.na(QB01B)  & !is.na(QB01C)  & !is.na(QB01D))
 
 # Créer des vecteurs des variables de santé et de jeux vidéo (JV)
 variables_sante <- c("Q17")
@@ -33,7 +35,7 @@ categories_Q17 <- c("Pas du tout satisfaisant", "Peu satisfaisant", "Plutôt sat
 data$Etat_de_santé <- factor(data$Q17, levels = 1:4, labels = categories_Q17)
 
 # Renommer la colonne QB01A en "joue à des jeux vidéo"
-colnames(data)[colnames(data) == "QB01A"] <- "joue à des jeux vidéo"
+colnames(data)[colnames(data) == "QB01A"] <- "nombre de jours passé à jouer aux jeux vidéo par mois"
 
 # Calculer le score ADRS
 data$score_ADRS <- rowSums(data[, variable_ADRS] == "1")
