@@ -44,7 +44,7 @@ data$score_ADRS_categorie <- cut(data$score_ADRS,
 # EDC = Épisode dépressif caractérisé
 
 #Création data_réduit qui contient uniquement les variables crées et modifiées
-data_reduit <- data[, c("score_ADRS", "score_ADRS_categorie", "IMC", "IMC_categorie")]
+data_reduit <- data[, c("score_ADRS", "score_ADRS_categorie", "Etat_de_santé", "IMC", "IMC_categorie")]
 
 
 # Création variable jours_joué_par_mois
