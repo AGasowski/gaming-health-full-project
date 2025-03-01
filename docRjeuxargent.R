@@ -27,11 +27,11 @@ data <- data %>%
 
 # RECHERCHE DE CORRELATIONS ENTRE VARIABLES: V DE CRAMER
 
-t <- table(data$Q22I, data$qb07abcdef1)
+t <- table(data$Q22J, data$qb07abcdef1)
 cramer_v <- assocstats(t)
 cramer_v
 
-summary(data$qb07_heb)
+summary(data$qb07_ph_web)
 
 tab <- table(data$QB07C1, data$Q21E)
 tab
