@@ -2,7 +2,9 @@ rm(list=ls())
 
 install.packages("dplyr")
 install.packages("vcd")
+install.packages("ggplot2")
 
+library(ggplot2)
 library(vcd)
 library(dplyr)
 
@@ -107,135 +109,93 @@ data_reduit[] <- lapply(data_reduit, function(x) if(is.factor(x)) as.character(x
 data_reduit[is.na(data_reduit)] <- "NA"
 
 
+#
+# Code pour 4 différents graphiques qui semblent pertinents
+#
+ 
 
-df <- data_reduit[data_reduit$score_ADRS_categorie != "NA" & data_reduit$jours_joué_par_mois != "NA", ]
-t <- table(df$score_ADRS_categorie, df$jours_joué_par_mois)
-cramer_v <- assocstats(t)
-cramer_v
+# Définir l'ordre des catégories
+ordre_score_ADRS <- c("Peu de risque d’EDC", "Risque d’EDC modéré", "Risque d’EDC important")
+ordre_frequence <- c("Très souvent", "Assez souvent", "De temps en temps", "Rarement", "Jamais")
+ordre_etat_sante <-  c("Pas du tout satisfaisant", "Peu satisfaisant", "Plutôt satisfaisant", "Très satisfaisant")
+ordre_IMC <- c("Maigreur", "Normal", "Surpoids", "Obésité")
+ordre_jours_joue <- c("Aucun", "1-2 jours", "3-5 jours", "6-9 jours", "10-19 jours", "20-29 jours", "Tous les jours ou presque")
 
-data_reduit$score_ADRS_categorie
-data_reduit$Etat_de_santé
-data_reduit$IMC_categorie
-
-data_reduit$jours_joué_par_mois
-data_reduit$dépense_catégorie
-data_reduit$difficulté_controle_JV
-data_reduit$pratique_JV_prioritaire
-data_reduit$joue_malgré_conséquences_négatives
-data_reduit$problèmes_pratique_JV
-
-
-# Liste des variables de santé
-variables_sante <- c("score_ADRS_categorie", "Etat_de_santé", "IMC_categorie")
-
-# Liste des variables liées aux jeux vidéo
-variables_jeux <- c("jours_joué_par_mois", "dépense_catégorie", "difficulté_controle_JV",
-                    "pratique_JV_prioritaire", "joue_malgré_conséquences_négatives", "problèmes_pratique_JV")
-
-# Filtrer les données pour enlever les lignes contenant "NA" dans toutes les colonnes
-data_filtre <- data_reduit[rowSums(data_reduit[, c(variables_sante, variables_jeux)] == "NA") == 0, ]
-
-# Boucle pour effectuer le test du Chi-carré pour chaque paire de variables
-for (var_sante in variables_sante) {
-  for (var_jeux in variables_jeux) {
-    # Créer un tableau de contingence
-    t <- table(data_filtre[[var_sante]], data_filtre[[var_jeux]])
-    
-    # Effectuer le test du Chi-carré
-    resultat_chi2 <- chisq.test(t)
-    
-    # Calculer le V de Cramér
-    v_cramer <- sqrt(resultat_chi2$statistic / (sum(t) * (min(dim(t)) - 1)))
-    
-    # Afficher les résultats
-    cat("Association entre", var_sante, "et", var_jeux, ":\n")
-    print(resultat_chi2)
-    cat("V de Cramér :", v_cramer, "\n\n")
-  }
-}
-
-
-# Charger les packages nécessaires
-install.packages("ggplot2")
-library(ggplot2)
 
 # Filtrer les données pour enlever les lignes contenant "NA"
 data_filtre <- data_reduit %>%
-  filter(score_ADRS_categorie != "NA" & difficulté_controle_JV != "NA")
+  filter(score_ADRS_categorie != "NA" &
+           difficulté_controle_JV != "NA" &
+           pratique_JV_prioritaire != "NA" &
+           Etat_de_santé != "NA" &
+           IMC_categorie != "NA" &
+           jours_joué_par_mois != "NA")
+
+
+# Convertir en facteurs avec les niveaux définis
+data_filtre$score_ADRS_categorie <- factor(data_filtre$score_ADRS_categorie, levels = ordre_score_ADRS)
+data_filtre$difficulté_controle_JV <- factor(data_filtre$difficulté_controle_JV, levels = ordre_frequence)
+data_filtre$pratique_JV_prioritaire <- factor(data_filtre$pratique_JV_prioritaire, levels = ordre_frequence)
+data_filtre$Etat_de_santé <- factor(data_filtre$Etat_de_santé, levels = ordre_etat_sante)
+data_filtre$IMC_categorie <- factor(data_filtre$IMC_categorie, levels = ordre_IMC)
+data_filtre$jours_joué_par_mois <- factor(data_filtre$jours_joué_par_mois, levels = ordre_jours_joue)
+
 
 # Calculer les pourcentages
-data_pourcentage <- data_filtre %>%
+data_pourcentage_1 <- data_filtre %>%
   count(score_ADRS_categorie, difficulté_controle_JV) %>%
   group_by(score_ADRS_categorie) %>%
   mutate(pct = n / sum(n) * 100)
 
-# Créer le graphique
-ggplot(data_pourcentage, aes(x = score_ADRS_categorie, y = pct, fill = difficulté_controle_JV)) +
-  geom_bar(stat = "identity") +
-  geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
-  labs(title = "Répartition de la difficulté de contrôle des JV par score ADRS",
-       x = "Score ADRS Catégorie",
-       y = "Pourcentage") +
-  theme_minimal()
-
-# Filtrer les données pour enlever les lignes contenant "NA"
-data_filtre <- data_reduit %>%
-  filter(score_ADRS_categorie != "NA" & pratique_JV_prioritaire != "NA")
-
-# Calculer les pourcentages
-data_pourcentage <- data_filtre %>%
+data_pourcentage_2 <- data_filtre %>%
   count(score_ADRS_categorie, pratique_JV_prioritaire) %>%
   group_by(score_ADRS_categorie) %>%
   mutate(pct = n / sum(n) * 100)
 
-# Créer le graphique
-ggplot(data_pourcentage, aes(x = score_ADRS_categorie, y = pct, fill = pratique_JV_prioritaire)) +
-  geom_bar(stat = "identity") +
-  geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
-  labs(title = "Répartition de la priorité des JV par score ADRS",
-       x = "Score ADRS Catégorie",
-       y = "Pourcentage") +
-  theme_minimal()
-
-
-
-# Filtrer les données pour enlever les lignes contenant "NA"
-data_filtre <- data_reduit %>%
-  filter(Etat_de_santé != "NA" & pratique_JV_prioritaire != "NA")
-
-# Calculer les pourcentages
-data_pourcentage <- data_filtre %>%
+data_pourcentage_3 <- data_filtre %>%
   count(Etat_de_santé, pratique_JV_prioritaire) %>%
   group_by(Etat_de_santé) %>%
   mutate(pct = n / sum(n) * 100)
 
-# Créer le graphique
-ggplot(data_pourcentage, aes(x = Etat_de_santé, y = pct, fill = pratique_JV_prioritaire)) +
-  geom_bar(stat = "identity") +
-  geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
-  labs(title = "Répartition de la priorité des JV par état de santé",
-       x = "État de Santé",
-       y = "Pourcentage") +
-  theme_minimal()
-
-
-# Filtrer les données pour enlever les lignes contenant "NA"
-data_filtre <- data_reduit %>%
-  filter(IMC_categorie != "NA" & jours_joué_par_mois != "NA")
-
-# Calculer les pourcentages
-data_pourcentage <- data_filtre %>%
+data_pourcentage_4 <- data_filtre %>%
   count(IMC_categorie, jours_joué_par_mois) %>%
   group_by(IMC_categorie) %>%
   mutate(pct = n / sum(n) * 100)
 
-# Créer le graphique
-ggplot(data_pourcentage, aes(x = IMC_categorie, y = pct, fill = jours_joué_par_mois)) +
+
+# Créer les graphiques
+ggplot(data_pourcentage_1, aes(x = score_ADRS_categorie, y = pct, fill = difficulté_controle_JV)) +
   geom_bar(stat = "identity") +
   geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
-  labs(title = "Répartition des jours joués par mois par catégorie d'IMC",
-       x = "IMC Catégorie",
-       y = "Pourcentage") +
+  labs(title = "Répartition des individus selon la difficultés à contrôler mon activité de jeu vidéo par score ADRS",
+       x = "Score ADRS Catégorie",
+       y = "Pourcentage",
+       fill = "Difficultés à contrôler mon activité de jeu vidéo") +
   theme_minimal()
 
+ggplot(data_pourcentage_2, aes(x = score_ADRS_categorie, y = pct, fill = pratique_JV_prioritaire)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
+  labs(title = "Répartition des individus selon la pratique du jeu vidéo prioritaire par score ADRS",
+       x = "Score ADRS Catégorie",
+       y = "Pourcentage",
+       fill = "Pratique du jeu vidéo prioritaire") +
+  theme_minimal()
 
+ggplot(data_pourcentage_3, aes(x = Etat_de_santé, y = pct, fill = pratique_JV_prioritaire)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
+  labs(title = "Répartition des individus selon la pratique du jeu vidéo prioritaire par état de santé",
+       x = "État de Santé",
+       y = "Pourcentage",
+       fill = "Pratique du jeu vidéo prioritaire") +
+  theme_minimal()
+
+ggplot(data_pourcentage_4, aes(x = IMC_categorie, y = pct, fill = jours_joué_par_mois)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
+  labs(title = "Répartition des individus selon le nombre de jours passés à jouer aux JV par mois, par catégorie d'IMC",
+       x = "IMC Catégorie",
+       y = "Pourcentage",
+       fill = "Nombre de jours passés à jouer aux JV par mois") +
+  theme_minimal()
