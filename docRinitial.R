@@ -41,6 +41,8 @@ data$score_ADRS_categorie <- cut(data$score_ADRS,
                                  breaks = c(-1, 3, 6, 11),
                                  labels = c("Peu de risque d’EDC", "Risque d’EDC modéré", "Risque d’EDC important"))
 
+# EDC = Épisode dépressif caractérisé
+
 #Création data_réduit qui contient uniquement les variables crées et modifiées
 data_reduit <- data[, c("score_ADRS", "score_ADRS_categorie", "IMC", "IMC_categorie")]
 
