@@ -27,26 +27,69 @@ data <- data %>%
 
 # RECHERCHE DE CORRELATIONS ENTRE VARIABLES: V DE CRAMER
 
-t <- table(data$Q22J, data$qb07abcdef1)
+t <- table(data$Q24, data$QB08I)
 cramer_v <- assocstats(t)
 cramer_v
 
-summary(data$qb07_ph_web)
+summary(data$QB08F)
 
-tab <- table(data$QB07C1, data$Q21E)
+
+
+
+
+###               OBSERVATIONS INTERESSANTES
+
+###   ETAT DE SANTE ET JEU
+tab <- table(data$qb07abcdef1, data$Q17)
 tab
 tab_pct <- prop.table(tab, margin = 1) * 100
 tab_pct
-##ceux qui font des paris sportifs vont moins chez le psychologue
+## On remarque que ceux qui jouent quotidiennement aux
+##jeux d'argent (tout confondu) déclarent en plus grande
+##proportion avoir un niveau de santé peu satisfaisant
 
 
+tab <- table(data$QB08E, data$Q17)
+tab
+tab_pct <- prop.table(tab, margin = 1) * 100
+tab_pct
+##Ceux qui ont senti avoir un problème avec le jeu se disent 
+##en moins bon état de santé que les autres
+
+
+tab <- table(data$QB08F, data$Q17)
+tab
+tab_pct <- prop.table(tab, margin = 1) * 100
+tab_pct
+##On remarque que ceux qui disent que le jeu a causé des problèmes
+##de santé disent avoir un état de santé beaucoup moins satisfaisant
+##(logique, inutile de travailler dessus)
+
+
+tab <- table(data$QB08G, data$Q17)
+tab
+tab_pct <- prop.table(tab, margin = 1) * 100
+tab_pct
+##Ceux qui disent que leurx habitudes de jeu ont été critiquées sont
+##en moins bon état de santé que les autres
+
+
+tab <- table(data$QB08I, data$Q17)
+tab
+tab_pct <- prop.table(tab, margin = 1) * 100
+tab_pct
+##Ceux qui se sont senti coupable de leurs habitudes de jeu se disent
+##en moins bonne santé
+
+
+
+###   SPORT ET JEU
 
 tab <- table(data$Q20, data$qb07_ann)
 tab
 tab_pct <- prop.table(tab, margin = 1) * 100
 tab_pct
 #les plus sportifs semblent + jouer aux jeux d'argent dans l'année
-
 
 
 tab <- table(data$Q20, data$qb07_heb)
@@ -63,6 +106,12 @@ tab_pct
 #les plus sportifs semblent + jouer aux jeux d'argent au quotidien
 
 
+tab <- table(data$Q20, data$qb07_quo)
+tab
+tab_pct <- prop.table(tab, margin = 1) * 100
+tab_pct
+#les sportifs jouent + aux jeux d'argent au quotidien que les non sportifs
+
 
 tab <- table(data$Q20, data$QB07C1)
 tab
@@ -72,11 +121,16 @@ tab_pct
 
 
 
-tab <- table(data$Q20, data$qb07_quo)
+
+
+
+tab <- table(data$QB07C1, data$Q21E)
 tab
 tab_pct <- prop.table(tab, margin = 1) * 100
 tab_pct
-#les sportifs jouent + aux jeux d'argent au quotidien que les non sportifs
+##ceux qui font des paris sportifs vont moins chez le psychologue
+
+
 
 
 
