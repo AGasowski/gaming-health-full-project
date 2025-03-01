@@ -85,6 +85,20 @@ tab_pct
 
 ###   SPORT ET JEU
 
+tab <- table(data$Q20, data$QB07C1)
+tab
+tab_pct <- prop.table(tab, margin = 1) * 100
+tab_pct
+##Les plus sportifs jouent + aux paris sportifs
+
+
+tab <- table(data$Q20, data$qb07abcdef1)
+tab
+tab_pct <- prop.table(tab, margin = 1) * 100
+tab_pct
+##Les plus sportifs jouent + aux jeux d'argent (tout confondu)
+
+
 tab <- table(data$Q20, data$qb07_ann)
 tab
 tab_pct <- prop.table(tab, margin = 1) * 100
@@ -106,88 +120,139 @@ tab_pct
 #les plus sportifs semblent + jouer aux jeux d'argent au quotidien
 
 
-tab <- table(data$Q20, data$qb07_quo)
+
+###   ALLER CHEZ UN MEDECIN ET JEU
+
+tab <- table(data$qb07abcdef1, data$Q21A)
 tab
 tab_pct <- prop.table(tab, margin = 1) * 100
 tab_pct
-#les sportifs jouent + aux jeux d'argent au quotidien que les non sportifs
+##Ceux qui jouent chaque jour sont moins allé chez le médecin que
+##les autres
 
 
-tab <- table(data$Q20, data$QB07C1)
+###   RISQUE DE DEPRESSION ET JEU
+
+tab <- table(data$qb07abcdef1, data$ADRS_cat)
 tab
 tab_pct <- prop.table(tab, margin = 1) * 100
 tab_pct
-#les plus sportifs semblent + jouer aux paris sportifs
+##Le risque de dépression est globalement le même pour ceux qui jouent
+##et ceux qui ne jouent pas
 
 
+###     PROBLEME DE SANTE ET JEU
+
+tab <- table(data$qb07abcdef1, data$Q21C)
+tab
+tab_pct <- prop.table(tab, margin = 1) * 100
+tab_pct
+##Autant de problèmes de santé chez les joueurs et non joueurs
 
 
-
+###     CONSULTER PSY ET JEU
 
 tab <- table(data$QB07C1, data$Q21E)
 tab
 tab_pct <- prop.table(tab, margin = 1) * 100
 tab_pct
-##ceux qui font des paris sportifs vont moins chez le psychologue
+##Ceux qui font des paris sportifs vont moins chez le psychologue
 
 
-
-
-
-tab <- table(data$QB07C1, data$ADRS_cat)
+tab <- table(data$qb07abcdef1, data$Q21E)
 tab
 tab_pct <- prop.table(tab, margin = 1) * 100
 tab_pct
-#résultat difficile à interprêter
-#un joueur sera en meilleure santé mentale sauf les plus gros joueurs
+##Ceux qui jouent plusieurs fois par semaines vont moins chez le 
+##psychologue
 
 
+
+###     IMC ET JEU
+##On remarque que l'imc et le jeu ne sont pas corrélés
+
+
+
+###   TRISTESSE ET JEU 
 
 tab <- table(data$QB07C1, data$Q22C)
 tab
 tab_pct <- prop.table(tab, margin = 1) * 100
 tab_pct
-#ceux qui ne jouent jamais aux paris sportifs ont une tristesse débrodante, en 
+#Ceux qui ne jouent jamais aux paris sportifs ont une tristesse débordante en 
 #plus grande proportion que le reste de la population
 
-
-
-tab <- table(data$QB07E1, data$Q22C)
+tab <- table(data$qb07abcdef1, data$Q22C)
 tab
 tab_pct <- prop.table(tab, margin = 1) * 100
 tab_pct
-#??
+##Ceux qui jouent aux jeux d'argent sont moins tristes que les autres
 
+
+
+###     PLUS D'INTERET ET JEU
+
+tab <- table(data$QB08F, data$Q22D)
+tab
+tab_pct <- prop.table(tab, margin = 1) * 100
+tab_pct
+##Ceux chez qui le jeu a causé des problèmes de santé ont moins d'intérêt
 
 
 tab <- table(data$QB08G, data$Q22D)
 tab
 tab_pct <- prop.table(tab, margin = 1) * 100
 tab_pct
-#les individus qui reçoivent beaucoup de critiques sur leurs habitudes de jeu
+#Les individus qui reçoivent beaucoup de critiques sur leurs habitudes de jeu
 #ont en plus grande proportion moins d'intérêt (plus rien ne les intéresse, plus
 #rien ne les amuse)
 
 
 
+###     DECOURAGEMENT ET JEU
 
-tab <- table(data$QB07A1, data$ADRS_cat)
+tab <- table(data$qb07abcdef1, data$Q22H)
 tab
 tab_pct <- prop.table(tab, margin = 1) * 100
 tab_pct
-#plus grosse proportion des ADRS de catégorie 2 parmi les individus qui jouent 
-#aux jeux de tirage 1 fois et plusieurs fois par semaine
+##Ceux qui jouent aux jeux d'argent sont moins découragés que les autres
 
 
 tab <- table(data$QB07C1, data$Q22H)
 tab
 tab_pct <- prop.table(tab, margin = 1) * 100
 tab_pct
+##Le résultat ci-dessus est encore plus flagrant chez ceux qui jouent aux 
+##paris sportifs
 
 
 
+###       QUALITE DE SOMMEIL ET JEU
 
-summary(data$qb07_casino_web)
+##Pas de corrélation visible
 
-summary(data$QB08G)
 
+
+###       PAS DE REUSSITE AU BOULOT/ECOLE ET JEU
+
+tab <- table(data$QB08G, data$Q22J)
+tab
+tab_pct <- prop.table(tab, margin = 1) * 100
+tab_pct
+##Ceux dont on critique les habitudes de jeux y arrivent moins pour travailler
+
+
+
+###     TENTATIVE DE SUICIDE ET JEU
+
+##Trop peu de personnes ont fait une tentative pour étudier cette variable
+
+
+
+###     PENSEES SUICIDAIRES DANS L'ANNEE ET JEU
+
+tab <- table(data$qb07abcdef1, data$Q24)
+tab
+tab_pct <- prop.table(tab, margin = 1) * 100
+tab_pct
+##Les très gros joueurs ont moins de pensées suicidaires que les autres
