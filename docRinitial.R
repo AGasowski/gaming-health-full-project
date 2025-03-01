@@ -33,11 +33,9 @@ data$IMC_categorie <- cut(data$IMC,
 categories_Q17 <- c("Pas du tout satisfaisant", "Peu satisfaisant", "Plutôt satisfaisant", "Très satisfaisant")
 data$Etat_de_santé <- factor(data$Q17, levels = 1:4, labels = categories_Q17)
 
-# Création variable ADRS
+# Création variables score_ADRS et score_ADRS_categorie
 variable_ADRS <- c("Q22A", "Q22B", "Q22C", "Q22D", "Q22E", "Q22F", "Q22G", "Q22H", "Q22I", "Q22J")
 data$score_ADRS <- rowSums(data[, variable_ADRS] == "1")
-
-# Catégoriser le score ADRS
 data$score_ADRS_categorie <- cut(data$score_ADRS,
                                  breaks = c(-1, 3, 6, 11),
                                  labels = c("Peu de risque d’EDC", "Risque d’EDC modéré", "Risque d’EDC important"))
