@@ -8,6 +8,7 @@ library(ggplot2)
 library(vcd)
 library(dplyr)
 
+
 datainitial <- read.csv2("Enquête 2022-20250104/bdd_2022.csv", header = TRUE)
 
 # data contient tous les individus qui ont répondu
@@ -31,6 +32,13 @@ data$IMC[data$IMC < 8 | data$IMC > 50] <- NA
 data$IMC_categorie <- cut(data$IMC,
                           breaks = c(0, 18.5, 25, 30, Inf),
                           labels = c("Maigreur", "Normal", "Surpoids", "Obésité"))
+
+# Visualisation distribution IMC
+data$IMC <- as.numeric(as.character(data$IMC))
+ggplot(data, aes(x = IMC)) +
+  geom_histogram(binwidth = 1, fill = 'blue', color = 'black') +
+  labs(title = 'Distribution de l\'IMC')
+
 
 # Création variable Etat_de_santé
 categories_Q17 <- c("Pas du tout satisfaisant", "Peu satisfaisant", "Plutôt satisfaisant", "Très satisfaisant")
@@ -68,7 +76,38 @@ data$dépense_catégorie <- case_when(
 )
 data_reduit$dépense_catégorie <- data$dépense_catégorie
 
-print(table(data$dépense_catégorie))
+# Création graphique pour visualiser ces catégories
+
+# Définir les intervalles de dépense pour chaque catégorie
+intervalles_depense <- c(
+  "aucune dépense" = "0 €",
+  "faible dépense" = "0-60 €",
+  "dépense modérée" = "60-180 €",
+  "forte dépense" = "180-600 €",
+  "dépense conséquente" = ">600 €"
+)
+
+# Calculer les proportions de chaque catégorie de dépense annuelle dans les JV
+data_depense <- data %>%
+  mutate(catégorie = cut(dépense_JV_par_année, breaks = c(-1, 0, 60, 180, 600, Inf), labels = c("aucune dépense", "faible dépense", "dépense modérée", "forte dépense", "dépense conséquente"))) %>%
+  group_by(catégorie) %>%
+  summarise(proportion = n() / nrow(data)) %>%
+  filter(!is.na(catégorie))  # Filtrer les valeurs NA
+
+# Créer le graphique à barres
+ggplot(data_depense, aes(x = catégorie, y = proportion, fill = catégorie)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = sprintf("%.1f%%", proportion * 100)), vjust = -0.5) +  # Formater les pourcentages
+  geom_text(aes(y = 0, label = intervalles_depense[catégorie]), vjust = 1, hjust = 1, color = "grey50") +  # Ajouter les intervalles
+  scale_fill_manual(values = c("cadetblue1", "lightgreen", "yellow", "orange", "red")) +
+  labs(title = "Proportions de chaque catégorie de dépense annuelle dans les JV",
+       x = "Catégorie de dépense annuelle",
+       y = "Proportion",
+       fill = "Catégorie") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        legend.position = "bottom")
+
 
 # Création de la variable difficulté_controle_JV avec des libellés
 data$difficulté_controle_JV <- factor(data$QB06A, 
@@ -76,7 +115,6 @@ data$difficulté_controle_JV <- factor(data$QB06A,
                                   labels = c("Jamais", "Rarement", "De temps en temps", "Assez souvent", "Très souvent"))
 data_reduit$difficulté_controle_JV <- data$difficulté_controle_JV
 
-print(table(data$difficulté_controle_JV))
 
 # Création de la variable difficulté_controle_JV avec des libellés
 data$pratique_JV_prioritaire <- factor(data$QB06B, 
@@ -199,3 +237,7 @@ ggplot(data_pourcentage_4, aes(x = IMC_categorie, y = pct, fill = jours_joué_pa
        y = "Pourcentage",
        fill = "Nombre de jours passés à jouer aux JV par mois") +
   theme_minimal()
+
+#
+#
+#
