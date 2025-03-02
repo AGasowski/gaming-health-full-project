@@ -199,3 +199,4 @@ ggplot(data_pourcentage_4, aes(x = IMC_categorie, y = pct, fill = jours_joué_pa
        y = "Pourcentage",
        fill = "Nombre de jours passés à jouer aux JV par mois") +
   theme_minimal()
+
