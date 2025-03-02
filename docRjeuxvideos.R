@@ -8,6 +8,7 @@ library(ggplot2)
 library(vcd)
 library(dplyr)
 
+
 datainitial <- read.csv2("Enquête 2022-20250104/bdd_2022.csv", header = TRUE)
 
 # data contient tous les individus qui ont répondu
@@ -31,6 +32,13 @@ data$IMC[data$IMC < 8 | data$IMC > 50] <- NA
 data$IMC_categorie <- cut(data$IMC,
                           breaks = c(0, 18.5, 25, 30, Inf),
                           labels = c("Maigreur", "Normal", "Surpoids", "Obésité"))
+
+# Visualisation distribution IMC
+data$IMC <- as.numeric(as.character(data$IMC))
+ggplot(data, aes(x = IMC)) +
+  geom_histogram(binwidth = 1, fill = 'blue', color = 'black') +
+  labs(title = 'Distribution de l\'IMC')
+
 
 # Création variable Etat_de_santé
 categories_Q17 <- c("Pas du tout satisfaisant", "Peu satisfaisant", "Plutôt satisfaisant", "Très satisfaisant")
@@ -217,3 +225,7 @@ ggplot(data_pourcentage_4, aes(x = IMC_categorie, y = pct, fill = jours_joué_pa
        y = "Pourcentage",
        fill = "Nombre de jours passés à jouer aux JV par mois") +
   theme_minimal()
+
+#
+#
+#
