@@ -52,6 +52,26 @@ data$score_ADRS_categorie <- cut(data$score_ADRS,
                                  labels = c("Peu de risque d’EDC", "Risque d’EDC modéré", "Risque d’EDC important"))
 
 # EDC = Épisode dépressif caractérisé
+# Visualisation de cette variable
+
+# Calculer les proportions de chaque score_ADRS
+data_ADRS <- data %>% 
+  filter(!is.na(score_ADRS) )
+data_ADRS <- data_ADRS %>%
+  group_by(score_ADRS) %>%
+  summarise(proportion = n() / nrow(data_ADRS))
+
+# Créer le graphique
+ggplot(data_ADRS, aes(x = factor(score_ADRS), y = proportion, fill = cut(score_ADRS, breaks = c(-1, 3, 6, 11), labels = c("Peu de risque d’EDC", "Risque d’EDC modéré", "Risque d’EDC important")))) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = paste0(round(proportion * 100), "%")), vjust = -0.5, position = position_dodge(width = 0.9)) +
+  scale_fill_manual(values = c("lightgreen", "yellow", "orange")) +
+  labs(title = "Proportions de chaque score ADRS",
+       x = "Score ADRS",
+       y = "Proportion",
+       fill = "Catégorie de risque") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 #Création data_réduit qui contient uniquement les variables crées et modifiées
 data_reduit <- data[, c("score_ADRS", "score_ADRS_categorie", "Etat_de_santé", "IMC", "IMC_categorie")]
