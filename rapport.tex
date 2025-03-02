@@ -1,1 +1,99 @@
-###eejieninid
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\usepackage[a4paper, top=2cm,bottom=2cm,margin=3cm, left=2.6cm, right=2.6cm]{geometry}
+\usepackage{setspace}
+
+
+
+\begin{document}
+
+\normalsize
+
+\begin{titlepage}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{Images/ensai_logo.png}\\[2.0 cm] 
+
+
+
+\rule{\linewidth}{0.4mm}
+\\[0.4cm]{\Large\bfseries \Large{Étude sur xxxxxxxxxxxxxxxxx}}\\[0.2cm]
+\rule{\linewidth}{0.4mm}\\[3cm]
+
+
+\begin{flushleft} \large
+\emph{\underline{Étudiants:}}\\\vspace{0.2cm}
+Prénom \textsc{Nom} \\
+Prénom \textsc{Nom} \\
+Prénom \textsc{Nom}\\
+\end{flushleft}
+
+\begin{flushright} \large
+\emph{\underline{Tuteur:}} \\ \vspace{0.2cm}
+Prénom \textsc{Nom} \\ \vspace{0.6cm}
+\end{flushright}
+
+\vfill
+{\large \today}
+\end{center}
+\end{titlepage}
+
+\onehalfspacing
+
+
+
+
+
+
+\newpage
+\singlespacing
+\tableofcontents 
+
+\newpage
+
+\include{Sections/intro}
+
+\newpage
+
+\section*{Cadrage}
+
+\blindtext[3]
+
+\newpage
+
+\include{Sections/p1}
+
+
+\newpage
+
+\include{Sections/p2}
+
+
+\newpage
+
+\include{Sections/p3}
+
+
+\newpage
+
+\include{Sections/conclusion}
+
+
+\newpage
+
+\include{Sections/Bibliographie}
+
+
+\newpage
+
+\include{Sections/annexes}
+
+
+\end{document}
