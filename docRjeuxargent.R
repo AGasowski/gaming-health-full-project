@@ -2,10 +2,12 @@ rm(list=ls())
 
 install.packages("dplyr")
 install.packages("vcd")
+install.packages("tidyr")
 
 library(vcd)
 library(dplyr)
-
+library(ggplot2)
+library(tidyr)
 datainitial <- read.csv2("Enquête 2022-20250104/bdd_2022.csv", header = TRUE)
 
 # data contient tous les individus qui ont répondu
@@ -44,9 +46,49 @@ tab <- table(data$qb07abcdef1, data$Q17)
 tab
 tab_pct <- prop.table(tab, margin = 1) * 100
 tab_pct
+print(tab_pct)
 ## On remarque que ceux qui jouent quotidiennement aux
 ##jeux d'argent (tout confondu) déclarent en plus grande
 ##proportion avoir un niveau de santé peu satisfaisant
+
+
+# Votre table de données
+tab_pct <- data.frame(
+  Ligne = 1:6,
+  `Pas du tout satisfaisant` = c(0.9978048, 1.7871018, 0.8797654, 1.6129032, 1.6393443, 2.9411765),
+  `Peu satisfaisant` = c(6.8249850, 7.6923077, 10.5571848, 8.8709677, 12.2950820, 26.4705882),
+  `Plutôt satisfaisant` = c(43.5442028, 46.2315462, 51.3196481, 45.9677419, 42.6229508, 23.5294118),
+  `Très satisfaisant` = c(48.6330074, 44.2890443, 37.2434018, 43.5483871, 43.4426230, 47.0588235)
+)
+colnames(tab_pct)<- c("Ligne", "Pas du tout satisfaisant", "Peu satisfaisant",
+                      "Plutôt satisfaisant", "Très satisfaisant")
+# Remplacer les valeurs dans la colonne Ligne par des noms plus parlants
+tab_pct <- tab_pct %>%
+  mutate(Ligne = recode(Ligne, `1` = "jamais",
+                        `2` = "1 fois par\nmois ou moins",
+                        `3` = "2 à 3 fois par\nmois",
+                        `4` = "1 fois par\nsemaine",
+                        `5` = "plusieurs fois par\nsemaine",
+                        `6` = "tous les jours"))
+# Transformer les données en format long
+tab_pct_long <- tab_pct %>%
+  pivot_longer(cols = c(`Pas du tout satisfaisant`, `Peu satisfaisant`,
+                        `Plutôt satisfaisant`, `Très satisfaisant`),
+               names_to = "Estimation de l'état de santé",
+               values_to = "pourcentage")
+
+
+# Créer le graphique à barres empilées
+ggplot(tab_pct_long, aes(x = Ligne, y = pourcentage, fill = `Estimation de l'état de santé`)) +
+  geom_bar(stat = "identity") +
+  labs(title =  "Auto-détermination de l'état de santé par rapport à la fréquence de jeux d'argent et de hasard",
+       x = "Fréquence de jeu d'argent et de hasard",
+       y = "Pourcentage") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+## j'ai pas réussi à mettre les colonnes du graphique dans l'ordre et 
+##j'arrive pas à aller à la ligne pour le titre
+  
 
 
 tab <- table(data$QB08E, data$Q17)
