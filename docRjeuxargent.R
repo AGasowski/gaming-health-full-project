@@ -29,15 +29,6 @@ data <- data %>%
 summary(data$santephysique)
 table(data$santephysique)
 
-##Calcul IMC moyen en fonction de la fréquence de jeu
-aggregate( q18imc ~ qb07abcdef1, data = data, FUN = mean, na.rm = TRUE)
-
-#On enlève la valeur aberrante
-data_clean <- data[data$q18imc <= 100, ]
-
-summary(data_clean$q18imc)
-
-aggregate( q18imc ~ qb07abcdef1, data = data_clean, FUN = mean, na.rm = TRUE)
 
 
 # RECHERCHE DE CORRELATIONS ENTRE VARIABLES: V DE CRAMER
