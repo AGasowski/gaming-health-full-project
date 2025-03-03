@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.2)  3 MAR 2025 21:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.2)  4 MAR 2025 00:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -364,12 +364,12 @@ Package hyperref Info: Link coloring OFF on input line 16.
 <Images/scoreADRSdistrib.pdf, id=3, 788.9475pt x 415.5525pt>
 File: Images/scoreADRSdistrib.pdf Graphic file (type pdf)
 <use Images/scoreADRSdistrib.pdf>
-Package pdftex.def Info: Images/scoreADRSdistrib.pdf  used on input line 22.
+Package pdftex.def Info: Images/scoreADRSdistrib.pdf  used on input line 21.
 (pdftex.def)             Requested size: 314.68588pt x 165.74883pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 32.
+(Font)              <14.4> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 32.
+(Font)              <7> on input line 31.
 [1
 
 {C:/Users/Alexandre/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Images/scoreADRSdistrib.pdf>]
@@ -381,7 +381,7 @@ No file rapport.toc.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.59 \newpage
+l.58 \newpage
               [1]
 \openout2 = `Sections/intro.aux'.
 
@@ -458,80 +458,80 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--13
 
  []
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 19.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 19.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 19.
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--39
-
- []
-
+<Images/Freq_JA_IMC.png, id=56, 547.04375pt x 602.25pt>
+File: Images/Freq_JA_IMC.png Graphic file (type png)
+<use Images/Freq_JA_IMC.png>
+Package pdftex.def Info: Images/Freq_JA_IMC.png  used on input line 16.
+(pdftex.def)             Requested size: 314.68588pt x 346.44728pt.
 [7
 
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 47--50
+ <./Images/Freq_JA_IMC.png (PNG copy)>]
+<Images/Freq_JV_IMC.png, id=63, 599.74063pt x 350.81062pt>
+File: Images/Freq_JV_IMC.png Graphic file (type png)
+<use Images/Freq_JV_IMC.png>
+Package pdftex.def Info: Images/Freq_JV_IMC.png  used on input line 27.
+(pdftex.def)             Requested size: 314.68588pt x 184.07661pt.
+ [8 <./Images/Freq_JV_IMC.png (PNG copy)>]
 
- []
+LaTeX Warning: File `Images/image4.pdf' not found on input line 55.
 
 
-LaTeX Warning: File `Images/image4.pdf' not found on input line 58.
-
-
-Sections/p2.tex:58: Package pdftex.def Error: File `Images/image4.pdf' not found: using draft setting.
+Sections/p2.tex:55: Package pdftex.def Error: File `Images/image4.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.58 ...egraphics[scale = 0.6]{Images/image4.pdf}}
+l.55 ...egraphics[scale = 0.6]{Images/image4.pdf}}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[8] [9]) [10]
+[9] [10]) [11]
 \openout2 = `Sections/p3.aux'.
 
- (Sections/p3.tex [11
+ (Sections/p3.tex [12
 
 
 
-] [12]) [13]
+] [13]) [14]
 \openout2 = `Sections/conclusion.aux'.
 
- (Sections/conclusion.tex) [14
+ (Sections/conclusion.tex) [15
 
 
 
-] [15]
+] [16]
 \openout2 = `Sections/Bibliographie.aux'.
 
- (Sections/Bibliographie.tex
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
-
- []
-
-) [16
+ (Sections/Bibliographie.tex) [17
 
 
 
 ]
 \openout2 = `Sections/annexes.aux'.
 
- (Sections/annexes.tex) [17
+ (Sections/annexes.tex) [18
 
 
 
-] (rapport.aux (Sections/intro.aux) (Sections/p1.aux) (Sections/p2.aux) (Sections/p3.aux) (Sections/conclusion.aux) (Sections/Bibliographie.aux) (Sections/annexes.aux))
+]
+
+c:/Users/Alexandre/Desktop/ENSAI/Projet_Stat/projetstat/rapport.tex:99: LaTeX Error: \begin{center} on input line 27 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.99 \end{document}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+(rapport.aux (Sections/intro.aux) (Sections/p1.aux) (Sections/p2.aux) (Sections/p3.aux) (Sections/conclusion.aux) (Sections/Bibliographie.aux) (Sections/annexes.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -547,20 +547,25 @@ Package rerunfilecheck Warning: File `rapport.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `rapport.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  18DC23B81E1B1C14CE4E9EE72D4784FD;2257.
- ) 
+(rerunfilecheck)             After:  DA33FA89D27B926014C689DE4C1AEDF4;2257.
+ )
+(\end occurred inside a group at level 2)
+
+### semi simple group (level 2) entered at line 27 (\begingroup)
+### semi simple group (level 1) entered at line 16 (\begingroup)
+### bottom level 
 Here is how much of TeX's memory you used:
- 13021 strings out of 474486
- 221742 string characters out of 5741868
- 1935542 words of memory out of 5000000
- 35084 multiletter control sequences out of 15000+600000
- 568605 words of font info for 58 fonts, out of 8000000 for 9000
+ 13012 strings out of 474486
+ 221807 string characters out of 5741868
+ 1933542 words of memory out of 5000000
+ 35081 multiletter control sequences out of 15000+600000
+ 566167 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,79p,375b,463s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,79p,375b,697s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk>
-Output written on rapport.pdf (18 pages, 107459 bytes).
+Output written on rapport.pdf (19 pages, 193892 bytes).
 PDF statistics:
- 354 PDF objects out of 1000 (max. 8388607)
+ 357 PDF objects out of 1000 (max. 8388607)
  44 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
