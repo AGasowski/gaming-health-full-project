@@ -19,9 +19,10 @@ data <- datainitial %>%
 # catégories IMC
 data <- data %>% 
   mutate(santephysique = case_when(
-    q18imc < 17 | q18imc > 30 ~ "très mauvaise",
-    q18imc < 18.5 | q18imc > 25 ~ "plutôt mauvaise",
-    TRUE ~ "bonne"
+    q18imc < 18.5 ~ "insuffisance pondérale",
+    q18imc > 30 ~ "obésité",
+    q18imc > 25 ~ "surpoids",
+    TRUE ~ "corpulence normale"
   ))
 
 # Création de deux variables IMC et IMC_categorie
@@ -75,6 +76,9 @@ ggplot(data_ADRS, aes(x = factor(score_ADRS), y = proportion, fill = cut(score_A
 
 #Création data_réduit qui contient uniquement les variables crées et modifiées
 data_reduit <- data[, c("score_ADRS", "score_ADRS_categorie", "Etat_de_santé", "IMC", "IMC_categorie")]
+
+
+
 
 
 # Création variable jours_joué_par_mois
