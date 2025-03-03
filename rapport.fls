@@ -135,10 +135,12 @@ INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstop
 INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 OUTPUT rapport.out
 OUTPUT rapport.pdf
-INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmtt.fd
-INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmtt.fd
-INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmtt.fd
-INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ectt1200.tfm
+INPUT .\Images\scoreADRSdistrib.pdf
+INPUT .\Images\scoreADRSdistrib.pdf
+INPUT .\Images\scoreADRSdistrib.pdf
+INPUT .\Images\scoreADRSdistrib.pdf
+INPUT .\Images\scoreADRSdistrib.pdf
+INPUT .\Images\scoreADRSdistrib.pdf
 INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1728.tfm
 INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1728.tfm
 INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1440.tfm
@@ -160,6 +162,10 @@ INPUT .\Sections\p1.tex
 INPUT .\Sections\p1.tex
 INPUT Sections\p1.tex
 INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1440.tfm
+INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmtt.fd
+INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmtt.fd
+INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmtt.fd
+INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ectt1200.tfm
 INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\eccc1200.tfm
 INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecti1200.tfm
 INPUT .\Sections\p2.tex
@@ -223,6 +229,8 @@ INPUT C:\Users\Alexandre\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600
 INPUT C:\Users\Alexandre\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk
 INPUT C:\Users\Alexandre\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1200.pk
 INPUT C:\Users\Alexandre\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1200.pk
+INPUT C:\Users\Alexandre\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
+INPUT C:\Users\Alexandre\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
 INPUT C:\Users\Alexandre\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
 INPUT C:\Users\Alexandre\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
 INPUT C:\Users\Alexandre\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
@@ -235,5 +243,3 @@ INPUT C:\Users\Alexandre\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600
 INPUT C:\Users\Alexandre\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1440.pk
 INPUT C:\Users\Alexandre\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
 INPUT C:\Users\Alexandre\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
-INPUT C:\Users\Alexandre\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
-INPUT C:\Users\Alexandre\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.2)  3 MAR 2025 13:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.2)  3 MAR 2025 20:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -362,32 +362,18 @@ Package hyperref Info: Link coloring OFF on input line 16.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-LaTeX Warning: File `Images/ensai_logo.png' not found on input line 22.
-
-
-c:/Users/Alexandre/Desktop/ENSAI/Projet_Stat/projetstat/rapport.tex:22: Package pdftex.def Error: File `Images/ensai_logo.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.22 ...idth=0.7\textwidth]{Images/ensai_logo.png}
-                                                  \\[2.0 cm]
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 22.
-(C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
-File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)
+<Images/scoreADRSdistrib.pdf, id=3, 788.9475pt x 415.5525pt>
+File: Images/scoreADRSdistrib.pdf Graphic file (type pdf)
+<use Images/scoreADRSdistrib.pdf>
+Package pdftex.def Info: Images/scoreADRSdistrib.pdf  used on input line 22.
+(pdftex.def)             Requested size: 314.68588pt x 165.74883pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <14.4> on input line 32.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 32.
- [1
+[1
 
-{C:/Users/Alexandre/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
+{C:/Users/Alexandre/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Images/scoreADRSdistrib.pdf>]
 No file rapport.toc.
 \tf@toc=\write4
 \openout4 = `rapport.toc'.
@@ -400,12 +386,7 @@ l.59 \newpage
               [1]
 \openout2 = `Sections/intro.aux'.
 
- (Sections/intro.tex)
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.61 \include{Sections/intro.tex}
-                                  [2
+ (Sections/intro.tex) [2
 
 ] [3
 
@@ -429,7 +410,10 @@ l.12 ...egraphics[scale = 0.6]{Images/image3.pdf}}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[4
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 12.
+(C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+) [4
 
 ]
 
@@ -567,17 +551,17 @@ Package rerunfilecheck Info: Checksums for `rapport.out':
 (rerunfilecheck)             After:  18DC23B81E1B1C14CE4E9EE72D4784FD;2257.
  ) 
 Here is how much of TeX's memory you used:
- 13041 strings out of 474486
- 222313 string characters out of 5741868
+ 13018 strings out of 474486
+ 221640 string characters out of 5741868
  1935542 words of memory out of 5000000
- 35106 multiletter control sequences out of 15000+600000
+ 35083 multiletter control sequences out of 15000+600000
  568605 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,79p,375b,530s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk>
-Output written on rapport.pdf (19 pages, 104305 bytes).
+ 75i,8n,79p,375b,463s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk>
+Output written on rapport.pdf (18 pages, 107459 bytes).
 PDF statistics:
- 355 PDF objects out of 1000 (max. 8388607)
+ 354 PDF objects out of 1000 (max. 8388607)
  44 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
