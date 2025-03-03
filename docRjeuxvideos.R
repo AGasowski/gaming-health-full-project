@@ -55,9 +55,11 @@ data$score_ADRS_categorie <- cut(data$score_ADRS,
 # Visualisation de cette variable
 
 # Calculer les proportions de chaque score_ADRS
-data_ADRS <- data %>%
+data_ADRS <- data %>% 
+  filter(!is.na(score_ADRS) )
+data_ADRS <- data_ADRS %>%
   group_by(score_ADRS) %>%
-  summarise(proportion = n() / nrow(data))
+  summarise(proportion = n() / nrow(data_ADRS))
 
 # Créer le graphique
 ggplot(data_ADRS, aes(x = factor(score_ADRS), y = proportion, fill = cut(score_ADRS, breaks = c(-1, 3, 6, 11), labels = c("Peu de risque d’EDC", "Risque d’EDC modéré", "Risque d’EDC important")))) +
