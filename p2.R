@@ -28,14 +28,15 @@ data <- data %>%
   ))
 
 
-# Remplacement des valeurs numériques par les catégories
-data$QB02 <- factor(labels_frequencejeu[data$QB02], levels = labels_frequencejeu)
-
 # Création d'un vecteur de correspondance
 labels_frequencejeu <- c("Jamais", "Une fois par mois ou moins", 
                          "2-3 fois par mois", "Une fois par semaine", 
                          "Plusieurs fois par semaine",
                          "Tous les jours ou presque")
+# Remplacement des valeurs numériques par les catégories
+data$QB02 <- factor(labels_frequencejeu[data$QB02], levels = labels_frequencejeu)
+data$qb07abcdef1 <- factor(labels_frequencejeu[data$qb07abcdef1], levels = labels_frequencejeu)
+
 
 
 ordre_IMC <- c("Insuffisance pondérale", "Corpulence normale", 
@@ -71,7 +72,7 @@ tab_pct
 
 
 
-#Graphique
+#GRAPHIQUE1
 
 data_clean_IMC_freqJV <- data %>% filter(!is.na(QB02) & !is.na(q18imc))
 
@@ -85,8 +86,29 @@ data_pourc_etatsante_freqJV <- data_clean_IMC_freqJV %>%
 ggplot(data_pourc_etatsante_freqJV, aes(x = IMC, y = pct, fill = QB02)) +
   geom_bar(stat = "identity") +
   geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
-  labs(title = "Répartition de la fréquence de jeu par catégorie d'IMC",
+  labs(title = "Répartition de la fréquence de jeux vidéo par catégorie d'IMC",
        x = "Catégorie d'IMC",
        y = "Pourcentage",
        fill = "Fréquence de jeux vidéos") +
+  theme_minimal()
+
+
+#GRAPHIQUE2
+
+data_clean_IMC_freqJA <- data %>% filter(!is.na(qb07abcdef1) & !is.na(q18imc))
+
+# Calculer les pourcentages par groupe de santé physique
+data_pourc_etatsante_freqJA <- data_clean_IMC_freqJA %>%
+  count(IMC, qb07abcdef1) %>%
+  group_by(IMC) %>%
+  mutate(pct = n / sum(n) * 100)
+
+# Création du graphique à barres empilées (100%)
+ggplot(data_pourc_etatsante_freqJA, aes(x = IMC, y = pct, fill = qb07abcdef1)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
+  labs(title = "Répartition de la fréquence de jeux d'argent par catégorie d'IMC",
+       x = "Catégorie d'IMC",
+       y = "Pourcentage",
+       fill = "Fréquence de jeux d'argent") +
   theme_minimal()
