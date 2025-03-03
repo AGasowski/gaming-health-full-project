@@ -262,3 +262,9 @@ tab
 tab_pct <- prop.table(tab, margin = 1) * 100
 tab_pct
 ##Les très gros joueurs ont moins de pensées suicidaires que les autres
+
+
+
+
+
+
