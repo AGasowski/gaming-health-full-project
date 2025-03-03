@@ -326,5 +326,6 @@ list(
   total_reponses = total_reponses,
   pourcentage_jamais = pourcentage_jamais
 )
-
+## 80,9% n'ont jamais joué à des jeux de grattages, c'est le taux le plus bas,
+## 19,1% ont déjà joué à des jeux de grattage contre 2,7 pour machines à sous
 
