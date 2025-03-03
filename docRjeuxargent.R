@@ -23,7 +23,7 @@ data <- data %>%
     q18imc < 18.5 ~ "insuffisance pondérale",
     q18imc > 30 ~ "obésité",
     q18imc > 25 ~ "surpoids",
-    TRUE ~ "bonne"
+    TRUE ~ "corpulence normale"
   ))
 
 # RECHERCHE DE CORRELATIONS ENTRE VARIABLES: V DE CRAMER
