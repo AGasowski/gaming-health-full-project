@@ -29,6 +29,10 @@ data <- data %>%
   ))
 
 
+# Création variable Etat_de_santé
+categories_Q17 <- c("Pas du tout satisfaisant", "Peu satisfaisant", "Plutôt satisfaisant", "Très satisfaisant")
+data$Etat_de_santé <- factor(data$Q17, levels = 1:4, labels = categories_Q17)
+
 
 
 ##Calcul IMC moyen en fonction de la fréquence de jeux d'argents
@@ -46,7 +50,33 @@ aggregate( q18imc ~ qb07abcdef1, data = data_clean, FUN = mean, na.rm = TRUE)
 aggregate( q18imc ~ QB02, data = data_clean, FUN = mean, na.rm = TRUE)
 
 
+
+#Fréquence de jeu et Etat de santé
+tab <- table(data$santephysique, data$QB02)
+tab
+tab_pct <- prop.table(tab, margin = 1) * 100
+tab_pct
+
+#Graphique Fréquence JV/Etat de santé
+ordre_IMC <- c("Maigreur", "Normal", "Surpoids", "Obésité")
+data_filtre$IMC_categorie <- factor(data$santephysique, levels = ordre_IMC)
+
+
+
+
+
 ##
+
+
+
+
+
+
+
+
+
+
+
 # Calcul des proportions pour chaque catégorie
 data_prop <- data %>%
   group_by(Q20, QB02) %>%

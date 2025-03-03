@@ -78,6 +78,9 @@ ggplot(data_ADRS, aes(x = factor(score_ADRS), y = proportion, fill = cut(score_A
 data_reduit <- data[, c("score_ADRS", "score_ADRS_categorie", "Etat_de_santé", "IMC", "IMC_categorie")]
 
 
+
+
+
 # Création variable jours_joué_par_mois
 categories_QBO1A <- c("Aucun", "1-2 jours", "3-5 jours", "6-9 jours", "10-19 jours", "20-29 jours", "Tous les jours ou presque")
 data$QB01A <- factor(data$QB01A, levels = 1:7, labels = categories_QBO1A)
