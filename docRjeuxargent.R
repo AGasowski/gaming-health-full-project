@@ -20,14 +20,15 @@ data <- datainitial %>%
 
 data <- data %>% 
   mutate(santephysique = case_when(
-    q18imc < 17 | q18imc > 30 ~ "très mauvaise",
-    q18imc < 18.5 | q18imc > 25 ~ "plutôt mauvaise",
+    q18imc < 18.5 ~ "insuffisance pondérale",
+    q18imc > 30 ~ "obésité",
+    q18imc > 25 ~ "surpoids",
     TRUE ~ "bonne"
   ))
 
 # RECHERCHE DE CORRELATIONS ENTRE VARIABLES: V DE CRAMER
 
-t <- table(data$Q24, data$QB08I)
+t <- table(data$santephysique, data$QB08I)
 cramer_v <- assocstats(t)
 cramer_v
 
