@@ -42,6 +42,8 @@ labels_sport <- c("Chaque jour", "4 à 6 fois par semaine", "3 fois par semaine"
 labels_sportred <- c("Jamais ou presque jamais", "Une fois par semaine",
                      "Plusieurs fois par semaine", "Chaque jour")
 
+labels_non_oui <- c("Non", "Oui")
+
 
 # Remplacement des valeurs numériques par les catégories
 data$QB02 <- factor(labels_frequencejeu[data$QB02], levels = labels_frequencejeu)
@@ -49,6 +51,7 @@ data$qb07abcdef1 <- factor(labels_frequencejeu[data$qb07abcdef1], levels = label
 data$QB07C1 <- factor(labels_frequencejeu[data$QB07C1], levels = labels_frequencejeu)
 
 data$Q20 <- factor(labels_sport[data$Q20], levels = labels_sport)
+
 
 
 
@@ -71,9 +74,14 @@ data <- data %>%
     Q20 == "Une fois par semaine" ~ "Une fois par semaine"
   ))
 
+data <- data %>% 
+  mutate(Q21A = case_when(
+    Q21A == 1 ~ "Non",
+    Q21A == 2 ~ "Oui"
+  ))
 
 data$Q20 <- factor(data$Q20, levels = labels_sportred)
-print(data$Q20)
+print(data$Q21A)
 
 
 
@@ -124,6 +132,18 @@ ggplot(data_pourc_etatsante_freqJV, aes(x = IMC, y = pct, fill = QB02)) +
        fill = "Fréquence de jeux vidéos") +
   theme_minimal()
 
+data_filter_etatsanteJV <- data_pourc_etatsante_freqJV %>%
+  filter(QB02 != "Jamais")
+ggplot(data_filter_etatsanteJV, aes(x = IMC, y = pct, fill = QB02)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
+  labs(title = "Répartition de la fréquence de jeux vidéo par catégorie d'IMC",
+       x = "Catégorie d'IMC",
+       y = "Pourcentage",
+       fill = "Fréquence de jeux vidéos") +
+  theme_minimal()
+
+
 
 #GRAPHIQUE2
 
@@ -171,6 +191,18 @@ data_pourc_sport_freqJV <- data_clean_sport_freqJV %>%
 
 # Création du graphique à barres empilées (100%)
 ggplot(data_pourc_sport_freqJV, aes(x = Q20, y = pct, fill = QB02)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
+  labs(title = "Répartition de la fréquence de jeux vidéo par fréquence d'activité sportive",
+       x = "Fréquence de pratique sportive",
+       y = "Pourcentage",
+       fill = "Fréquence de jeux vidéo") +
+  theme_minimal()
+
+
+data_filter_sportJV <- data_pourc_sport_freqJV %>%
+  filter(QB02 != "Jamais")
+ggplot(data_filter_sportJV, aes(x = Q20, y = pct, fill = QB02)) +
   geom_bar(stat = "identity") +
   geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
   labs(title = "Répartition de la fréquence de jeux vidéo par fréquence d'activité sportive",
@@ -248,4 +280,122 @@ ggplot(data_filter_sportPS, aes(x = Q20, y = pct, fill = QB07C1)) +
        x = "Fréquence de pratique sportive",
        y = "Pourcentage",
        fill = "Fréquence de paris sportifs") +
+  theme_minimal()
+
+
+
+#Graphique 6
+data_clean_medecinJA <- data %>% filter(!is.na(Q21A) & !is.na(qb07abcdef1))
+# Calculer les pourcentages par groupe de joueurs
+data_pourc_med <- data_clean_medecinJA %>%
+  count(qb07abcdef1, Q21A) %>%
+  group_by(qb07abcdef1) %>%
+  mutate(pct = n / sum(n) * 100)
+
+ggplot(data_pourc_med, aes(x = qb07abcdef1, y = pct, fill = Q21A)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
+  labs(title = "Part des individus ayant été chez le médecin au cours de l'année pour chaque catégorie de joueur",
+       x = "Fréquence de jeux d'argent",
+       y = "Pourcentage",
+       fill = "A été chez le médecin") +
+  theme_minimal()
+
+
+#Graphique 7
+data_clean_medecin_JV <- data %>% filter(!is.na(Q21A) & !is.na(QB02))
+# Calculer les pourcentages par groupe de joueurs
+data_pourc_medJV <- data_clean_medecin_JV %>%
+  count(QB02, Q21A) %>%
+  group_by(QB02) %>%
+  mutate(pct = n / sum(n) * 100)
+
+ggplot(data_pourc_medJV, aes(x = QB02, y = pct, fill = Q21A)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
+  labs(title = "Part des individus ayant été chez le médecin au cours de l'année pour chaque catégorie de joueur",
+       x = "Fréquence de jeux vidéo",
+       y = "Pourcentage",
+       fill = "A été chez le médecin") +
+  theme_minimal()
+
+data_clean_medtot <- data %>% filter(!is.na(Q21A))
+data_medecin_tot <- data_clean_medtot %>% 
+  count(Q21A) %>% 
+  mutate(pct = n / sum(n) * 100)
+
+
+
+
+#Graphique 8
+
+labels_frequencejeu <- c("Jamais", "Une fois par mois ou moins", 
+                         "2-3 fois par mois", "Une fois par semaine", 
+                         "Plusieurs fois par semaine",
+                         "Tous les jours ou presque")
+data$QB02 <- factor(labels_frequencejeu[data$QB02], levels = labels_frequencejeu)
+
+labels_etatsante <- c("Pas du tout satisfaisant", "Peu satisfaisant",
+                      "Plutôt satisfaisant", "Très satisfaisant")
+
+data$Q17 <- factor(labels_etatsante[data$Q17], levels = labels_etatsante)
+
+data_clean_etatsanteJV <- data %>% filter(!is.na(Q17) & !is.na(QB02))
+data_etatsanteJV <- data_clean_etatsanteJV %>% 
+  count(QB02, Q17) %>% 
+  group_by(QB02) %>% 
+  mutate(pct = n / sum(n) * 100)
+
+
+data_etatsantetot <- data_clean_etatsanteJV %>% 
+  count(Q17) %>% 
+  mutate(pct = n / sum(n) * 100)
+
+
+
+ggplot(data_etatsanteJV, aes(x = QB02, y = pct, fill = Q17)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
+  labs(title = "Qualification de son état de santé en fonction de la catégorie de joueurs de jeux vidéos",
+       x = "Fréquence de jeux vidéo",
+       y = "Pourcentage",
+       fill = "Etat de santé") +
+  theme_minimal()
+
+
+
+
+##Graphique 9
+
+labels_frequencejeu <- c("Jamais", "Une fois par mois ou moins", 
+                         "2-3 fois par mois", "Une fois par semaine", 
+                         "Plusieurs fois par semaine",
+                         "Tous les jours ou presque")
+data$qb07abcdef1 <- factor(labels_frequencejeu[data$qb07abcdef1], levels = labels_frequencejeu)
+
+labels_etatsante <- c("Pas du tout satisfaisant", "Peu satisfaisant",
+                      "Plutôt satisfaisant", "Très satisfaisant")
+
+data$Q17 <- factor(labels_etatsante[data$Q17], levels = labels_etatsante)
+
+data_clean_etatsanteJA <- data %>% filter(!is.na(Q17) & !is.na(qb07abcdef1))
+data_etatsanteJA <- data_clean_etatsanteJA %>% 
+  count(qb07abcdef1, Q17) %>% 
+  group_by(qb07abcdef1) %>% 
+  mutate(pct = n / sum(n) * 100)
+
+
+data_etatsantetot <- data %>% 
+  count(Q17) %>% 
+  mutate(pct = n / sum(n) * 100)
+
+
+
+ggplot(data_etatsanteJA, aes(x = qb07abcdef1, y = pct, fill = Q17)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
+  labs(title = "Qualification de son état de santé en fonction de la catégorie de joueurs de jeux d'argent",
+       x = "Fréquence de jeux d'argent",
+       y = "Pourcentage",
+       fill = "Etat de santé") +
   theme_minimal()

@@ -35,7 +35,7 @@ table(data$santephysique)
 
 # RECHERCHE DE CORRELATIONS ENTRE VARIABLES: V DE CRAMER
 
-t <- table(data$santephysique, data$q18imc)
+t <- table(data$Q21A, data$qb07abcdef1)
 cramer_v <- assocstats(t)
 cramer_v
 
