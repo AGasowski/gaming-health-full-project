@@ -305,26 +305,8 @@ tab_pct <- prop.table(tab, margin = 1) * 100
 tab_pct
 ##Les très gros joueurs ont moins de pensées suicidaires que les autres
 
-### quel jeu d'argent a le plus de "jamais"
-# Liste des variables à comparer
-variables <- c("QB07A1", "QB07B1", "QB07C1", "QB07D1", "QB07E1", "QB07F1")
 
-# Compter les occurrences de "Jamais" pour chaque variable en ignorant les NA
-occurrences_jamais <- sapply(variables, function(var) sum(data[[var]] == 1, na.rm = TRUE))
 
-# Afficher les résultats
-occurrences_jamais
 
-total_reponses <- sapply(variables, function(var) sum(!is.na(data[[var]])))
-
-# Calculer le pourcentage de réponses "jamais" par rapport au total des réponses valides
-pourcentage_jamais <- (occurrences_jamais / total_reponses) * 100
-
-# Afficher les résultats
-list(
-  occurrences_jamais = occurrences_jamais,
-  total_reponses = total_reponses,
-  pourcentage_jamais = pourcentage_jamais
-)
 
 

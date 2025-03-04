@@ -46,6 +46,7 @@ labels_sportred <- c("Jamais ou presque jamais", "Une fois par semaine",
 # Remplacement des valeurs numériques par les catégories
 data$QB02 <- factor(labels_frequencejeu[data$QB02], levels = labels_frequencejeu)
 data$qb07abcdef1 <- factor(labels_frequencejeu[data$qb07abcdef1], levels = labels_frequencejeu)
+data$QB07C1 <- factor(labels_frequencejeu[data$QB07C1], levels = labels_frequencejeu)
 
 data$Q20 <- factor(labels_sport[data$Q20], levels = labels_sport)
 
@@ -135,7 +136,7 @@ data_pourc_etatsante_freqJA <- data_clean_IMC_freqJA %>%
   mutate(pct = n / sum(n) * 100)
 
 # Création du graphique à barres empilées (100%)
-ggplot(data_pourc_etatsante_freqJA, aes(x = IMC, y = pct, fill = ifelse(qb07abcdef1 == "Jamais", NA, qb07abcdef1))) +
+ggplot(data_pourc_etatsante_freqJA, aes(x = IMC, y = pct, fill = qb07abcdef1) +
   geom_bar(stat = "identity") +
   geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
   labs(title = "Répartition de la fréquence de jeux d'argent par catégorie d'IMC",
@@ -148,7 +149,7 @@ ggplot(data_pourc_etatsante_freqJA, aes(x = IMC, y = pct, fill = ifelse(qb07abcd
 data_filter_etatsanteJA <- data_pourc_etatsante_freqJA %>%
   filter(qb07abcdef1 != "Jamais")
 
-ggplot(data_filter_etatsanteJA, aes(x = IMC, y = pct, fill = ifelse(qb07abcdef1 == "Jamais", NA, qb07abcdef1))) +
+ggplot(data_filter_etatsanteJA, aes(x = IMC, y = pct, fill = qb07abcdef1)) +
   geom_bar(stat = "identity") +
   geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
   labs(title = "Répartition de la fréquence de jeux d'argent par catégorie d'IMC",
@@ -159,11 +160,31 @@ ggplot(data_filter_etatsanteJA, aes(x = IMC, y = pct, fill = ifelse(qb07abcdef1 
 
 
 
+#Graphique 3
+data_clean_sport_freqJV <- data %>% filter(!is.na(Q20) & !is.na(QB02))
+# Calculer les pourcentages par groupe de sportifs
+data_pourc_sport_freqJV <- data_clean_sport_freqJV %>%
+  count(Q20, QB02) %>%
+  group_by(Q20) %>%
+  mutate(pct = n / sum(n) * 100)
+
+
+# Création du graphique à barres empilées (100%)
+ggplot(data_pourc_sport_freqJV, aes(x = Q20, y = pct, fill = QB02)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
+  labs(title = "Répartition de la fréquence de jeux vidéo par fréquence d'activité sportive",
+       x = "Fréquence de pratique sportive",
+       y = "Pourcentage",
+       fill = "Fréquence de jeux vidéo") +
+  theme_minimal()
 
 
 
 
 
+
+#Graphique 4
 data_clean_sport_freq <- data %>% filter(!is.na(Q20) & !is.na(qb07abcdef1))
 # Calculer les pourcentages par groupe de sportifs
 data_pourc_sport_freqJA <- data_clean_sport_freq %>%
@@ -176,7 +197,7 @@ data_pourc_sport_freqJA <- data_clean_sport_freq %>%
 ggplot(data_pourc_sport_freqJA, aes(x = Q20, y = pct, fill = qb07abcdef1)) +
   geom_bar(stat = "identity") +
   geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
-  labs(title = "Répartition de la fréquence de jeux d'argent par catégorie d'IMC",
+  labs(title = "Répartition de la fréquence de jeux d'argent par fréquence d'activité sportive",
        x = "Fréquence de pratique sportive",
        y = "Pourcentage",
        fill = "Fréquence de jeux d'argent") +
@@ -189,8 +210,42 @@ data_filter_sportJA <- data_pourc_sport_freqJA %>%
 ggplot(data_filter_sportJA, aes(x = Q20, y = pct, fill = qb07abcdef1)) +
   geom_bar(stat = "identity") +
   geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
-  labs(title = "Répartition de la fréquence de jeux d'argent par catégorie d'IMC",
+  labs(title = "Répartition de la fréquence de jeux d'argent par fréquence d'activité sportive",
        x = "Fréquence de pratique sportive",
        y = "Pourcentage",
        fill = "Fréquence de jeux d'argent") +
+  theme_minimal()
+
+
+
+#Graphique 5
+data_clean_sport_freqPS <- data %>% filter(!is.na(Q20) & !is.na(QB07C1))
+# Calculer les pourcentages par groupe de sportifs
+data_pourc_sport_freqPS <- data_clean_sport_freqPS %>%
+  count(Q20, QB07C1) %>%
+  group_by(Q20) %>%
+  mutate(pct = n / sum(n) * 100)
+
+
+# Création du graphique à barres empilées (100%)
+ggplot(data_pourc_sport_freqPS, aes(x = Q20, y = pct, fill = QB07C1)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
+  labs(title = "Répartition de la fréquence de paris sportifs par fréquence d'activité sportive",
+       x = "Fréquence de pratique sportive",
+       y = "Pourcentage",
+       fill = "Fréquence de paris sportifs") +
+  theme_minimal()
+
+# Création du graphique à barres empilées sans les non joueurs
+data_filter_sportPS <- data_pourc_sport_freqPS %>%
+  filter(QB07C1 != "Jamais")
+
+ggplot(data_filter_sportPS, aes(x = Q20, y = pct, fill = QB07C1)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
+  labs(title = "Répartition de la fréquence de paris sportifs par fréquence d'activité sportive",
+       x = "Fréquence de pratique sportive",
+       y = "Pourcentage",
+       fill = "Fréquence de paris sportifs") +
   theme_minimal()
