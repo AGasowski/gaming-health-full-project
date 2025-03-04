@@ -4,6 +4,7 @@ install.packages("dplyr")
 install.packages("vcd")
 install.packages("ggplot2")
 
+
 library(vcd)
 library(dplyr)
 library(ggplot2)
@@ -38,6 +39,9 @@ labels_sport <- c("Chaque jour", "4 à 6 fois par semaine", "3 fois par semaine"
                   "2 fois par semaine", "Une fois par semaine", "Une fois par mois",
                   "Moins d'une fois par mois", "Jamais")
 
+labels_sportred <- c("Jamais ou presque jamais", "Une fois par semaine",
+                     "Plusieurs fois par semaine", "Chaque jour")
+
 
 # Remplacement des valeurs numériques par les catégories
 data$QB02 <- factor(labels_frequencejeu[data$QB02], levels = labels_frequencejeu)
@@ -60,11 +64,15 @@ data <- data %>%
       Q20 == "3 fois par semaine" |
       Q20 == "2 fois par semaine" ~ "Plusieurs fois par semaine",
     Q20 == "Moins d'une fois par mois" |
-      Q20 == "Jamais" ~ "Jamais ou presque jamais" |
-      Q20 == "Une fois par mois",
+      Q20 == "Jamais" |
+      Q20 == "Une fois par mois" ~ "Jamais ou presque jamais" ,
     Q20 == "Chaque jour" ~ "Chaque jour",
     Q20 == "Une fois par semaine" ~ "Une fois par semaine"
   ))
+
+
+data$Q20 <- factor(data$Q20, levels = labels_sportred)
+print(data$Q20)
 
 
 
@@ -136,6 +144,19 @@ ggplot(data_pourc_etatsante_freqJA, aes(x = IMC, y = pct, fill = ifelse(qb07abcd
        fill = "Fréquence de jeux d'argent") +
   theme_minimal()
 
+# Création du graphique à barres empilées sans les non joueurs
+data_filter_etatsanteJA <- data_pourc_etatsante_freqJA %>%
+  filter(qb07abcdef1 != "Jamais")
+
+ggplot(data_filter_etatsanteJA, aes(x = IMC, y = pct, fill = ifelse(qb07abcdef1 == "Jamais", NA, qb07abcdef1))) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
+  labs(title = "Répartition de la fréquence de jeux d'argent par catégorie d'IMC",
+       x = "Catégorie d'IMC",
+       y = "Pourcentage",
+       fill = "Fréquence de jeux d'argent") +
+  theme_minimal()
+
 
 
 
@@ -150,8 +171,22 @@ data_pourc_sport_freqJA <- data_clean_sport_freq %>%
   group_by(Q20) %>%
   mutate(pct = n / sum(n) * 100)
 
+
 # Création du graphique à barres empilées (100%)
 ggplot(data_pourc_sport_freqJA, aes(x = Q20, y = pct, fill = qb07abcdef1)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
+  labs(title = "Répartition de la fréquence de jeux d'argent par catégorie d'IMC",
+       x = "Fréquence de pratique sportive",
+       y = "Pourcentage",
+       fill = "Fréquence de jeux d'argent") +
+  theme_minimal()
+
+# Création du graphique à barres empilées sans les non joueurs
+data_filter_sportJA <- data_pourc_sport_freqJA %>%
+  filter(qb07abcdef1 != "Jamais")
+  
+ggplot(data_filter_sportJA, aes(x = Q20, y = pct, fill = qb07abcdef1)) +
   geom_bar(stat = "identity") +
   geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
   labs(title = "Répartition de la fréquence de jeux d'argent par catégorie d'IMC",
