@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.2)  4 MAR 2025 19:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.2)  4 MAR 2025 20:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -272,47 +272,62 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@dimlist=\toks23
  (C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
+) (C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex/latex/makecell\makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+ (C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen174
+\ar@mcellbox=\box53
+\extrarowheight=\dimen175
+\NC@list=\toks24
+\extratabsurround=\skip53
+\backup@length=\skip54
+\ar@cellbox=\box54
+)
+\rotheadsize=\dimen176
+\c@nlinenum=\count307
+\TeXr@lab=\toks25
 ) (C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count307
-\l__pdf_internal_box=\box53
+\l__color_backend_stack_int=\count308
+\l__pdf_internal_box=\box55
 )
 No file rapport.aux.
 \openout1 = `rapport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Info: Redefining \degres on input line 16.
-LaTeX Info: Redefining \up on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Info: Redefining \degres on input line 17.
+LaTeX Info: Redefining \up on input line 17.
 (C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count308
-\scratchdimen=\dimen174
-\scratchbox=\box54
-\nofMPsegments=\count309
-\nofMParguments=\count310
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count311
-\MPscratchDim=\dimen175
-\MPnumerator=\count312
-\makeMPintoPDFobject=\count313
-\everyMPtoPDFconversion=\toks25
+\scratchcounter=\count309
+\scratchdimen=\dimen177
+\scratchbox=\box56
+\nofMPsegments=\count310
+\nofMParguments=\count311
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count312
+\MPscratchDim=\dimen178
+\MPnumerator=\count313
+\makeMPintoPDFobject=\count314
+\everyMPtoPDFconversion=\toks27
 ) (C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -323,7 +338,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 16.
+Package hyperref Info: Link coloring OFF on input line 17.
 \@outlinefile=\write3
 \openout3 = `rapport.out'.
 
@@ -363,9 +378,9 @@ Package hyperref Info: Link coloring OFF on input line 16.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 31.
+(Font)              <14.4> on input line 32.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 31.
+(Font)              <7> on input line 32.
 [1
 
 {C:/Users/Alexandre/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
@@ -377,7 +392,7 @@ No file rapport.toc.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.60 \newpage
+l.61 \newpage
               [1]
 \openout2 = `Sections/intro.aux'.
 
@@ -434,92 +449,107 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--9
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--13
+Underfull \hbox (badness 10000) in paragraph at lines 10--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--21
+
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 25.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 25.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 25.
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--43
 
  []
 
 <Images/Freq_JA_IMC.png, id=43, 602.25pt x 416.05438pt>
 File: Images/Freq_JA_IMC.png Graphic file (type png)
 <use Images/Freq_JA_IMC.png>
-Package pdftex.def Info: Images/Freq_JA_IMC.png  used on input line 18.
+Package pdftex.def Info: Images/Freq_JA_IMC.png  used on input line 48.
 (pdftex.def)             Requested size: 449.55322pt x 310.57986pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--25
-
- []
-
 [6
 
 
 
- <./Images/Freq_JA_IMC.png (PNG copy)>]
-<Images/Freq_JV_IMC.png, id=51, 599.74063pt x 350.81062pt>
+]
+Underfull \hbox (badness 10000) in paragraph at lines 50--55
+
+ []
+
+<Images/Freq_JV_IMC.png, id=52, 599.74063pt x 350.81062pt>
 File: Images/Freq_JV_IMC.png Graphic file (type png)
 <use Images/Freq_JV_IMC.png>
-Package pdftex.def Info: Images/Freq_JV_IMC.png  used on input line 28.
+Package pdftex.def Info: Images/Freq_JV_IMC.png  used on input line 58.
 (pdftex.def)             Requested size: 449.55322pt x 262.96812pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 30--35
-
- []
-
-[7 <./Images/Freq_JV_IMC.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 44--47
+[7 <./Images/Freq_JA_IMC.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 60--65
 
  []
 
-<Images/Freq_JA_sport.png, id=56, 677.53125pt x 489.32813pt>
+[8 <./Images/Freq_JV_IMC.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 74--77
+
+ []
+
+<Images/Freq_JA_sport.png, id=61, 677.53125pt x 489.32813pt>
 File: Images/Freq_JA_sport.png Graphic file (type png)
 <use Images/Freq_JA_sport.png>
-Package pdftex.def Info: Images/Freq_JA_sport.png  used on input line 48.
+Package pdftex.def Info: Images/Freq_JA_sport.png  used on input line 78.
 (pdftex.def)             Requested size: 449.55322pt x 324.68979pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--53
+Underfull \hbox (badness 10000) in paragraph at lines 80--83
 
  []
 
-<Images/Freq_PS_sport.png, id=57, 677.53125pt x 489.32813pt>
+<Images/Freq_PS_sport.png, id=62, 677.53125pt x 489.32813pt>
 File: Images/Freq_PS_sport.png Graphic file (type png)
 <use Images/Freq_PS_sport.png>
-Package pdftex.def Info: Images/Freq_PS_sport.png  used on input line 57.
+Package pdftex.def Info: Images/Freq_PS_sport.png  used on input line 87.
 (pdftex.def)             Requested size: 449.55322pt x 324.68979pt.
-[8 <./Images/Freq_JA_sport.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 59--63
+[9 <./Images/Freq_JA_sport.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 89--93
 
  []
 
-<Images/Freq_JV_sport.png, id=63, 715.17188pt x 414.04688pt>
+<Images/Freq_JV_sport.png, id=68, 715.17188pt x 414.04688pt>
 File: Images/Freq_JV_sport.png Graphic file (type png)
 <use Images/Freq_JV_sport.png>
-Package pdftex.def Info: Images/Freq_JV_sport.png  used on input line 67.
+Package pdftex.def Info: Images/Freq_JV_sport.png  used on input line 97.
 (pdftex.def)             Requested size: 449.55322pt x 260.26965pt.
-[9 <./Images/Freq_PS_sport.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 69--74
+[10 <./Images/Freq_PS_sport.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 99--104
 
  []
 
-<Images/Freq_JA_medecin.png, id=68, 865.73438pt x 376.40625pt>
+<Images/Freq_JA_medecin.png, id=73, 865.73438pt x 376.40625pt>
 File: Images/Freq_JA_medecin.png Graphic file (type png)
 <use Images/Freq_JA_medecin.png>
-Package pdftex.def Info: Images/Freq_JA_medecin.png  used on input line 79.
+Package pdftex.def Info: Images/Freq_JA_medecin.png  used on input line 109.
 (pdftex.def)             Requested size: 449.55322pt x 195.45668pt.
-[10 <./Images/Freq_JV_sport.png (PNG copy)> <./Images/Freq_JA_medecin.png>]
-<Images/Freq_JV_medecin.png, id=74, 865.73438pt x 376.40625pt>
+[11 <./Images/Freq_JV_sport.png (PNG copy)> <./Images/Freq_JA_medecin.png>]
+<Images/Freq_JV_medecin.png, id=79, 865.73438pt x 376.40625pt>
 File: Images/Freq_JV_medecin.png Graphic file (type png)
 <use Images/Freq_JV_medecin.png>
-Package pdftex.def Info: Images/Freq_JV_medecin.png  used on input line 84.
+Package pdftex.def Info: Images/Freq_JV_medecin.png  used on input line 114.
 (pdftex.def)             Requested size: 449.55322pt x 195.45668pt.
- [11 <./Images/Freq_JV_medecin.png>]) [12]
+ [12 <./Images/Freq_JV_medecin.png>]) [13]
 \openout2 = `Sections/p3.aux'.
 
- (Sections/p3.tex [13
+ (Sections/p3.tex [14
 
 
 
-] [14]) [15]
+] [15]) [16]
 \openout2 = `Sections/conclusion.aux'.
 
- (Sections/conclusion.tex) [16
+ (Sections/conclusion.tex) [17
 
 
 
@@ -536,14 +566,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
 
-) [17
+) [18
 
 
 
 ]
 \openout2 = `Sections/annexes.aux'.
 
- (Sections/annexes.tex) [18
+ (Sections/annexes.tex) [19
 
 
 
@@ -563,20 +593,20 @@ Package rerunfilecheck Warning: File `rapport.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `rapport.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  8C50F0053F5B8C6FE4BA96FB3E023138;2771.
+(rerunfilecheck)             After:  EBD0B710847A3D3A5B345EDCF66A4DA4;2771.
  ) 
 Here is how much of TeX's memory you used:
- 12971 strings out of 474486
- 220807 string characters out of 5741868
- 1929542 words of memory out of 5000000
- 35045 multiletter control sequences out of 15000+600000
- 566167 words of font info for 50 fonts, out of 8000000 for 9000
+ 13220 strings out of 474486
+ 224064 string characters out of 5741868
+ 1933542 words of memory out of 5000000
+ 35280 multiletter control sequences out of 15000+600000
+ 568605 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,79p,375b,528s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,15n,79p,375b,528s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk>
-Output written on rapport.pdf (19 pages, 353641 bytes).
+Output written on rapport.pdf (20 pages, 357008 bytes).
 PDF statistics:
- 383 PDF objects out of 1000 (max. 8388607)
- 41 named destinations out of 1000 (max. 500000)
+ 394 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
