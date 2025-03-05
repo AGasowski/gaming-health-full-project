@@ -305,7 +305,7 @@ tab_pct <- prop.table(tab, margin = 1) * 100
 tab_pct
 ##Les très gros joueurs ont moins de pensées suicidaires que les autres
 
-<<<<<<< HEAD
+
 ### quel jeu d'argent a le plus de "jamais"
 # Liste des variables à comparer
 variables <- c("QB07A1", "QB07B1", "QB07C1", "QB07D1", "QB07E1", "QB07F1")
@@ -329,11 +329,8 @@ list(
 )
 ## 80,9% n'ont jamais joué à des jeux de grattages, c'est le taux le plus bas,
 ## 19,1% ont déjà joué à des jeux de grattage contre 2,7 pour machines à sous
-=======
 
 
-
->>>>>>> f04236e1ad5a9df244ab21c2ef65707189173c69
 
 # Compter les occurrences des modalités 1 et 2 pour chaque variable en ignorant les NA
 occurrences_1_ou_2 <- sapply(variables, function(var) sum(data[[var]] %in% c(1, 2), na.rm = TRUE))
@@ -352,4 +349,164 @@ list(
 )
 ## 5,7% des sondés jouent plus d'une fois par mois à des paris sportifs, 
 ##c'est 4,1% pour les tickets à gratter
+
+## jeu d'argent internet
+
+tab <- sum(data$qb07_ps_web == 0, na.rm = T)
+tab
+### 289 parient en ligne contre 266 pas en ligne 
+
+## mise habituelle paris
+tab <- summary (data$QB10B[data$QB10B != 0 & !is.na(data$QB10B)])
+tab
+## en moyenne les mises habituelles sont de 252 € dans l'année, médianne = 10 et 3ème quartile = 20
+
+
+## plus grosse mise
+tab <- summary(data$QB11[data$QB11 != 0 & !is.na(data$QB11)])
+tab
+## plus grosse mise médianne 20€ et moyenne 412€ BIZARRE plus gros que total mises sur l'année
+
+# Calculer le premier quartile (Q1) et le troisième quartile (Q3)
+Q1 <- quantile(data$QB10B, 0.25, na.rm = TRUE)
+Q3 <- quantile(data$QB10B, 0.75, na.rm = TRUE)
+IQR <- Q3 - Q1
+
+# Définir les limites pour les valeurs aberrantes
+lower_bound <- Q1 - 1.5 * IQR
+upper_bound <- Q3 + 1.5 * IQR
+
+# Filtrer les données pour enlever les valeurs aberrantes
+filtered_data <- data[data$QB10B >= lower_bound & data$QB10B <= upper_bound, ]
+
+# Afficher le nombre de lignes avant et après le filtrage
+cat("Nombre de lignes avant filtrage :", nrow(data), "\n")
+cat("Nombre de lignes après filtrage :", nrow(filtered_data), "\n")
+summary( filtered_data$QB10B)
+
+
+
+# Filtrer les valeurs NA et 0 dans QB10B
+filtered_data <- filtered_data %>%
+  filter(!is.na(QB10B), QB10B != 0)
+
+# Calculer les moyennes de QB10B pour chaque catégorie de joueurs
+moyennes <- filtered_data %>%
+  summarise(
+    `Joueurs occasionnels` = mean(QB10B[qb07_ps_ann == 1], na.rm = TRUE),
+    `Joueurs hebdomadaires` = mean(QB10B[qb07_ps_heb == 1], na.rm = TRUE),
+    `Joueurs quotidiens` = mean(QB10B[qb07_ps_quo == 1], na.rm = TRUE)
+  )
+
+# Afficher le tableau
+print
+
+
+### graphique fréquence de jeu argent
+# Créer un dataframe avec les intitulés des modalités
+labels <- c("jamais", "1 fois par mois ou moins", "2-3 fois par mois", "1 fois par semaine", "plusieurs fois par semaine", "tous les jours ou presque")
+
+# Filtrer les valeurs NA dans QB01A
+filtered_data <- data %>%
+  filter(!is.na(qb07abcdef1))
+
+# Calculer le nombre total de réponses valides
+total_responses <- nrow(filtered_data)
+
+# Calculer les proportions pour chaque catégorie
+proportions <- filtered_data %>%
+  count(qb07abcdef1) %>%
+  mutate(proportion = n / total_responses * 100)
+
+
+# Créer le graphique en barres
+ggplot(proportions, aes(x = factor(qb07abcdef1, levels = 1:6, labels = labels), y = proportion)) +
+  geom_bar(stat = "identity", fill = "skyblue") +
+  labs(
+    title = "Fréquence de consommation du jeu d'argent",
+    x = "Fréquence de consommation",
+    y = "Pourcentage"
+  ) +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    plot.title = element_text(hjust = 0.5)
+  )
+
+# Charger les bibliothèques nécessaires
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+
+# Créer un dataframe avec les intitulés des modalités
+modalites <- c("jamais", "une fois par mois ou moins", "2-3 fois par mois",
+               "une fois par semaine", "plusieurs fois par semaine", "tous les jours ou presque")
+
+# Regrouper les données pour qb07abcdef1 et QB02, en excluant les NA
+data_long <- data %>%
+  select(qb07abcdef1, QB02, Q03) %>%
+  pivot_longer(cols = c(qb07abcdef1, QB02), names_to = "variable", values_to = "modalite") %>%
+  filter(!is.na(modalite) & !is.na(Q03)) %>%
+  mutate(modalite = factor(modalite, levels = 1:6, labels = modalites))
+
+# Remplacer les étiquettes des variables
+data_long <- data_long %>%
+  mutate(variable = recode(variable, qb07abcdef1 = "Jeux d'argent", QB02 = "Jeux vidéo"))
+
+# Calculer le nombre total d'hommes et de femmes pour chaque variable
+total_counts <- data_long %>%
+  group_by(variable, Q03) %>%
+  summarise(total = n(), .groups = 'drop')
+
+# Calculer les proportions pour chaque catégorie en fonction du sexe
+proportions <- data_long %>%
+  group_by(variable, modalite, Q03) %>%
+  summarise(count = n(), .groups = 'drop') %>%
+  left_join(total_counts, by = c("variable", "Q03")) %>%
+  mutate(proportion = count / total * 100)
+
+# Créer le graphique en barres empilées combiné
+ggplot(proportions, aes(x = modalite, y = proportion, fill = factor(Q03, labels = c("Homme", "Femme")))) +
+  geom_bar(stat = "identity", position = "dodge") +
+  facet_wrap(~ variable, scales = "free_x") +
+  labs(
+    title = "Fréquence des consommation de jeu par sexe",
+    x = "Modalité",
+    y = "Pourcentage des joueurs par sexe",
+    fill = "Sexe"
+  ) +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    plot.title = element_text(hjust = 0.5)
+  )
+
+#### PCS du père et jeu d'argent
+# Charger les bibliothèques nécessaires
+library(dplyr)
+library(tidyr)
+
+# Créer un dataframe avec les intitulés des modalités pour q15a_br
+csp_labels <- c("Agriculteur exploitant", "Artisan, commerçant", "Chef d’entreprise",
+                "Cadre", "Profession intermédiaire", "Employé", "Ouvrier", "Sans profession")
+
+# Créer un dataframe avec les intitulés des modalités pour qb07abcdef1
+modalites_qb07 <- c("jamais", "une  mois", "2-3 ",
+                    "semaine", "plusieurs  semaine", "tous les jours")
+
+# Filtrer les valeurs NA et créer le tableau croisé
+data_filtered <- data %>%
+  filter(!is.na(q15a_br) & !is.na(qb07abcdef1)) %>%
+  mutate(
+    q15a_br = factor(q15a_br, levels = 1:8, labels = csp_labels),
+    qb07abcdef1 = factor(qb07abcdef1, levels = 1:6, labels = modalites_qb07)
+  )
+
+# Créer le tableau croisé avec les proportions en pourcentage
+tableau_croise <- data_filtered %>%
+  group_by(q15a_br, qb07abcdef1) %>%
+  summarise(count = n(), .groups = 'drop') %>%
+  spread(qb07abcdef1, count, fill = 0) %>%
+  mutate(across(where(is.numeric), ~ . / rowSums(across(where(is.numeric))) * 100))
+
+# Afficher le tableau croisé
+print(tableau_croise)
 
