@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.2)  5 MAR 2025 12:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.2)  5 MAR 2025 12:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -291,7 +291,8 @@ Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count308
 \l__pdf_internal_box=\box55
-) (rapport.aux)
+)
+No file rapport.aux.
 \openout1 = `rapport.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
@@ -314,7 +315,7 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 LaTeX Info: Redefining \degres on input line 17.
 LaTeX Info: Redefining \up on input line 17.
- (C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+(C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count309
 \scratchdimen=\dimen177
@@ -592,13 +593,13 @@ Package rerunfilecheck Warning: File `rapport.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `rapport.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  DA0CA76230B3116E20357587942670E6;3090.
+(rerunfilecheck)             After:  07D7393CDDEDD94B8E279E1845432995;3010.
  ) 
 Here is how much of TeX's memory you used:
- 13223 strings out of 474486
- 224222 string characters out of 5741868
+ 13220 strings out of 474486
+ 224120 string characters out of 5741868
  1934542 words of memory out of 5000000
- 35281 multiletter control sequences out of 15000+600000
+ 35280 multiletter control sequences out of 15000+600000
  568605 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,15n,79p,375b,528s stack positions out of 10000i,1000n,20000p,200000b,200000s
