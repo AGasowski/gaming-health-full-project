@@ -122,6 +122,9 @@ INPUT C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex\latex\setspace\setspac
 INPUT C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex\latex\setspace\setspace.sty
 INPUT C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT .\rapport.aux
+INPUT .\rapport.aux
+INPUT rapport.aux
 OUTPUT rapport.aux
 INPUT C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -133,6 +136,7 @@ INPUT C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopd
 INPUT C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 OUTPUT rapport.out
 OUTPUT rapport.pdf
+INPUT C:\Users\Gregoire\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT .\Images\scoreADRSdistrib.pdf
 INPUT .\Images\scoreADRSdistrib.pdf
 INPUT .\Images\scoreADRSdistrib.pdf
@@ -147,7 +151,6 @@ INPUT C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.
 INPUT C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
 INPUT C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\eccc1440.tfm
-INPUT C:\Users\Gregoire\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 OUTPUT rapport.toc
 INPUT .\Sections\intro.tex
 OUTPUT Sections\intro.aux
@@ -220,8 +223,6 @@ INPUT C:\Users\Gregoire\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\
 INPUT C:\Users\Gregoire\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
 INPUT C:\Users\Gregoire\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
 INPUT C:\Users\Gregoire\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
-INPUT C:\Users\Gregoire\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
-INPUT C:\Users\Gregoire\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
 INPUT C:\Users\Gregoire\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1440.pk
 INPUT C:\Users\Gregoire\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\eccc1440.pk
 INPUT C:\Users\Gregoire\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1440.pk
@@ -230,3 +231,5 @@ INPUT C:\Users\Gregoire\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\
 INPUT C:\Users\Gregoire\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1440.pk
 INPUT C:\Users\Gregoire\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
 INPUT C:\Users\Gregoire\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
+INPUT C:\Users\Gregoire\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
+INPUT C:\Users\Gregoire\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk

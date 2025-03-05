@@ -329,3 +329,21 @@ list(
 ## 80,9% n'ont jamais joué à des jeux de grattages, c'est le taux le plus bas,
 ## 19,1% ont déjà joué à des jeux de grattage contre 2,7 pour machines à sous
 
+# Compter les occurrences des modalités 1 et 2 pour chaque variable en ignorant les NA
+occurrences_1_ou_2 <- sapply(variables, function(var) sum(data[[var]] %in% c(1, 2), na.rm = TRUE))
+
+# Calculer le nombre total de réponses valides (non NA) pour chaque variable
+total_reponses <- sapply(variables, function(var) sum(!is.na(data[[var]])))
+
+# Calculer le pourcentage de réponses 1 ou 2 par rapport au total des réponses valides
+pourcentage_1_ou_2 <- (occurrences_1_ou_2 / total_reponses) * 100
+
+# Afficher les résultats
+list(
+  occurrences_1_ou_2 = occurrences_1_ou_2,
+  total_reponses = total_reponses,
+  pourcentage_1_ou_2 = pourcentage_1_ou_2
+)
+## 5,7% des sondés jouent plus d'une fois par mois à des paris sportifs, 
+##c'est 4,1% pour les tickets à gratter
+
