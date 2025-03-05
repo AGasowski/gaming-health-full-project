@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.2) (preloaded format=pdflatex 2025.3.5)  5 MAR 2025 16:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.2) (preloaded format=pdflatex 2025.3.5)  5 MAR 2025 17:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -289,7 +289,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count317
 \l__pdf_internal_box=\box56
-) (rapport.aux (Sections/intro.aux) (Sections/p1.aux) (Sections/p2.aux) (Sections/p3.aux) (Sections/conclusion.aux) (Sections/Bibliographie.aux) (Sections/annexes.aux))
+) (rapport.aux)
 \openout1 = `rapport.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -370,7 +370,6 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 16.
-(rapport.out) (rapport.out)
 \@outlinefile=\write3
 \openout3 = `rapport.out'.
 
@@ -382,14 +381,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 [1
 
-{C:/Users/noahm/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (rapport.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 4.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 4.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 4.
-)
+{C:/Users/noahm/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+No file rapport.toc.
 \tf@toc=\write4
 \openout4 = `rapport.toc'.
 
@@ -469,12 +462,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--21
 
  []
 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 25.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 25.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 25.
 
 Underfull \hbox (badness 10000) in paragraph at lines 41--44
 
  []
 
-<Images/Freq_JA_IMC.png, id=109, 602.25pt x 416.05438pt>
+<Images/Freq_JA_IMC.png, id=43, 602.25pt x 416.05438pt>
 File: Images/Freq_JA_IMC.png Graphic file (type png)
 <use Images/Freq_JA_IMC.png>
 Package pdftex.def Info: Images/Freq_JA_IMC.png  used on input line 49.
@@ -490,7 +489,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--56
 
  []
 
-<Images/Freq_JV_IMC_bis.png, id=116, 602.25pt x 376.40625pt>
+<Images/Freq_JV_IMC_bis.png, id=52, 602.25pt x 376.40625pt>
 File: Images/Freq_JV_IMC_bis.png Graphic file (type png)
 <use Images/Freq_JV_IMC_bis.png>
 Package pdftex.def Info: Images/Freq_JV_IMC_bis.png  used on input line 59.
@@ -509,7 +508,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--78
 
  []
 
-<Images/Freq_JA_sport.png, id=125, 677.53125pt x 489.32813pt>
+<Images/Freq_JA_sport.png, id=61, 677.53125pt x 489.32813pt>
 File: Images/Freq_JA_sport.png Graphic file (type png)
 <use Images/Freq_JA_sport.png>
 Package pdftex.def Info: Images/Freq_JA_sport.png  used on input line 79.
@@ -519,7 +518,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--84
 
  []
 
-<Images/Freq_PS_sport.png, id=126, 677.53125pt x 489.32813pt>
+<Images/Freq_PS_sport.png, id=62, 677.53125pt x 489.32813pt>
 File: Images/Freq_PS_sport.png Graphic file (type png)
 <use Images/Freq_PS_sport.png>
 Package pdftex.def Info: Images/Freq_PS_sport.png  used on input line 88.
@@ -531,7 +530,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--94
 
  []
 
-<Images/Freq_JV_sport_bis.png, id=131, 602.25pt x 376.40625pt>
+<Images/Freq_JV_sport_bis.png, id=68, 602.25pt x 376.40625pt>
 File: Images/Freq_JV_sport_bis.png Graphic file (type png)
 <use Images/Freq_JV_sport_bis.png>
 Package pdftex.def Info: Images/Freq_JV_sport_bis.png  used on input line 98.
@@ -543,7 +542,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--106
 
  []
 
-<Images/Freq_JA_medecin.png, id=136, 865.73438pt x 376.40625pt>
+<Images/Freq_JA_medecin.png, id=73, 865.73438pt x 376.40625pt>
 File: Images/Freq_JA_medecin.png Graphic file (type png)
 <use Images/Freq_JA_medecin.png>
 Package pdftex.def Info: Images/Freq_JA_medecin.png  used on input line 112.
@@ -551,7 +550,7 @@ Package pdftex.def Info: Images/Freq_JA_medecin.png  used on input line 112.
 
 
 [11 <./Images/Freq_JV_sport_bis.png (PNG copy)>]
-<Images/Freq_JV_medecin.png, id=141, 865.73438pt x 376.40625pt>
+<Images/Freq_JV_medecin.png, id=78, 865.73438pt x 376.40625pt>
 File: Images/Freq_JV_medecin.png Graphic file (type png)
 <use Images/Freq_JV_medecin.png>
 Package pdftex.def Info: Images/Freq_JV_medecin.png  used on input line 117.
@@ -562,12 +561,15 @@ Package pdftex.def Info: Images/Freq_JV_medecin.png  used on input line 117.
 \openout2 = `Sections/p3.aux'.
 
 (Sections/p3.tex
-<Images/scoreADRSdistrib.pdf, id=150, 788.9475pt x 415.5525pt>
+
+LaTeX Warning: Reference `fig:adrs' on page 13 undefined on input line 7.
+
+<Images/scoreADRSdistrib.pdf, id=86, 788.9475pt x 415.5525pt>
 File: Images/scoreADRSdistrib.pdf Graphic file (type pdf)
 <use Images/scoreADRSdistrib.pdf>
 Package pdftex.def Info: Images/scoreADRSdistrib.pdf  used on input line 11.
 (pdftex.def)             Requested size: 359.64394pt x 189.43176pt.
-<Images/Etatsante_JV.png, id=151, 865.73438pt x 526.96875pt>
+<Images/Etatsante_JV.png, id=87, 865.73438pt x 526.96875pt>
 File: Images/Etatsante_JV.png Graphic file (type png)
 <use Images/Etatsante_JV.png>
 Package pdftex.def Info: Images/Etatsante_JV.png  used on input line 20.
@@ -579,26 +581,41 @@ Package pdftex.def Info: Images/Etatsante_JV.png  used on input line 20.
 
 
  <./Images/scoreADRSdistrib.pdf>]
-<Images/Etatsante_JA.png, id=162, 865.73438pt x 451.6875pt>
+<Images/Etatsante_JA.png, id=101, 865.73438pt x 451.6875pt>
 File: Images/Etatsante_JA.png Graphic file (type png)
 <use Images/Etatsante_JA.png>
 Package pdftex.def Info: Images/Etatsante_JA.png  used on input line 27.
 (pdftex.def)             Requested size: 359.64394pt x 187.63979pt.
 
+LaTeX Warning: Reference `fig:adrs' on page 14 undefined on input line 33.
+
+
+LaTeX Warning: Reference `fig:jeux_argent' on page 14 undefined on input line 35.
+
+
+LaTeX Warning: Reference `fig:jeux_video' on page 14 undefined on input line 37.
+
+
 
 [14 <./Images/Etatsante_JV.png (PNG copy)> <./Images/Etatsante_JA.png (PNG copy)>]
 
 [15]
-<Images/JV_prioritaire_ADRS.pdf, id=176, 788.9475pt x 415.5525pt>
+<Images/JV_prioritaire_ADRS.pdf, id=112, 788.9475pt x 415.5525pt>
 File: Images/JV_prioritaire_ADRS.pdf Graphic file (type pdf)
 <use Images/JV_prioritaire_ADRS.pdf>
 Package pdftex.def Info: Images/JV_prioritaire_ADRS.pdf  used on input line 49.
 (pdftex.def)             Requested size: 359.64394pt x 189.43176pt.
-<Images/JV_prioritaire_etat_sante.pdf, id=178, 788.9475pt x 415.5525pt>
+
+LaTeX Warning: Reference `fig:jv_adrs' on page 16 undefined on input line 54.
+
+<Images/JV_prioritaire_etat_sante.pdf, id=113, 788.9475pt x 415.5525pt>
 File: Images/JV_prioritaire_etat_sante.pdf Graphic file (type pdf)
 <use Images/JV_prioritaire_etat_sante.pdf>
 Package pdftex.def Info: Images/JV_prioritaire_etat_sante.pdf  used on input line 58.
 (pdftex.def)             Requested size: 359.64394pt x 189.43176pt.
+
+LaTeX Warning: Reference `fig:jv_sante' on page 16 undefined on input line 63.
+
 
 
 [16 <./Images/JV_prioritaire_ADRS.pdf> <./Images/JV_prioritaire_etat_sante.pdf>])
@@ -645,21 +662,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: 7DBF404AF1063765FDCF5493255F136E;2937.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `rapport.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `rapport.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  59FC506747171D6696264690ADACE5D0;3175.
  ) 
 Here is how much of TeX's memory you used:
- 13422 strings out of 473522
- 226649 string characters out of 5714610
- 641960 words of memory out of 5000000
- 36404 multiletter control sequences out of 15000+600000
+ 13379 strings out of 473522
+ 225702 string characters out of 5714610
+ 636888 words of memory out of 5000000
+ 36380 multiletter control sequences out of 15000+600000
  570149 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,15n,79p,570b,574s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\noahm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\noahm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\noahm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\noahm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\noahm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\noahm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\noahm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\noahm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\noahm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk> <C:\Users\noahm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk>
-Output written on rapport.pdf (21 pages, 488101 bytes).
+ 75i,15n,79p,760b,570s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\noahm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\noahm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\noahm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\noahm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\noahm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\noahm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\noahm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\noahm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\noahm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk> <C:\Users\noahm\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk>
+Output written on rapport.pdf (21 pages, 473705 bytes).
 PDF statistics:
- 560 PDF objects out of 1000 (max. 8388607)
- 47 named destinations out of 1000 (max. 500000)
- 173 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 481 PDF objects out of 1000 (max. 8388607)
+ 48 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
