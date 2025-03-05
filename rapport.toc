@@ -1,0 +1,4 @@
+\babel@toc {french}{}\relax 
+\contentsline {section}{Introduction}{2}{section*.2}%
+\contentsline {section}{\numberline {1}Une brève déscription de la population de joueurs}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Quelles sont les pratiques de consommation du jeu ?}{3}{subsection.1.1}%
