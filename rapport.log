@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.2) (preloaded format=pdflatex 2025.3.3)  5 MAR 2025 17:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.2) (preloaded format=pdflatex 2025.3.3)  5 MAR 2025 18:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -481,9 +481,19 @@ l.60 \newpage
 File: Images/Frequence_conso_jeuxA.pdf Graphic file (type pdf)
 <use Images/Frequence_conso_jeuxA.pdf>
 Package pdftex.def Info: Images/Frequence_conso_jeuxA.pdf  used on input line 15.
-(pdftex.def)             Requested size: 627.34221pt x 386.44281pt.
+(pdftex.def)             Requested size: 439.13762pt x 270.50877pt.
 
-Overfull \hbox (407.05867pt too wide) in paragraph at lines 15--16
+Overfull \hbox (218.85408pt too wide) in paragraph at lines 15--16
+ [][] 
+ []
+
+<Images/tableau_mises_moyenne.pdf, id=26, 597.50829pt x 845.0471pt>
+File: Images/tableau_mises_moyenne.pdf Graphic file (type pdf)
+<use Images/tableau_mises_moyenne.pdf>
+Package pdftex.def Info: Images/tableau_mises_moyenne.pdf  used on input line 28.
+(pdftex.def)             Requested size: 418.25294pt x 591.52895pt.
+
+Overfull \hbox (197.9694pt too wide) in paragraph at lines 28--29
  [][] 
  []
 
@@ -494,10 +504,17 @@ Overfull \hbox (407.05867pt too wide) in paragraph at lines 15--16
 
 
  <./Images/Frequence_conso_jeuxA.pdf>]
+<Images/Fréquence_conso_jeuV2.pdf, id=41, 627.34375pt x 386.44376pt>
+File: Images/Fréquence_conso_jeuV2.pdf Graphic file (type pdf)
+<use Images/Fréquence_conso_jeuV2.pdf>
+Package pdftex.def Info: Images/Fréquence_conso_jeuV2.pdf  used on input line 41.
+(pdftex.def)             Requested size: 439.13762pt x 270.50877pt.
 
-[4])
+Overfull \hbox (218.85408pt too wide) in paragraph at lines 41--42
+ [][] 
+ []
 
-[5]
+)
 \openout2 = `Sections/p2.aux'.
 
  (Sections/p2.tex
@@ -515,6 +532,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--21
 
  []
 
+
+Sections/p2.tex:22: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 \begin{table}[ht]
+                      
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 25.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -526,42 +555,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--44
 
  []
 
-<Images/Freq_JA_IMC.png, id=51, 602.25pt x 416.05438pt>
+<Images/Freq_JA_IMC.png, id=42, 602.25pt x 416.05438pt>
 File: Images/Freq_JA_IMC.png Graphic file (type png)
 <use Images/Freq_JA_IMC.png>
 Package pdftex.def Info: Images/Freq_JA_IMC.png  used on input line 49.
 (pdftex.def)             Requested size: 449.55322pt x 310.57986pt.
 
-
-[6
-
-
-
-]
 Underfull \hbox (badness 10000) in paragraph at lines 51--56
 
  []
 
-<Images/Freq_JV_IMC_bis.png, id=60, 602.25pt x 376.40625pt>
+<Images/Freq_JV_IMC_bis.png, id=43, 602.25pt x 376.40625pt>
 File: Images/Freq_JV_IMC_bis.png Graphic file (type png)
 <use Images/Freq_JV_IMC_bis.png>
 Package pdftex.def Info: Images/Freq_JV_IMC_bis.png  used on input line 59.
 (pdftex.def)             Requested size: 449.55322pt x 280.98299pt.
 
-
-[7 <./Images/Freq_JA_IMC.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 61--66
 
  []
 
 
-
-[8 <./Images/Freq_JV_IMC_bis.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 75--78
 
  []
 
-<Images/Freq_JA_sport.png, id=69, 677.53125pt x 489.32813pt>
+<Images/Freq_JA_sport.png, id=44, 677.53125pt x 489.32813pt>
 File: Images/Freq_JA_sport.png Graphic file (type png)
 <use Images/Freq_JA_sport.png>
 Package pdftex.def Info: Images/Freq_JA_sport.png  used on input line 79.
@@ -571,120 +590,87 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--84
 
  []
 
-<Images/Freq_PS_sport.png, id=70, 677.53125pt x 489.32813pt>
+<Images/Freq_PS_sport.png, id=45, 677.53125pt x 489.32813pt>
 File: Images/Freq_PS_sport.png Graphic file (type png)
 <use Images/Freq_PS_sport.png>
 Package pdftex.def Info: Images/Freq_PS_sport.png  used on input line 88.
 (pdftex.def)             Requested size: 449.55322pt x 324.68979pt.
 
-
-[9 <./Images/Freq_JA_sport.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 90--94
 
  []
 
-<Images/Freq_JV_sport_bis.png, id=76, 602.25pt x 376.40625pt>
+<Images/Freq_JV_sport_bis.png, id=46, 602.25pt x 376.40625pt>
 File: Images/Freq_JV_sport_bis.png Graphic file (type png)
 <use Images/Freq_JV_sport_bis.png>
 Package pdftex.def Info: Images/Freq_JV_sport_bis.png  used on input line 98.
 (pdftex.def)             Requested size: 449.55322pt x 280.98299pt.
 
-
-[10 <./Images/Freq_PS_sport.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 100--106
 
  []
 
-<Images/Freq_JA_medecin.png, id=81, 865.73438pt x 376.40625pt>
+<Images/Freq_JA_medecin.png, id=47, 865.73438pt x 376.40625pt>
 File: Images/Freq_JA_medecin.png Graphic file (type png)
 <use Images/Freq_JA_medecin.png>
 Package pdftex.def Info: Images/Freq_JA_medecin.png  used on input line 112.
 (pdftex.def)             Requested size: 449.55322pt x 195.45668pt.
-
-
-[11 <./Images/Freq_JV_sport_bis.png (PNG copy)>]
-<Images/Freq_JV_medecin.png, id=87, 865.73438pt x 376.40625pt>
+<Images/Freq_JV_medecin.png, id=48, 865.73438pt x 376.40625pt>
 File: Images/Freq_JV_medecin.png Graphic file (type png)
 <use Images/Freq_JV_medecin.png>
 Package pdftex.def Info: Images/Freq_JV_medecin.png  used on input line 117.
 (pdftex.def)             Requested size: 449.55322pt x 195.45668pt.
 )
-
-[12 <./Images/Freq_JA_medecin.png> <./Images/Freq_JV_medecin.png>]
 \openout2 = `Sections/p3.aux'.
 
  (Sections/p3.tex
 
-LaTeX Warning: Reference `fig:adrs' on page 13 undefined on input line 7.
+LaTeX Warning: Reference `fig:adrs' on page 4 undefined on input line 7.
 
-<Images/scoreADRSdistrib.pdf, id=94, 788.9475pt x 415.5525pt>
+<Images/scoreADRSdistrib.pdf, id=49, 788.9475pt x 415.5525pt>
 File: Images/scoreADRSdistrib.pdf Graphic file (type pdf)
 <use Images/scoreADRSdistrib.pdf>
 Package pdftex.def Info: Images/scoreADRSdistrib.pdf  used on input line 11.
 (pdftex.def)             Requested size: 359.64394pt x 189.43176pt.
-<Images/Etatsante_JV.png, id=95, 865.73438pt x 526.96875pt>
+<Images/Etatsante_JV.png, id=50, 865.73438pt x 526.96875pt>
 File: Images/Etatsante_JV.png Graphic file (type png)
 <use Images/Etatsante_JV.png>
 Package pdftex.def Info: Images/Etatsante_JV.png  used on input line 20.
 (pdftex.def)             Requested size: 359.64394pt x 218.91309pt.
-
-
-[13
-
-
-
- <./Images/scoreADRSdistrib.pdf>]
-<Images/Etatsante_JA.png, id=109, 865.73438pt x 451.6875pt>
+<Images/Etatsante_JA.png, id=51, 865.73438pt x 451.6875pt>
 File: Images/Etatsante_JA.png Graphic file (type png)
 <use Images/Etatsante_JA.png>
 Package pdftex.def Info: Images/Etatsante_JA.png  used on input line 27.
 (pdftex.def)             Requested size: 359.64394pt x 187.63979pt.
 
-
-LaTeX Warning: Reference `fig:adrs' on page 14 undefined on input line 33.
-
-
-LaTeX Warning: Reference `fig:jeux_argent' on page 14 undefined on input line 35.
+LaTeX Warning: Reference `fig:adrs' on page 4 undefined on input line 33.
 
 
-LaTeX Warning: Reference `fig:jeux_video' on page 14 undefined on input line 37.
+LaTeX Warning: Reference `fig:jeux_argent' on page 4 undefined on input line 35.
 
 
+LaTeX Warning: Reference `fig:jeux_video' on page 4 undefined on input line 37.
 
-[14 <./Images/Etatsante_JV.png (PNG copy)> <./Images/Etatsante_JA.png (PNG copy)>]
-
-[15]
-<Images/JV_prioritaire_ADRS.pdf, id=120, 788.9475pt x 415.5525pt>
+<Images/JV_prioritaire_ADRS.pdf, id=52, 788.9475pt x 415.5525pt>
 File: Images/JV_prioritaire_ADRS.pdf Graphic file (type pdf)
 <use Images/JV_prioritaire_ADRS.pdf>
 Package pdftex.def Info: Images/JV_prioritaire_ADRS.pdf  used on input line 49.
 (pdftex.def)             Requested size: 359.64394pt x 189.43176pt.
 
+LaTeX Warning: Reference `fig:jv_adrs' on page 4 undefined on input line 54.
 
-LaTeX Warning: Reference `fig:jv_adrs' on page 16 undefined on input line 54.
-
-<Images/JV_prioritaire_etat_sante.pdf, id=121, 788.9475pt x 415.5525pt>
+<Images/JV_prioritaire_etat_sante.pdf, id=53, 788.9475pt x 415.5525pt>
 File: Images/JV_prioritaire_etat_sante.pdf Graphic file (type pdf)
 <use Images/JV_prioritaire_etat_sante.pdf>
 Package pdftex.def Info: Images/JV_prioritaire_etat_sante.pdf  used on input line 58.
 (pdftex.def)             Requested size: 359.64394pt x 189.43176pt.
 
-LaTeX Warning: Reference `fig:jv_sante' on page 16 undefined on input line 63.
+LaTeX Warning: Reference `fig:jv_sante' on page 4 undefined on input line 63.
 
-
-
-[16 <./Images/JV_prioritaire_ADRS.pdf> <./Images/JV_prioritaire_etat_sante.pdf>])
-
-[17]
+)
 \openout2 = `Sections/conclusion.aux'.
 
  (Sections/conclusion.tex)
-
-[18
-
-
-
-]
 \openout2 = `Sections/Bibliographie.aux'.
 
  (Sections/Bibliographie.tex
@@ -698,21 +684,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
  []
 
 )
-
-[19
-
-
-
-]
 \openout2 = `Sections/annexes.aux'.
 
  (Sections/annexes.tex)
 
-[20
+c:/Users/Gregoire/Documents/travail ensai/projet stat 1A/test git/projetstat/rapport.tex:97: LaTeX Error: \begin{figure} on input line 37 ended by \end{document}.
 
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 \end{document}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-
-] (rapport.aux (Sections/intro.aux) (Sections/p1.aux) (Sections/p2.aux) (Sections/p3.aux) (Sections/conclusion.aux) (Sections/Bibliographie.aux) (Sections/annexes.aux))
+(rapport.aux (Sections/intro.aux) (Sections/p1.aux) (Sections/p2.aux) (Sections/p3.aux) (Sections/conclusion.aux) (Sections/Bibliographie.aux) (Sections/annexes.aux))
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -731,20 +719,54 @@ Package rerunfilecheck Warning: File `rapport.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `rapport.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  517B3E0467C902B2C09FBA9A801C4BA3;3386.
- ) 
-Here is how much of TeX's memory you used:
- 13370 strings out of 473522
- 226435 string characters out of 5713158
- 636921 words of memory out of 5000000
- 36372 multiletter control sequences out of 15000+600000
- 569836 words of font info for 58 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 75i,15n,79p,897b,570s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk>
-Output written on rapport.pdf (22 pages, 478299 bytes).
-PDF statistics:
- 484 PDF objects out of 1000 (max. 8388607)
- 48 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+(rerunfilecheck)             After:  B9D33C8697366F8F4420DB87731427C5;755.
+c:/Users/Gregoire/Documents/travail ensai/projet stat 1A/test git/projetstat/rapport.tex:97: You can't use `\end' in internal vertical mode.
+\enddocument ...cument/end}\deadcycles \z@ \@@end 
+                                                  
+l.97 \end{document}
+                   
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
 
+
+c:/Users/Gregoire/Documents/travail ensai/projet stat 1A/test git/projetstat/rapport.tex:97: LaTeX Error: \begin{figure} on input line 37 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 \end{document}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+c:/Users/Gregoire/Documents/travail ensai/projet stat 1A/test git/projetstat/rapport.tex:97: Missing } inserted.
+<inserted text> 
+                }
+l.97 \end{document}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+)
+! Emergency stop.
+<*> ...et stat 1A/test git/projetstat/rapport.tex"
+                                                  
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 13350 strings out of 473522
+ 226683 string characters out of 5713158
+ 652921 words of memory out of 5000000
+ 36389 multiletter control sequences out of 15000+600000
+ 570550 words of font info for 60 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 75i,17n,79p,1397b,736s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!
