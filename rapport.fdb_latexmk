@@ -1,4 +1,5 @@
 # Fdb version 4
+<<<<<<< HEAD
 ["pdflatex"] 1741198061.95904 "c:/Users/Gregoire/Documents/travail ensai/projet stat 1A/test git/projetstat/rapport.tex" "rapport.pdf" "rapport" 1741198066.69337 2
   "C:/Users/Gregoire/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1741171419 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/Gregoire/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1741041225 12017275 8aaee286d82476ad9a78ecabb90bfa13 ""
@@ -119,17 +120,13 @@
   "rapport.out" 1741198065 755 b9d33c8697366f8f4420db87731427c5 "pdflatex"
   "rapport.tex" 1741192525 1480 52fe0fed2fc79289ca9511da2eb29a04 ""
   "rapport.toc" 1741198065 307 0af2982edd10a8021c36fd2b755a7fb4 "pdflatex"
+=======
+["pdflatex"] 0 "c:/Users/Alexandre/Desktop/ENSAI/Projet_Stat/projetstat/rapport.tex" "rapport.pdf" "rapport" 0 -1
+  "c:/Users/Alexandre/Desktop/ENSAI/Projet_Stat/projetstat/rapport.tex" 0 -1 0 ""
+  "rapport.aux" 0 -1 0 "pdflatex"
+>>>>>>> ecdfd522ef78db0b7b8728e558024863243b44e5
   (generated)
-  "Sections/Bibliographie.aux"
-  "Sections/annexes.aux"
-  "Sections/conclusion.aux"
-  "Sections/intro.aux"
-  "Sections/p1.aux"
-  "Sections/p2.aux"
-  "Sections/p3.aux"
   "rapport.aux"
   "rapport.log"
-  "rapport.out"
   "rapport.pdf"
-  "rapport.toc"
   (rewritten before read)

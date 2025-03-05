@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.2) (preloaded format=pdflatex 2025.3.3)  5 MAR 2025 19:07
 entering extended mode
  restricted \write18 enabled.
@@ -792,3 +793,5 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  75i,19n,79p,1397b,879s stack positions out of 10000i,1000n,20000p,200000b,200000s
 !  ==> Fatal error occurred, no output PDF file produced!
+=======
+>>>>>>> ecdfd522ef78db0b7b8728e558024863243b44e5
