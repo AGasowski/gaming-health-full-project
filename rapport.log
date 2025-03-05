@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.2)  5 MAR 2025 19:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.2)  5 MAR 2025 19:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -404,20 +404,20 @@ l.60 \newpage
 <Images/Frequence_conso_jeuxA.pdf, id=22, 627.34375pt x 386.44376pt>
 File: Images/Frequence_conso_jeuxA.pdf Graphic file (type pdf)
 <use Images/Frequence_conso_jeuxA.pdf>
-Package pdftex.def Info: Images/Frequence_conso_jeuxA.pdf  used on input line 15.
+Package pdftex.def Info: Images/Frequence_conso_jeuxA.pdf  used on input line 27.
 (pdftex.def)             Requested size: 439.13762pt x 270.50877pt.
 
-Overfull \hbox (218.85408pt too wide) in paragraph at lines 15--16
+Overfull \hbox (218.85408pt too wide) in paragraph at lines 27--28
  [][] 
  []
 
 <Images/tableau_mises_moyenne.pdf, id=23, 597.50829pt x 845.0471pt>
 File: Images/tableau_mises_moyenne.pdf Graphic file (type pdf)
 <use Images/tableau_mises_moyenne.pdf>
-Package pdftex.def Info: Images/tableau_mises_moyenne.pdf  used on input line 28.
+Package pdftex.def Info: Images/tableau_mises_moyenne.pdf  used on input line 52.
 (pdftex.def)             Requested size: 418.25294pt x 591.52895pt.
 
-Overfull \hbox (197.9694pt too wide) in paragraph at lines 28--29
+Overfull \hbox (197.9694pt too wide) in paragraph at lines 52--53
  [][] 
  []
 
@@ -429,10 +429,10 @@ Overfull \hbox (197.9694pt too wide) in paragraph at lines 28--29
 <Images/Fréquence_conso_jeuV2.pdf, id=38, 627.34375pt x 386.44376pt>
 File: Images/Fréquence_conso_jeuV2.pdf Graphic file (type pdf)
 <use Images/Fréquence_conso_jeuV2.pdf>
-Package pdftex.def Info: Images/Fréquence_conso_jeuV2.pdf  used on input line 41.
+Package pdftex.def Info: Images/Fréquence_conso_jeuV2.pdf  used on input line 71.
 (pdftex.def)             Requested size: 439.13762pt x 270.50877pt.
 
-Overfull \hbox (218.85408pt too wide) in paragraph at lines 41--42
+Overfull \hbox (218.85408pt too wide) in paragraph at lines 71--72
  [][] 
  []
 
@@ -610,7 +610,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  (Sections/annexes.tex)
 
-c:/Users/Alexandre/Desktop/ENSAI/Projet_Stat/projetstat/rapport.tex:97: LaTeX Error: \begin{figure} on input line 37 ended by \end{document}.
+c:/Users/Alexandre/Desktop/ENSAI/Projet_Stat/projetstat/rapport.tex:97: LaTeX Error: \begin{figure} on input line 67 ended by \end{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -653,7 +653,7 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-c:/Users/Alexandre/Desktop/ENSAI/Projet_Stat/projetstat/rapport.tex:97: LaTeX Error: \begin{figure} on input line 37 ended by \end{document}.
+c:/Users/Alexandre/Desktop/ENSAI/Projet_Stat/projetstat/rapport.tex:97: LaTeX Error: \begin{figure} on input line 67 ended by \end{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -686,9 +686,9 @@ my insertion and my current dilemma will both disappear.
 Here is how much of TeX's memory you used:
  13180 strings out of 474486
  223987 string characters out of 5741868
- 1950542 words of memory out of 5000000
+ 1952542 words of memory out of 5000000
  35272 multiletter control sequences out of 15000+600000
  569782 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,17n,79p,1374b,738s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,17n,79p,788b,738s stack positions out of 10000i,1000n,20000p,200000b,200000s
 !  ==> Fatal error occurred, no output PDF file produced!
