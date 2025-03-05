@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.2) (preloaded format=pdflatex 2025.3.3)  3 MAR 2025 23:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.2) (preloaded format=pdflatex 2025.3.3)  5 MAR 2025 11:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -334,46 +334,61 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@dimlist=\toks23
  (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
+) (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/latex/makecell\makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+ (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen175
+\ar@mcellbox=\box54
+\extrarowheight=\dimen176
+\NC@list=\toks24
+\extratabsurround=\skip54
+\backup@length=\skip55
+\ar@cellbox=\box55
+)
+\rotheadsize=\dimen177
+\c@nlinenum=\count361
+\TeXr@lab=\toks25
 ) (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count361
-\l__pdf_internal_box=\box54
+\l__color_backend_stack_int=\count362
+\l__pdf_internal_box=\box56
 ) (rapport.aux)
 \openout1 = `rapport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Info: Redefining \degres on input line 16.
-LaTeX Info: Redefining \up on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Info: Redefining \degres on input line 17.
+LaTeX Info: Redefining \up on input line 17.
  (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count362
-\scratchdimen=\dimen175
-\scratchbox=\box55
-\nofMPsegments=\count363
-\nofMParguments=\count364
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count365
-\MPscratchDim=\dimen176
-\MPnumerator=\count366
-\makeMPintoPDFobject=\count367
-\everyMPtoPDFconversion=\toks25
+\scratchcounter=\count363
+\scratchdimen=\dimen178
+\scratchbox=\box57
+\nofMPsegments=\count364
+\nofMParguments=\count365
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count366
+\MPscratchDim=\dimen179
+\MPnumerator=\count367
+\makeMPintoPDFobject=\count368
+\everyMPtoPDFconversion=\toks27
 ) (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -384,7 +399,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 16.
+Package hyperref Info: Link coloring OFF on input line 17.
 \@outlinefile=\write3
 \openout3 = `rapport.out'.
 
@@ -428,23 +443,18 @@ Package hyperref Info: Link coloring OFF on input line 16.
 [1
 
 {C:/Users/Gregoire/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-<Images/scoreADRSdistrib.pdf, id=9, 788.9475pt x 415.5525pt>
-File: Images/scoreADRSdistrib.pdf Graphic file (type pdf)
-<use Images/scoreADRSdistrib.pdf>
-Package pdftex.def Info: Images/scoreADRSdistrib.pdf  used on input line 21.
-(pdftex.def)             Requested size: 314.68588pt x 165.74883pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 31.
+(Font)              <14.4> on input line 32.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 31.
+(Font)              <7> on input line 32.
 
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.45 \end{titlepage}
-                     [1 <./Images/scoreADRSdistrib.pdf>]
+l.48 \end{titlepage}
+                     [1]
 No file rapport.toc.
 \tf@toc=\write4
 \openout4 = `rapport.toc'.
@@ -455,7 +465,7 @@ No file rapport.toc.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.58 \newpage
+l.61 \newpage
               [1]
 \openout2 = `Sections/intro.aux'.
 
@@ -464,53 +474,50 @@ l.58 \newpage
 [2
 
 ]
-
-[3
-
-
-]
 \openout2 = `Sections/p1.aux'.
 
  (Sections/p1.tex
 
-[4
+[3
+
+
 
 ]
 
-LaTeX Warning: File `Images/image1.png' not found on input line 21.
+LaTeX Warning: File `Images/image1.png' not found on input line 20.
 
 
-Sections/p1.tex:21: Package pdftex.def Error: File `Images/image1.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.21 ...egraphics[scale = 0.12]{Images/image1.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `Images/image2.png' not found on input line 26.
-
-
-Sections/p1.tex:26: Package pdftex.def Error: File `Images/image2.png' not found: using draft setting.
+Sections/p1.tex:20: Package pdftex.def Error: File `Images/image1.png' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.26 ...egraphics[scale = 0.12]{Images/image2.png}
+l.20 ...egraphics[scale = 0.12]{Images/image1.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `Images/image2.png' not found on input line 25.
+
+
+Sections/p1.tex:25: Package pdftex.def Error: File `Images/image2.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 ...egraphics[scale = 0.12]{Images/image2.png}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
 
-[5])
+[4])
 
-[6]
+[5]
 \openout2 = `Sections/p2.aux'.
 
  (Sections/p2.tex
@@ -519,70 +526,116 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--9
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--13
+Underfull \hbox (badness 10000) in paragraph at lines 10--15
 
  []
 
 
-LaTeX Warning: File `Images/nbr_jour_JV_IMC.pdf.pdf' not found on input line 16.
+Underfull \hbox (badness 10000) in paragraph at lines 16--21
+
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 25.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 25.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 25.
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--43
+
+ []
+
+<Images/Freq_JA_IMC.png, id=47, 602.25pt x 416.05438pt>
+File: Images/Freq_JA_IMC.png Graphic file (type png)
+<use Images/Freq_JA_IMC.png>
+Package pdftex.def Info: Images/Freq_JA_IMC.png  used on input line 48.
+(pdftex.def)             Requested size: 449.55322pt x 310.57986pt.
 
 
-Sections/p2.tex:16: Package pdftex.def Error: File `Images/nbr_jour_JV_IMC.pdf.pdf' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.16 ...textwidth]{Images/nbr_jour_JV_IMC.pdf.pdf}
-                                                  \\[2.0 cm]
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-
-[7
+[6
 
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 50--55
 
-LaTeX Warning: File `Images/image4.pdf' not found on input line 39.
+ []
 
-
-Sections/p2.tex:39: Package pdftex.def Error: File `Images/image4.pdf' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.39 ...egraphics[scale = 0.6]{Images/image4.pdf}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<Images/Freq_JV_IMC_bis.png, id=55, 602.25pt x 376.40625pt>
+File: Images/Freq_JV_IMC_bis.png Graphic file (type png)
+<use Images/Freq_JV_IMC_bis.png>
+Package pdftex.def Info: Images/Freq_JV_IMC_bis.png  used on input line 58.
+(pdftex.def)             Requested size: 449.55322pt x 280.98299pt.
 
 
+[7 <./Images/Freq_JA_IMC.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 60--65
 
-[8]
+ []
 
-[9])
 
-[10]
+
+[8 <./Images/Freq_JV_IMC_bis.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 74--77
+
+ []
+
+<Images/Freq_JA_sport.png, id=64, 677.53125pt x 489.32813pt>
+File: Images/Freq_JA_sport.png Graphic file (type png)
+<use Images/Freq_JA_sport.png>
+Package pdftex.def Info: Images/Freq_JA_sport.png  used on input line 78.
+(pdftex.def)             Requested size: 449.55322pt x 324.68979pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 80--83
+
+ []
+
+<Images/Freq_PS_sport.png, id=65, 677.53125pt x 489.32813pt>
+File: Images/Freq_PS_sport.png Graphic file (type png)
+<use Images/Freq_PS_sport.png>
+Package pdftex.def Info: Images/Freq_PS_sport.png  used on input line 87.
+(pdftex.def)             Requested size: 449.55322pt x 324.68979pt.
+
+
+[9 <./Images/Freq_JA_sport.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 89--93
+
+ []
+
+<Images/Freq_JV_sport_bis.png, id=71, 602.25pt x 376.40625pt>
+File: Images/Freq_JV_sport_bis.png Graphic file (type png)
+<use Images/Freq_JV_sport_bis.png>
+Package pdftex.def Info: Images/Freq_JV_sport_bis.png  used on input line 97.
+(pdftex.def)             Requested size: 449.55322pt x 280.98299pt.
+
+
+[10 <./Images/Freq_PS_sport.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 99--104
+
+ []
+
+<Images/Freq_JA_medecin.png, id=76, 865.73438pt x 376.40625pt>
+File: Images/Freq_JA_medecin.png Graphic file (type png)
+<use Images/Freq_JA_medecin.png>
+Package pdftex.def Info: Images/Freq_JA_medecin.png  used on input line 109.
+(pdftex.def)             Requested size: 449.55322pt x 195.45668pt.
+
+
+[11 <./Images/Freq_JV_sport_bis.png (PNG copy)>]
+<Images/Freq_JV_medecin.png, id=82, 865.73438pt x 376.40625pt>
+File: Images/Freq_JV_medecin.png Graphic file (type png)
+<use Images/Freq_JV_medecin.png>
+Package pdftex.def Info: Images/Freq_JV_medecin.png  used on input line 114.
+(pdftex.def)             Requested size: 449.55322pt x 195.45668pt.
+
+
+[12 <./Images/Freq_JA_medecin.png> <./Images/Freq_JV_medecin.png>])
+
+[13]
 \openout2 = `Sections/p3.aux'.
 
  (Sections/p3.tex
-
-[11
-
-
-
-]
-
-[12])
-
-[13]
-\openout2 = `Sections/conclusion.aux'.
-
- (Sections/conclusion.tex)
 
 [14
 
@@ -590,12 +643,33 @@ If that doesn't work, type  X <return>  to quit.
 
 ]
 
-[15]
+[15])
+
+[16]
+\openout2 = `Sections/conclusion.aux'.
+
+ (Sections/conclusion.tex)
+
+[17
+
+
+
+]
 \openout2 = `Sections/Bibliographie.aux'.
 
- (Sections/Bibliographie.tex)
+ (Sections/Bibliographie.tex
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
-[16
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+)
+
+[18
 
 
 
@@ -604,25 +678,11 @@ If that doesn't work, type  X <return>  to quit.
 
  (Sections/annexes.tex)
 
-[17
+[19
 
 
 
-]
-
-c:/Users/Gregoire/Documents/travail ensai/projet stat 1A/test git/projetstat/rapport.tex:99: LaTeX Error: \begin{center} on input line 16 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.99 \end{document}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-(rapport.aux (Sections/intro.aux) (Sections/p1.aux) (Sections/p2.aux) (Sections/p3.aux) (Sections/conclusion.aux) (Sections/Bibliographie.aux) (Sections/annexes.aux))
+] (rapport.aux (Sections/intro.aux) (Sections/p1.aux) (Sections/p2.aux) (Sections/p3.aux) (Sections/conclusion.aux) (Sections/Bibliographie.aux) (Sections/annexes.aux))
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -638,24 +698,20 @@ Package rerunfilecheck Warning: File `rapport.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `rapport.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  B93C76C2820B42CB0768E7743521E9E4;2607.
- )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 16 (\begingroup)
-### bottom level 
+(rerunfilecheck)             After:  EBD0B710847A3D3A5B345EDCF66A4DA4;2771.
+ ) 
 Here is how much of TeX's memory you used:
- 13141 strings out of 473522
- 223733 string characters out of 5713158
- 632427 words of memory out of 5000000
- 36162 multiletter control sequences out of 15000+600000
- 566935 words of font info for 50 fonts, out of 8000000 for 9000
+ 13373 strings out of 473522
+ 226247 string characters out of 5713158
+ 636486 words of memory out of 5000000
+ 36381 multiletter control sequences out of 15000+600000
+ 569373 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,79p,398b,646s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,15n,79p,398b,528s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk>
-Output written on rapport.pdf (19 pages, 109651 bytes).
+Output written on rapport.pdf (21 pages, 349531 bytes).
 PDF statistics:
- 368 PDF objects out of 1000 (max. 8388607)
- 42 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 398 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

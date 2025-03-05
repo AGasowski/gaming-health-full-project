@@ -35,7 +35,7 @@ table(data$santephysique)
 
 # RECHERCHE DE CORRELATIONS ENTRE VARIABLES: V DE CRAMER
 
-t <- table(data$santephysique, data$q18imc)
+t <- table(data$Q21A, data$qb07abcdef1)
 cramer_v <- assocstats(t)
 cramer_v
 
@@ -305,6 +305,7 @@ tab_pct <- prop.table(tab, margin = 1) * 100
 tab_pct
 ##Les très gros joueurs ont moins de pensées suicidaires que les autres
 
+<<<<<<< HEAD
 ### quel jeu d'argent a le plus de "jamais"
 # Liste des variables à comparer
 variables <- c("QB07A1", "QB07B1", "QB07C1", "QB07D1", "QB07E1", "QB07F1")
@@ -328,6 +329,11 @@ list(
 )
 ## 80,9% n'ont jamais joué à des jeux de grattages, c'est le taux le plus bas,
 ## 19,1% ont déjà joué à des jeux de grattage contre 2,7 pour machines à sous
+=======
+
+
+
+>>>>>>> f04236e1ad5a9df244ab21c2ef65707189173c69
 
 # Compter les occurrences des modalités 1 et 2 pour chaque variable en ignorant les NA
 occurrences_1_ou_2 <- sapply(variables, function(var) sum(data[[var]] %in% c(1, 2), na.rm = TRUE))
