@@ -385,7 +385,8 @@ data_etatsanteJA <- data_clean_etatsanteJA %>%
   mutate(pct = n / sum(n) * 100)
 
 
-data_etatsantetot <- data %>% 
+data_cleantot <- data %>% filter(!is.na(Q17))
+data_etatsantetot <- data_cleantot %>% 
   count(Q17) %>% 
   mutate(pct = n / sum(n) * 100)
 
