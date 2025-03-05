@@ -3,13 +3,13 @@
 \contentsline {section}{\numberline {1}Une brève déscription de la population de joueurs}{3}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Quelles sont les pratiques de consommation du jeu ?}{3}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Quels sont les profils sociodémographiques des joueurs ?}{6}{subsection.1.2}%
-\contentsline {section}{\numberline {2}Liens entre la santé physique et la consommation de jeux}{9}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Etat de santé et jeux}{9}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Comportement des joueurs vis à vis de leur santé}{12}{subsection.2.2}%
-\contentsline {section}{\numberline {3}Troisième partie}{16}{section.3}%
-\contentsline {subsection}{\numberline {3.1}ADRS et Etat de santé auto déclaré}{16}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Pratique du jeu vidéo prioritaire et santé mentale}{19}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Conclusion de la Troisième Partie}{20}{subsection.3.3}%
-\contentsline {section}{Conclusion}{21}{section*.10}%
-\contentsline {section}{Bibliographie}{22}{section*.11}%
-\contentsline {section}{Annexes}{23}{section*.13}%
+\contentsline {section}{\numberline {2}Liens entre la santé physique et la consommation de jeux}{8}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Etat de santé et jeux}{8}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Comportement des joueurs vis à vis de leur santé}{11}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Troisième partie}{15}{section.3}%
+\contentsline {subsection}{\numberline {3.1}ADRS et Etat de santé auto déclaré}{15}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Pratique du jeu vidéo prioritaire et santé mentale}{18}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Conclusion de la Troisième Partie}{19}{subsection.3.3}%
+\contentsline {section}{Conclusion}{20}{section*.10}%
+\contentsline {section}{Bibliographie}{21}{section*.11}%
+\contentsline {section}{Annexes}{22}{section*.13}%

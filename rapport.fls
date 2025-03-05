@@ -224,12 +224,13 @@ INPUT .\Images\freq_par_sexe.pdf
 INPUT .\Images\freq_par_sexe.pdf
 INPUT .\Images\freq_par_sexe.pdf
 INPUT .\Images\freq_par_sexe.pdf
-INPUT .\Images\tableau_jeuA_PCSpere.pdf
-INPUT .\Images\tableau_jeuA_PCSpere.pdf
-INPUT .\Images\tableau_jeuA_PCSpere.pdf
-INPUT .\Images\tableau_jeuA_PCSpere.pdf
-INPUT .\Images\tableau_jeuA_PCSpere.pdf
-INPUT .\Images\tableau_jeuA_PCSpere.pdf
+INPUT .\Images\tableau_jeuA_PCSper-1.png
+INPUT .\Images\tableau_jeuA_PCSper-1.png
+INPUT .\Images\tableau_jeuA_PCSper-1.png
+INPUT .\Images\tableau_jeuA_PCSper-1.png
+INPUT .\Images\tableau_jeuA_PCSper-1.png
+INPUT .\Images\tableau_jeuA_PCSper-1.png
+INPUT .\Images\tableau_jeuA_PCSper-1.png
 INPUT .\Sections\p2.tex
 OUTPUT Sections\p2.aux
 INPUT .\Sections\p2.tex
@@ -382,7 +383,3 @@ INPUT C:\Users\Alexandre\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600
 INPUT C:\Users\Alexandre\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1440.pk
 INPUT C:\Users\Alexandre\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
 INPUT C:\Users\Alexandre\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk
-INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
-INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
-INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
-INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
