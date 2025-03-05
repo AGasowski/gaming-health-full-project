@@ -7,11 +7,10 @@
 \contentsline {section}{\numberline {2}Liens entre la santé physique et la consommation de jeux}{6}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Etat de santé et jeux}{6}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Comportement des joueurs vis à vis de leur santé}{9}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Troisième sous-partie}{13}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Troisième partie}{14}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Première sous-partie}{14}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Deuxième sous-partie}{15}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Troisième sous-partie}{16}{subsection.3.3}%
-\contentsline {section}{Conclusion}{17}{section*.5}%
-\contentsline {section}{Bibliographie}{18}{section*.6}%
-\contentsline {section}{Annexes}{19}{section*.8}%
+\contentsline {section}{\numberline {3}Troisième partie}{13}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Première sous-partie}{13}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Deuxième sous-partie}{14}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Troisième sous-partie}{15}{subsection.3.3}%
+\contentsline {section}{Conclusion}{16}{section*.5}%
+\contentsline {section}{Bibliographie}{17}{section*.6}%
+\contentsline {section}{Annexes}{18}{section*.8}%
