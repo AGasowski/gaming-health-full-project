@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.2) (preloaded format=pdflatex 2025.3.3)  5 MAR 2025 17:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.2) (preloaded format=pdflatex 2025.3.3)  5 MAR 2025 17:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -144,11 +144,45 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 \c@blind@randommax=\count298
 \c@blind@pangramcount=\count299
 \c@blind@pangrammax=\count300
-) (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
-Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
+) (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
  (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
-) (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+))
+\Gm@cnth=\count301
+\Gm@cntv=\count302
+\c@Gm@tempcnt=\count303
+\Gm@bindingoffset=\dimen163
+\Gm@wd@mp=\dimen164
+\Gm@odd@mp=\dimen165
+\Gm@even@mp=\dimen166
+\Gm@layoutwidth=\dimen167
+\Gm@layoutheight=\dimen168
+\Gm@layouthoffset=\dimen169
+\Gm@layoutvoffset=\dimen170
+\Gm@dimlist=\toks23
+ (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+) (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/latex/makecell\makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+ (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen171
+\ar@mcellbox=\box54
+\extrarowheight=\dimen172
+\NC@list=\toks24
+\extratabsurround=\skip53
+\backup@length=\skip54
+\ar@cellbox=\box55
+)
+\rotheadsize=\dimen173
+\c@nlinenum=\count304
+\TeXr@lab=\toks25
+) (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
+ (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 ) (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
@@ -175,16 +209,16 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
  (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count301
+\c@section@level=\count305
 ) (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count302
+\etb@tempcnta=\count306
 ) (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\@linkdim=\dimen163
-\Hy@linkcounter=\count303
-\Hy@pagecounter=\count304
+\@linkdim=\dimen174
+\Hy@linkcounter=\count307
+\Hy@pagecounter=\count308
  (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -202,55 +236,55 @@ l.798 p
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-\HyPsd@tempa=\count305
-\HyPsd@tempb=\count306
-\HyPsd@tempc=\count307
-\HyPsd@tempd=\count308
-\HyPsd@tempe=\count309
-\HyPsd@tempf=\count310
-\HyPsd@tempg=\count311
-\HyPsd@temph=\count312
-\HyPsd@tempi=\count313
-\HyPsd@tempj=\count314
-\HyPsd@tempk=\count315
-\HyPsd@templ=\count316
-\HyPsd@tempm=\count317
-\HyPsd@tempn=\count318
-\HyPsd@tempo=\count319
-\HyPsd@tempp=\count320
-\HyPsd@tempq=\count321
-\HyPsd@tempr=\count322
-\HyPsd@temps=\count323
-\HyPsd@tempt=\count324
-\HyPsd@tempu=\count325
-\HyPsd@tempv=\count326
-\HyPsd@tempw=\count327
-\HyPsd@tempx=\count328
-\HyPsd@tempy=\count329
-\HyPsd@tempz=\count330
-\HyPsd@tempA=\count331
-\HyPsd@tempB=\count332
-\HyPsd@tempC=\count333
-\HyPsd@tempD=\count334
-\HyPsd@tempE=\count335
-\HyPsd@tempF=\count336
-\HyPsd@tempG=\count337
-\HyPsd@tempH=\count338
-\HyPsd@tempI=\count339
-\HyPsd@tempJ=\count340
-\HyPsd@tempK=\count341
-\HyPsd@tempL=\count342
-\HyPsd@tempM=\count343
-\HyPsd@tempN=\count344
-\HyPsd@tempO=\count345
-\HyPsd@tempP=\count346
-\HyPsd@tempQ=\count347
-\HyPsd@tempR=\count348
-\Hy=\count349
+\HyPsd@tempa=\count309
+\HyPsd@tempb=\count310
+\HyPsd@tempc=\count311
+\HyPsd@tempd=\count312
+\HyPsd@tempe=\count313
+\HyPsd@tempf=\count314
+\HyPsd@tempg=\count315
+\HyPsd@temph=\count316
+\HyPsd@tempi=\count317
+\HyPsd@tempj=\count318
+\HyPsd@tempk=\count319
+\HyPsd@templ=\count320
+\HyPsd@tempm=\count321
+\HyPsd@tempn=\count322
+\HyPsd@tempo=\count323
+\HyPsd@tempp=\count324
+\HyPsd@tempq=\count325
+\HyPsd@tempr=\count326
+\HyPsd@temps=\count327
+\HyPsd@tempt=\count328
+\HyPsd@tempu=\count329
+\HyPsd@tempv=\count330
+\HyPsd@tempw=\count331
+\HyPsd@tempx=\count332
+\HyPsd@tempy=\count333
+\HyPsd@tempz=\count334
+\HyPsd@tempA=\count335
+\HyPsd@tempB=\count336
+\HyPsd@tempC=\count337
+\HyPsd@tempD=\count338
+\HyPsd@tempE=\count339
+\HyPsd@tempF=\count340
+\HyPsd@tempG=\count341
+\HyPsd@tempH=\count342
+\HyPsd@tempI=\count343
+\HyPsd@tempJ=\count344
+\HyPsd@tempK=\count345
+\HyPsd@tempL=\count346
+\HyPsd@tempM=\count347
+\HyPsd@tempN=\count348
+\HyPsd@tempO=\count349
+\HyPsd@tempP=\count350
+\HyPsd@tempQ=\count351
+\HyPsd@tempR=\count352
+\Hy=\count353
 (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count350
+\Hy@SavedSpaceFactor=\count354
 
 Overfull \hbox (78.91191pt too wide) in paragraph at lines 798--2274
 []\T1/cmr/m/n/12 package(intcalc): 2019/12/15 ver 1.3                                                                                                       
@@ -268,21 +302,21 @@ Package hyperref Info: Plain pages OFF on input line 4218.
 Package hyperref Info: Backreferencing OFF on input line 4223.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4470.
-\c@Hy@tempcnt=\count351
+\c@Hy@tempcnt=\count355
  (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4809.
-\XeTeXLinkMargin=\dimen164
+\XeTeXLinkMargin=\dimen175
  (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count352
-\Field@Width=\dimen165
-\Fld@charsize=\dimen166
+\Fld@menulength=\count356
+\Field@Width=\dimen176
+\Fld@charsize=\dimen177
 Package hyperref Info: Hyper figures OFF on input line 6088.
 Package hyperref Info: Link nesting OFF on input line 6093.
 Package hyperref Info: Hyper index ON on input line 6096.
@@ -294,9 +328,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6118.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count353
-\c@Item=\count354
-\c@Hfootnote=\count355
+\Hy@abspage=\count357
+\c@Item=\count358
+\c@Hfootnote=\count359
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
@@ -305,8 +339,8 @@ File: hpdftex.def 2024-11-05 v7.01l Hyperref driver for pdfTeX
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
-\Fld@listcount=\count356
-\c@bookmark@seq@number=\count357
+\Fld@listcount=\count360
+\c@bookmark@seq@number=\count361
  (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
  (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
@@ -314,70 +348,35 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
-\Hy@SectionHShift=\skip53
-) (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
-Package: geometry 2020/01/02 v5.9 Page Geometry
- (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
-Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-)
-\Gm@cnth=\count358
-\Gm@cntv=\count359
-\c@Gm@tempcnt=\count360
-\Gm@bindingoffset=\dimen167
-\Gm@wd@mp=\dimen168
-\Gm@odd@mp=\dimen169
-\Gm@even@mp=\dimen170
-\Gm@layoutwidth=\dimen171
-\Gm@layoutheight=\dimen172
-\Gm@layouthoffset=\dimen173
-\Gm@layoutvoffset=\dimen174
-\Gm@dimlist=\toks23
- (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
-Package: setspace 2022/12/04 v6.7b set line spacing
-) (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/latex/makecell\makecell.sty
-Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
- (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
-Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
-\col@sep=\dimen175
-\ar@mcellbox=\box54
-\extrarowheight=\dimen176
-\NC@list=\toks24
-\extratabsurround=\skip54
-\backup@length=\skip55
-\ar@cellbox=\box55
-)
-\rotheadsize=\dimen177
-\c@nlinenum=\count361
-\TeXr@lab=\toks25
+\Hy@SectionHShift=\skip55
 ) (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count362
 \l__pdf_internal_box=\box56
-)
-No file rapport.aux.
+) (rapport.aux)
 \openout1 = `rapport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Info: Redefining \degres on input line 17.
-LaTeX Info: Redefining \up on input line 17.
-(C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Info: Redefining \degres on input line 16.
+LaTeX Info: Redefining \up on input line 16.
+ (C:\Users\Gregoire\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count363
 \scratchdimen=\dimen178
@@ -400,10 +399,6 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 17.
-\@outlinefile=\write3
-\openout3 = `rapport.out'.
-
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -439,22 +434,26 @@ Package hyperref Info: Link coloring OFF on input line 17.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+Package hyperref Info: Link coloring OFF on input line 16.
+\@outlinefile=\write3
+\openout3 = `rapport.out'.
+
 
 
 [1
 
 {C:/Users/Gregoire/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 32.
+(Font)              <14.4> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 32.
+(Font)              <7> on input line 31.
 
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.48 \end{titlepage}
+l.47 \end{titlepage}
                      [1]
 No file rapport.toc.
 \tf@toc=\write4
@@ -466,7 +465,7 @@ No file rapport.toc.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.61 \newpage
+l.60 \newpage
               [1]
 \openout2 = `Sections/intro.aux'.
 
@@ -484,20 +483,11 @@ l.61 \newpage
 
 
 ]
-
-LaTeX Warning: File `Images/image1.png' not found on input line 20.
-
-
-Sections/p1.tex:20: Package pdftex.def Error: File `Images/image1.png' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.20 ...egraphics[scale = 0.12]{Images/image1.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<Images/Frequence_conso_jeuxA.pdf, id=32, 627.34375pt x 386.44376pt>
+File: Images/Frequence_conso_jeuxA.pdf Graphic file (type pdf)
+<use Images/Frequence_conso_jeuxA.pdf>
+Package pdftex.def Info: Images/Frequence_conso_jeuxA.pdf  used on input line 20.
+(pdftex.def)             Requested size: 75.278pt x 46.37125pt.
 
 
 LaTeX Warning: File `Images/image2.png' not found on input line 25.
@@ -516,7 +506,7 @@ If that doesn't work, type  X <return>  to quit.
 
 
 
-[4])
+[4 <./Images/Frequence_conso_jeuxA.pdf>])
 
 [5]
 \openout2 = `Sections/p2.aux'.
@@ -543,14 +533,14 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 25.
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--45
+Underfull \hbox (badness 10000) in paragraph at lines 41--44
 
  []
 
-<Images/Freq_JA_IMC.png, id=47, 602.25pt x 416.05438pt>
+<Images/Freq_JA_IMC.png, id=53, 602.25pt x 416.05438pt>
 File: Images/Freq_JA_IMC.png Graphic file (type png)
 <use Images/Freq_JA_IMC.png>
-Package pdftex.def Info: Images/Freq_JA_IMC.png  used on input line 50.
+Package pdftex.def Info: Images/Freq_JA_IMC.png  used on input line 49.
 (pdftex.def)             Requested size: 449.55322pt x 310.57986pt.
 
 
@@ -559,99 +549,149 @@ Package pdftex.def Info: Images/Freq_JA_IMC.png  used on input line 50.
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 52--57
+Underfull \hbox (badness 10000) in paragraph at lines 51--56
 
  []
 
-<Images/Freq_JV_IMC_bis.png, id=55, 602.25pt x 376.40625pt>
+<Images/Freq_JV_IMC_bis.png, id=61, 602.25pt x 376.40625pt>
 File: Images/Freq_JV_IMC_bis.png Graphic file (type png)
 <use Images/Freq_JV_IMC_bis.png>
-Package pdftex.def Info: Images/Freq_JV_IMC_bis.png  used on input line 60.
+Package pdftex.def Info: Images/Freq_JV_IMC_bis.png  used on input line 59.
 (pdftex.def)             Requested size: 449.55322pt x 280.98299pt.
 
 
 [7 <./Images/Freq_JA_IMC.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 62--67
+Underfull \hbox (badness 10000) in paragraph at lines 61--66
 
  []
 
 
 
 [8 <./Images/Freq_JV_IMC_bis.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 76--79
+Underfull \hbox (badness 10000) in paragraph at lines 75--78
 
  []
 
-<Images/Freq_JA_sport.png, id=64, 677.53125pt x 489.32813pt>
+<Images/Freq_JA_sport.png, id=70, 677.53125pt x 489.32813pt>
 File: Images/Freq_JA_sport.png Graphic file (type png)
 <use Images/Freq_JA_sport.png>
-Package pdftex.def Info: Images/Freq_JA_sport.png  used on input line 80.
+Package pdftex.def Info: Images/Freq_JA_sport.png  used on input line 79.
 (pdftex.def)             Requested size: 449.55322pt x 324.68979pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--85
+Underfull \hbox (badness 10000) in paragraph at lines 81--84
 
  []
 
-<Images/Freq_PS_sport.png, id=65, 677.53125pt x 489.32813pt>
+<Images/Freq_PS_sport.png, id=71, 677.53125pt x 489.32813pt>
 File: Images/Freq_PS_sport.png Graphic file (type png)
 <use Images/Freq_PS_sport.png>
-Package pdftex.def Info: Images/Freq_PS_sport.png  used on input line 89.
+Package pdftex.def Info: Images/Freq_PS_sport.png  used on input line 88.
 (pdftex.def)             Requested size: 449.55322pt x 324.68979pt.
 
 
 [9 <./Images/Freq_JA_sport.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 91--95
+Underfull \hbox (badness 10000) in paragraph at lines 90--94
 
  []
 
-<Images/Freq_JV_sport_bis.png, id=71, 602.25pt x 376.40625pt>
+<Images/Freq_JV_sport_bis.png, id=77, 602.25pt x 376.40625pt>
 File: Images/Freq_JV_sport_bis.png Graphic file (type png)
 <use Images/Freq_JV_sport_bis.png>
-Package pdftex.def Info: Images/Freq_JV_sport_bis.png  used on input line 99.
+Package pdftex.def Info: Images/Freq_JV_sport_bis.png  used on input line 98.
 (pdftex.def)             Requested size: 449.55322pt x 280.98299pt.
 
 
 [10 <./Images/Freq_PS_sport.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 101--106
+Underfull \hbox (badness 10000) in paragraph at lines 100--106
 
  []
 
-<Images/Freq_JA_medecin.png, id=76, 865.73438pt x 376.40625pt>
+<Images/Freq_JA_medecin.png, id=82, 865.73438pt x 376.40625pt>
 File: Images/Freq_JA_medecin.png Graphic file (type png)
 <use Images/Freq_JA_medecin.png>
-Package pdftex.def Info: Images/Freq_JA_medecin.png  used on input line 111.
+Package pdftex.def Info: Images/Freq_JA_medecin.png  used on input line 112.
 (pdftex.def)             Requested size: 449.55322pt x 195.45668pt.
 
 
 [11 <./Images/Freq_JV_sport_bis.png (PNG copy)>]
-<Images/Freq_JV_medecin.png, id=82, 865.73438pt x 376.40625pt>
+<Images/Freq_JV_medecin.png, id=88, 865.73438pt x 376.40625pt>
 File: Images/Freq_JV_medecin.png Graphic file (type png)
 <use Images/Freq_JV_medecin.png>
-Package pdftex.def Info: Images/Freq_JV_medecin.png  used on input line 116.
+Package pdftex.def Info: Images/Freq_JV_medecin.png  used on input line 117.
 (pdftex.def)             Requested size: 449.55322pt x 195.45668pt.
+)
 
-
-[12 <./Images/Freq_JA_medecin.png> <./Images/Freq_JV_medecin.png>])
-
-[13]
+[12 <./Images/Freq_JA_medecin.png> <./Images/Freq_JV_medecin.png>]
 \openout2 = `Sections/p3.aux'.
 
  (Sections/p3.tex
 
-[14
+LaTeX Warning: Reference `fig:adrs' on page 13 undefined on input line 7.
+
+<Images/scoreADRSdistrib.pdf, id=95, 788.9475pt x 415.5525pt>
+File: Images/scoreADRSdistrib.pdf Graphic file (type pdf)
+<use Images/scoreADRSdistrib.pdf>
+Package pdftex.def Info: Images/scoreADRSdistrib.pdf  used on input line 11.
+(pdftex.def)             Requested size: 359.64394pt x 189.43176pt.
+<Images/Etatsante_JV.png, id=96, 865.73438pt x 526.96875pt>
+File: Images/Etatsante_JV.png Graphic file (type png)
+<use Images/Etatsante_JV.png>
+Package pdftex.def Info: Images/Etatsante_JV.png  used on input line 20.
+(pdftex.def)             Requested size: 359.64394pt x 218.91309pt.
+
+
+[13
 
 
 
-]
+ <./Images/scoreADRSdistrib.pdf>]
+<Images/Etatsante_JA.png, id=110, 865.73438pt x 451.6875pt>
+File: Images/Etatsante_JA.png Graphic file (type png)
+<use Images/Etatsante_JA.png>
+Package pdftex.def Info: Images/Etatsante_JA.png  used on input line 27.
+(pdftex.def)             Requested size: 359.64394pt x 187.63979pt.
 
-[15])
 
-[16]
+LaTeX Warning: Reference `fig:adrs' on page 14 undefined on input line 33.
+
+
+LaTeX Warning: Reference `fig:jeux_argent' on page 14 undefined on input line 35.
+
+
+LaTeX Warning: Reference `fig:jeux_video' on page 14 undefined on input line 37.
+
+
+
+[14 <./Images/Etatsante_JV.png (PNG copy)> <./Images/Etatsante_JA.png (PNG copy)>]
+
+[15]
+<Images/JV_prioritaire_ADRS.pdf, id=121, 788.9475pt x 415.5525pt>
+File: Images/JV_prioritaire_ADRS.pdf Graphic file (type pdf)
+<use Images/JV_prioritaire_ADRS.pdf>
+Package pdftex.def Info: Images/JV_prioritaire_ADRS.pdf  used on input line 49.
+(pdftex.def)             Requested size: 359.64394pt x 189.43176pt.
+
+
+LaTeX Warning: Reference `fig:jv_adrs' on page 16 undefined on input line 54.
+
+<Images/JV_prioritaire_etat_sante.pdf, id=122, 788.9475pt x 415.5525pt>
+File: Images/JV_prioritaire_etat_sante.pdf Graphic file (type pdf)
+<use Images/JV_prioritaire_etat_sante.pdf>
+Package pdftex.def Info: Images/JV_prioritaire_etat_sante.pdf  used on input line 58.
+(pdftex.def)             Requested size: 359.64394pt x 189.43176pt.
+
+LaTeX Warning: Reference `fig:jv_sante' on page 16 undefined on input line 63.
+
+
+
+[16 <./Images/JV_prioritaire_ADRS.pdf> <./Images/JV_prioritaire_etat_sante.pdf>])
+
+[17]
 \openout2 = `Sections/conclusion.aux'.
 
  (Sections/conclusion.tex)
 
-[17
+[18
 
 
 
@@ -670,7 +710,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
 )
 
-[18
+[19
 
 
 
@@ -679,7 +719,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  (Sections/annexes.tex)
 
-[19
+[20
 
 
 
@@ -688,6 +728,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
@@ -699,20 +742,20 @@ Package rerunfilecheck Warning: File `rapport.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `rapport.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  0B81AA8F3B4934B57B46696E9F786D54;3301.
+(rerunfilecheck)             After:  517B3E0467C902B2C09FBA9A801C4BA3;3386.
  ) 
 Here is how much of TeX's memory you used:
- 13372 strings out of 473522
- 226147 string characters out of 5713158
- 637495 words of memory out of 5000000
- 36382 multiletter control sequences out of 15000+600000
- 569373 words of font info for 58 fonts, out of 8000000 for 9000
+ 13403 strings out of 473522
+ 227280 string characters out of 5713158
+ 636921 words of memory out of 5000000
+ 36404 multiletter control sequences out of 15000+600000
+ 570149 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,15n,79p,398b,528s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk>
-Output written on rapport.pdf (21 pages, 352799 bytes).
+ 75i,15n,79p,811b,570s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\Gregoire\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk>
+Output written on rapport.pdf (22 pages, 480452 bytes).
 PDF statistics:
- 406 PDF objects out of 1000 (max. 8388607)
- 43 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 495 PDF objects out of 1000 (max. 8388607)
+ 48 named destinations out of 1000 (max. 500000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

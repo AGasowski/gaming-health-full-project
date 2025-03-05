@@ -1,0 +1,7 @@
+PWD D:\projet stat\projetstat
+INPUT C:\Users\noahm\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
+INPUT Sections\p3.tex
+OUTPUT p3.log
+INPUT C:\Users\noahm\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
+OUTPUT p3.pdf
+INPUT C:\Users\noahm\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
