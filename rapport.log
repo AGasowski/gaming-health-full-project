@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.2) (preloaded format=pdflatex 2025.3.3)  5 MAR 2025 18:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.2) (preloaded format=pdflatex 2025.3.3)  5 MAR 2025 19:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -514,6 +514,28 @@ Overfull \hbox (218.85408pt too wide) in paragraph at lines 41--42
  [][] 
  []
 
+
+Sections/p1.tex:52: LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \begin{figure}[htb]
+                        
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<Images/freq_par_sexe.pdf, id=42, 578.16pt x 386.44376pt>
+File: Images/freq_par_sexe.pdf Graphic file (type pdf)
+<use Images/freq_par_sexe.pdf>
+Package pdftex.def Info: Images/freq_par_sexe.pdf  used on input line 56.
+(pdftex.def)             Requested size: 404.70924pt x 270.50877pt.
+
+Overfull \hbox (184.4257pt too wide) in paragraph at lines 56--57
+ [][] 
+ []
+
 )
 \openout2 = `Sections/p2.aux'.
 
@@ -555,7 +577,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--44
 
  []
 
-<Images/Freq_JA_IMC.png, id=42, 602.25pt x 416.05438pt>
+<Images/Freq_JA_IMC.png, id=43, 602.25pt x 416.05438pt>
 File: Images/Freq_JA_IMC.png Graphic file (type png)
 <use Images/Freq_JA_IMC.png>
 Package pdftex.def Info: Images/Freq_JA_IMC.png  used on input line 49.
@@ -565,7 +587,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--56
 
  []
 
-<Images/Freq_JV_IMC_bis.png, id=43, 602.25pt x 376.40625pt>
+<Images/Freq_JV_IMC_bis.png, id=44, 602.25pt x 376.40625pt>
 File: Images/Freq_JV_IMC_bis.png Graphic file (type png)
 <use Images/Freq_JV_IMC_bis.png>
 Package pdftex.def Info: Images/Freq_JV_IMC_bis.png  used on input line 59.
@@ -580,7 +602,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--78
 
  []
 
-<Images/Freq_JA_sport.png, id=44, 677.53125pt x 489.32813pt>
+<Images/Freq_JA_sport.png, id=45, 677.53125pt x 489.32813pt>
 File: Images/Freq_JA_sport.png Graphic file (type png)
 <use Images/Freq_JA_sport.png>
 Package pdftex.def Info: Images/Freq_JA_sport.png  used on input line 79.
@@ -590,7 +612,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 81--84
 
  []
 
-<Images/Freq_PS_sport.png, id=45, 677.53125pt x 489.32813pt>
+<Images/Freq_PS_sport.png, id=46, 677.53125pt x 489.32813pt>
 File: Images/Freq_PS_sport.png Graphic file (type png)
 <use Images/Freq_PS_sport.png>
 Package pdftex.def Info: Images/Freq_PS_sport.png  used on input line 88.
@@ -600,7 +622,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--94
 
  []
 
-<Images/Freq_JV_sport_bis.png, id=46, 602.25pt x 376.40625pt>
+<Images/Freq_JV_sport_bis.png, id=47, 602.25pt x 376.40625pt>
 File: Images/Freq_JV_sport_bis.png Graphic file (type png)
 <use Images/Freq_JV_sport_bis.png>
 Package pdftex.def Info: Images/Freq_JV_sport_bis.png  used on input line 98.
@@ -610,12 +632,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--106
 
  []
 
-<Images/Freq_JA_medecin.png, id=47, 865.73438pt x 376.40625pt>
+<Images/Freq_JA_medecin.png, id=48, 865.73438pt x 376.40625pt>
 File: Images/Freq_JA_medecin.png Graphic file (type png)
 <use Images/Freq_JA_medecin.png>
 Package pdftex.def Info: Images/Freq_JA_medecin.png  used on input line 112.
 (pdftex.def)             Requested size: 449.55322pt x 195.45668pt.
-<Images/Freq_JV_medecin.png, id=48, 865.73438pt x 376.40625pt>
+<Images/Freq_JV_medecin.png, id=49, 865.73438pt x 376.40625pt>
 File: Images/Freq_JV_medecin.png Graphic file (type png)
 <use Images/Freq_JV_medecin.png>
 Package pdftex.def Info: Images/Freq_JV_medecin.png  used on input line 117.
@@ -627,17 +649,17 @@ Package pdftex.def Info: Images/Freq_JV_medecin.png  used on input line 117.
 
 LaTeX Warning: Reference `fig:adrs' on page 4 undefined on input line 7.
 
-<Images/scoreADRSdistrib.pdf, id=49, 788.9475pt x 415.5525pt>
+<Images/scoreADRSdistrib.pdf, id=50, 788.9475pt x 415.5525pt>
 File: Images/scoreADRSdistrib.pdf Graphic file (type pdf)
 <use Images/scoreADRSdistrib.pdf>
 Package pdftex.def Info: Images/scoreADRSdistrib.pdf  used on input line 11.
 (pdftex.def)             Requested size: 359.64394pt x 189.43176pt.
-<Images/Etatsante_JV.png, id=50, 865.73438pt x 526.96875pt>
+<Images/Etatsante_JV.png, id=51, 865.73438pt x 526.96875pt>
 File: Images/Etatsante_JV.png Graphic file (type png)
 <use Images/Etatsante_JV.png>
 Package pdftex.def Info: Images/Etatsante_JV.png  used on input line 20.
 (pdftex.def)             Requested size: 359.64394pt x 218.91309pt.
-<Images/Etatsante_JA.png, id=51, 865.73438pt x 451.6875pt>
+<Images/Etatsante_JA.png, id=52, 865.73438pt x 451.6875pt>
 File: Images/Etatsante_JA.png Graphic file (type png)
 <use Images/Etatsante_JA.png>
 Package pdftex.def Info: Images/Etatsante_JA.png  used on input line 27.
@@ -651,7 +673,7 @@ LaTeX Warning: Reference `fig:jeux_argent' on page 4 undefined on input line 35.
 
 LaTeX Warning: Reference `fig:jeux_video' on page 4 undefined on input line 37.
 
-<Images/JV_prioritaire_ADRS.pdf, id=52, 788.9475pt x 415.5525pt>
+<Images/JV_prioritaire_ADRS.pdf, id=53, 788.9475pt x 415.5525pt>
 File: Images/JV_prioritaire_ADRS.pdf Graphic file (type pdf)
 <use Images/JV_prioritaire_ADRS.pdf>
 Package pdftex.def Info: Images/JV_prioritaire_ADRS.pdf  used on input line 49.
@@ -659,7 +681,7 @@ Package pdftex.def Info: Images/JV_prioritaire_ADRS.pdf  used on input line 49.
 
 LaTeX Warning: Reference `fig:jv_adrs' on page 4 undefined on input line 54.
 
-<Images/JV_prioritaire_etat_sante.pdf, id=53, 788.9475pt x 415.5525pt>
+<Images/JV_prioritaire_etat_sante.pdf, id=54, 788.9475pt x 415.5525pt>
 File: Images/JV_prioritaire_etat_sante.pdf Graphic file (type pdf)
 <use Images/JV_prioritaire_etat_sante.pdf>
 Package pdftex.def Info: Images/JV_prioritaire_etat_sante.pdf  used on input line 58.
@@ -688,7 +710,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  (Sections/annexes.tex)
 
-c:/Users/Gregoire/Documents/travail ensai/projet stat 1A/test git/projetstat/rapport.tex:97: LaTeX Error: \begin{figure} on input line 37 ended by \end{document}.
+c:/Users/Gregoire/Documents/travail ensai/projet stat 1A/test git/projetstat/rapport.tex:97: LaTeX Error: \begin{figure} on input line 52 ended by \end{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -731,7 +753,7 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-c:/Users/Gregoire/Documents/travail ensai/projet stat 1A/test git/projetstat/rapport.tex:97: LaTeX Error: \begin{figure} on input line 37 ended by \end{document}.
+c:/Users/Gregoire/Documents/travail ensai/projet stat 1A/test git/projetstat/rapport.tex:97: LaTeX Error: \begin{figure} on input line 52 ended by \end{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -762,11 +784,11 @@ my insertion and my current dilemma will both disappear.
 
  
 Here is how much of TeX's memory you used:
- 13350 strings out of 473522
- 226683 string characters out of 5713158
- 652921 words of memory out of 5000000
- 36389 multiletter control sequences out of 15000+600000
+ 13357 strings out of 473522
+ 226923 string characters out of 5713158
+ 654921 words of memory out of 5000000
+ 36396 multiletter control sequences out of 15000+600000
  570550 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,17n,79p,1397b,736s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,19n,79p,1397b,879s stack positions out of 10000i,1000n,20000p,200000b,200000s
 !  ==> Fatal error occurred, no output PDF file produced!

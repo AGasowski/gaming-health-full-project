@@ -182,6 +182,12 @@ INPUT .\Images\Fréquence_conso_jeuV2.pdf
 INPUT .\Images\Fréquence_conso_jeuV2.pdf
 INPUT .\Images\Fréquence_conso_jeuV2.pdf
 INPUT .\Images\Fréquence_conso_jeuV2.pdf
+INPUT .\Images\freq_par_sexe.pdf
+INPUT .\Images\freq_par_sexe.pdf
+INPUT .\Images\freq_par_sexe.pdf
+INPUT .\Images\freq_par_sexe.pdf
+INPUT .\Images\freq_par_sexe.pdf
+INPUT .\Images\freq_par_sexe.pdf
 INPUT .\Sections\p2.tex
 OUTPUT Sections\p2.aux
 INPUT .\Sections\p2.tex
