@@ -156,7 +156,7 @@ data_pourc_etatsante_freqJA <- data_clean_IMC_freqJA %>%
   mutate(pct = n / sum(n) * 100)
 
 # Création du graphique à barres empilées (100%)
-ggplot(data_pourc_etatsante_freqJA, aes(x = IMC, y = pct, fill = qb07abcdef1) +
+ggplot(data_pourc_etatsante_freqJA, aes(x = IMC, y = pct, fill = qb07abcdef1)) +
   geom_bar(stat = "identity") +
   geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
   labs(title = "Répartition de la fréquence de jeux d'argent par catégorie d'IMC",
@@ -170,6 +170,23 @@ data_filter_etatsanteJA <- data_pourc_etatsante_freqJA %>%
   filter(qb07abcdef1 != "Jamais")
 
 ggplot(data_filter_etatsanteJA, aes(x = IMC, y = pct, fill = qb07abcdef1)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
+  labs(title = "Répartition de la fréquence de jeux d'argent par catégorie d'IMC",
+       x = "Catégorie d'IMC",
+       y = "Pourcentage",
+       fill = "Fréquence de jeux d'argent") +
+  theme_minimal()
+
+#Graphique qui prend en compte seulement les joueurs, pour avoir un total à 100%
+data_clean_IMC_freqJA_100 <- data %>% filter(!is.na(qb07abcdef1) & !is.na(q18imc) & qb07abcdef1!="Jamais")
+
+data_pourc_etatsante_freqJA_100 <- data_clean_IMC_freqJA_100 %>%
+  count(IMC, qb07abcdef1) %>%
+  group_by(IMC) %>%
+  mutate(pct = n / sum(n) * 100)
+
+ggplot(data_pourc_etatsante_freqJA_100, aes(x = IMC, y = pct, fill = qb07abcdef1)) +
   geom_bar(stat = "identity") +
   geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
   labs(title = "Répartition de la fréquence de jeux d'argent par catégorie d'IMC",
