@@ -60,7 +60,7 @@ data <- data %>%
   ))
 
 print(data$Q20)
-data$Q20 <- factor(labels_sportred[data$QB07C1], levels = labels_sportred)
+data$Q20 <- factor(labels_sportred[data$Q20], levels = labels_sportred)
 
 
 
@@ -98,43 +98,11 @@ data_pourc_sport_freqJA_100 <- data_clean_sport_freq_100 %>%
 
 # Création du graphique à barres empilées (100%)
 ggplot(data_pourc_sport_freqJA_100, aes(x = Q20, y = pct, fill = qb07simp)) +
-  geom_bar(stat = "identity") +
-  geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
-  labs(title = "Répartition de la fréquence de jeux d'argent des joueurs par fréquence d'activité sportive",
+  geom_bar(stat = "identity", position = position_stack(reverse = TRUE)) +
+  geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5, reverse = TRUE)) +
+  labs(title = "Proportion de joueurs de jeux d'argent en fonction de la fréquence de pratique sportive",
        x = "Fréquence de pratique sportive",
        y = "Pourcentage",
-       fill = "Fréquence de jeux d'argent") +
-  theme_minimal()
-
-
-# GRAPHIQUE 4
-
-data_clean_sport_freqJV <- data %>% filter(!is.na(Q20) & !is.na(QB02))
-# Calculer les pourcentages par groupe de sportifs
-data_pourc_sport_freqJV <- data_clean_sport_freqJV %>%
-  count(Q20, QB02) %>%
-  group_by(Q20) %>%
-  mutate(pct = n / sum(n) * 100)
-
-
-# Création du graphique à barres empilées (100%)
-ggplot(data_pourc_sport_freqJV, aes(x = Q20, y = pct, fill = QB02)) +
-  geom_bar(stat = "identity") +
-  geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
-  labs(title = "Répartition de la fréquence de jeux vidéo par fréquence d'activité sportive",
-       x = "Fréquence de pratique sportive",
-       y = "Pourcentage",
-       fill = "Fréquence de jeux vidéo") +
-  theme_minimal()
-
-
-data_filter_sportJV <- data_pourc_sport_freqJV %>%
-  filter(QB02 != "Jamais")
-ggplot(data_filter_sportJV, aes(x = Q20, y = pct, fill = QB02)) +
-  geom_bar(stat = "identity") +
-  geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
-  labs(title = "Répartition de la fréquence de jeux vidéo par fréquence d'activité sportive",
-       x = "Fréquence de pratique sportive",
-       y = "Pourcentage",
-       fill = "Fréquence de jeux vidéo") +
+       fill = "Jeux d'argent") +
+  scale_fill_discrete(guide = guide_legend(reverse = TRUE)) + # Inverser l'ordre dans la légende
   theme_minimal()
