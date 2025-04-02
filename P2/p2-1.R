@@ -36,15 +36,6 @@ labels_frequencejeu <- c("Jamais", "Une fois par mois ou moins",
                          "Plusieurs fois par semaine",
                          "Tous les jours ou presque")
 
-labels_sport <- c("Chaque jour", "4 à 6 fois par semaine", "3 fois par semaine",
-                  "2 fois par semaine", "Une fois par semaine", "Une fois par mois",
-                  "Moins d'une fois par mois", "Jamais")
-
-labels_sportred <- c("Jamais ou presque jamais", "Une fois par semaine",
-                     "Plusieurs fois par semaine", "Chaque jour")
-
-labels_non_oui <- c("Non", "Oui")
-
 
 
 # Remplacement des valeurs numériques par les catégories
@@ -52,23 +43,12 @@ data$QB02 <- factor(labels_frequencejeu[data$QB02], levels = labels_frequencejeu
 data$qb07abcdef1 <- factor(labels_frequencejeu[data$qb07abcdef1], levels = labels_frequencejeu)
 data$QB07C1 <- factor(labels_frequencejeu[data$QB07C1], levels = labels_frequencejeu)
 
-data$Q20 <- factor(labels_sport[data$Q20], levels = labels_sport)
-
 ordre_IMC <- c("Insuffisance pondérale", "Corpulence normale", 
                "Surpoids", "Obésité")
 data$IMC <- factor(data$IMC, levels = ordre_IMC)
 
-data <- data %>% 
-  mutate(Q20 = case_when(
-    Q20 == "4 à 6 fois par semaine" |
-      Q20 == "3 fois par semaine" |
-      Q20 == "2 fois par semaine" ~ "Plusieurs fois par semaine",
-    Q20 == "Moins d'une fois par mois" |
-      Q20 == "Jamais" |
-      Q20 == "Une fois par mois" ~ "Jamais ou presque jamais" ,
-    Q20 == "Chaque jour" ~ "Chaque jour",
-    Q20 == "Une fois par semaine" ~ "Une fois par semaine"
-  ))
+
+
 
 
 # GRAPHIQUE 1
@@ -109,6 +89,41 @@ ggplot(data_pourc_etatsante_freqJV_100, aes(x = IMC, y = pct, fill = QB02)) +
        x = "Catégorie d'IMC",
        y = "Pourcentage",
        fill = "Fréquence de jeux vidéos") +
+  theme_minimal()
+
+
+# GRAPHIQUE 3
+#qui prend en compte seulement les joueurs, pour avoir un total à 100%
+data_clean <- data %>% filter(!is.na(qb07abcdef1) & !is.na(q18imc))
+
+print(data_clean$qb07abcdef1)
+data_clean <- data_clean %>% 
+  mutate(qb07abcdef1 = case_when(
+    qb07abcdef1 == 1 ~ "Jamais",
+    qb07abcdef1 == 2 |
+      qb07abcdef1 == 3 ~ "Rarement",
+    qb07abcdef1 == 4 |
+    qb07abcdef1 == 5 |
+      qb07abcdef1 == 6 ~ "Au moins une fois par semaine" ,
+  ))
+
+
+data_pourc_etatsante_freqJA_100 <- data_clean %>%
+  count(IMC, qb07abcdef1) %>%
+  group_by(IMC) %>%
+  mutate(pct = n / sum(n) * 100)
+
+data_pourc_etatsante_freqJA_100$qb07abcdef1 <- factor(data_pourc_etatsante_freqJA_100$qb07abcdef1, 
+                                                      levels = c("Jamais", "Rarement", "Au moins une fois par semaine"))
+
+
+ggplot(data_pourc_etatsante_freqJA_100, aes(x = IMC, y = pct, fill = qb07abcdef1)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
+  labs(title = "Répartition de la fréquence de jeux d'argent des joueurs par catégorie d'IMC",
+       x = "Catégorie d'IMC",
+       y = "Pourcentage",
+       fill = "Fréquence de jeux d'argent") +
   theme_minimal()
 
 

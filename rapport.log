@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.2)  2 APR 2025 13:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.2)  2 APR 2025 21:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -443,89 +443,61 @@ Package pdftex.def Info: Images/tableau_jeuA_PCSper-1.png  used on input line 99
 \openout2 = `Sections/p2.aux'.
 
  (Sections/p2.tex
-Underfull \hbox (badness 10000) in paragraph at lines 5--9
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--15
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--21
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--42
-
- []
-
 <Images/p2-graphe1-freqJAimc.png, id=140, 612.78937pt x 354.32375pt>
 File: Images/p2-graphe1-freqJAimc.png Graphic file (type png)
 <use Images/p2-graphe1-freqJAimc.png>
-Package pdftex.def Info: Images/p2-graphe1-freqJAimc.png  used on input line 49.
+Package pdftex.def Info: Images/p2-graphe1-freqJAimc.png  used on input line 53.
 (pdftex.def)             Requested size: 449.55322pt x 259.94093pt.
-[8
+ [8
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 54--59
-
- []
-
 <Images/p2-graphe2-freqJVimc.png, id=146, 590.205pt x 316.68312pt>
 File: Images/p2-graphe2-freqJVimc.png Graphic file (type png)
 <use Images/p2-graphe2-freqJVimc.png>
-Package pdftex.def Info: Images/p2-graphe2-freqJVimc.png  used on input line 64.
+Package pdftex.def Info: Images/p2-graphe2-freqJVimc.png  used on input line 70.
 (pdftex.def)             Requested size: 449.55322pt x 241.21803pt.
-[9 <./Images/p2-graphe1-freqJAimc.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 69--74
-
- []
-
-[10 <./Images/p2-graphe2-freqJVimc.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 83--86
+ [9 <./Images/p2-graphe1-freqJAimc.png (PNG copy)>] [10 <./Images/p2-graphe2-freqJVimc.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 91--95
 
  []
 
 <Images/p2-graphe3-comparaisonJAetPSetJAsansPS.png, id=157, 701.62125pt x 357.335pt>
 File: Images/p2-graphe3-comparaisonJAetPSetJAsansPS.png Graphic file (type png)
 <use Images/p2-graphe3-comparaisonJAetPSetJAsansPS.png>
-Package pdftex.def Info: Images/p2-graphe3-comparaisonJAetPSetJAsansPS.png  used on input line 89.
+Package pdftex.def Info: Images/p2-graphe3-comparaisonJAetPSetJAsansPS.png  used on input line 98.
 (pdftex.def)             Requested size: 449.55322pt x 228.96078pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--97
+Underfull \hbox (badness 10000) in paragraph at lines 103--106
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--105
+Underfull \hbox (badness 10000) in paragraph at lines 110--115
 
  []
 
 <Images/p2-graphe4-joueurJVsport.png, id=158, 677.53125pt x 376.40625pt>
 File: Images/p2-graphe4-joueurJVsport.png Graphic file (type png)
 <use Images/p2-graphe4-joueurJVsport.png>
-Package pdftex.def Info: Images/p2-graphe4-joueurJVsport.png  used on input line 111.
+Package pdftex.def Info: Images/p2-graphe4-joueurJVsport.png  used on input line 121.
 (pdftex.def)             Requested size: 449.55322pt x 249.76137pt.
 [11 <./Images/p2-graphe3-comparaisonJAetPSetJAsansPS.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 116--122
+Underfull \hbox (badness 10000) in paragraph at lines 126--133
 
  []
 
 <Images/Freq_JA_medecin.png, id=165, 865.73438pt x 376.40625pt>
 File: Images/Freq_JA_medecin.png Graphic file (type png)
 <use Images/Freq_JA_medecin.png>
-Package pdftex.def Info: Images/Freq_JA_medecin.png  used on input line 130.
+Package pdftex.def Info: Images/Freq_JA_medecin.png  used on input line 142.
 (pdftex.def)             Requested size: 449.55322pt x 195.45668pt.
 [12 <./Images/p2-graphe4-joueurJVsport.png (PNG copy)>]
 <Images/Freq_JV_medecin.png, id=172, 865.73438pt x 376.40625pt>
 File: Images/Freq_JV_medecin.png Graphic file (type png)
 <use Images/Freq_JV_medecin.png>
-Package pdftex.def Info: Images/Freq_JV_medecin.png  used on input line 140.
+Package pdftex.def Info: Images/Freq_JV_medecin.png  used on input line 153.
 (pdftex.def)             Requested size: 449.55322pt x 195.45668pt.
 ) [13 <./Images/Freq_JA_medecin.png> <./Images/Freq_JV_medecin.png>]
 \openout2 = `Sections/p3.aux'.
@@ -604,15 +576,15 @@ Package rerunfilecheck Info: File `rapport.out' has not changed.
 Here is how much of TeX's memory you used:
  13273 strings out of 474486
  226129 string characters out of 5741868
- 1933542 words of memory out of 5000000
+ 1932542 words of memory out of 5000000
  35300 multiletter control sequences out of 15000+600000
  569782 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,15n,79p,788b,572s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk>
-Output written on rapport.pdf (22 pages, 483135 bytes).
+Output written on rapport.pdf (22 pages, 483208 bytes).
 PDF statistics:
- 618 PDF objects out of 1000 (max. 8388607)
+ 619 PDF objects out of 1000 (max. 8388607)
  54 named destinations out of 1000 (max. 500000)
  188 words of extra memory for PDF output out of 10000 (max. 10000000)
 
