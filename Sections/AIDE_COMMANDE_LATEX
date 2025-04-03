@@ -1,0 +1,14 @@
+Pour sauter une ligne (par exemple changer de paragraphe),
+ne pas utiliser:         \\ 
+mais plutôt:           \vspace{1em}
+sinon il y aura des erreurs dans le code
+
+
+Code pour insérer une image:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{Chemin d'accès de l'image}
+    \caption{Titre du graphique}
+    \label{fig: Nom de la figure (il n'est pas affiché dans le pdf)}
+\end{figure}
+Cela permet notamment de numéroter les figures correctement tout le long

@@ -139,7 +139,50 @@ ggplot(data_pourc_etatsante_freqJA_100, aes(x = IMC, y = pct, fill = qb07abcdef1
 
 
 
-# GRAPHIQUE 3 (inutile)
+
+# GRAPHIQUE 4 : Fréquence de JA simplifiée (parmi les joueurs)
+data_clean <- data %>% filter(!is.na(qb07abcdef1) & !is.na(q18imc))
+
+data_clean <- data_clean %>% 
+  mutate(qb07abcdef1 = case_when(
+    qb07abcdef1 == "Jamais" ~ "Jamais",
+    qb07abcdef1 == "Une fois par mois ou moins" |
+      qb07abcdef1 == "2-3 fois par mois" ~ "Moins d'une fois par semaine",
+    qb07abcdef1 == "Une fois par semaine" |
+      qb07abcdef1 == "Plusieurs fois par semaine" ~ "Au moins une fois par semaine",
+    qb07abcdef1 == "Tous les jours ou presque" ~ "Au quotidien" ,
+  ))
+
+data_clean <- data_clean %>% filter(qb07abcdef1!="Jamais")
+
+data_pourc_etatsante_freqJA_100 <- data_clean %>%
+  count(IMC, qb07abcdef1) %>%
+  group_by(IMC) %>%
+  mutate(pct = n / sum(n) * 100)
+
+data_pourc_etatsante_freqJA_100$qb07abcdef1 <- factor(data_pourc_etatsante_freqJA_100$qb07abcdef1, 
+                                                      levels = c("Moins d'une fois par semaine", "Au moins une fois par semaine", "Au quotidien"))
+
+
+ggplot(data_pourc_etatsante_freqJA_100, aes(x = IMC, y = pct, fill = qb07abcdef1)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
+  labs(title = "Répartition de la fréquence de jeux d'argent des joueurs par catégorie d'IMC",
+       x = "Catégorie d'IMC",
+       y = "Pourcentage",
+       fill = "Fréquence de jeux d'argent") +
+  theme_minimal()
+
+
+
+
+
+
+
+
+
+
+# GRAPHIQUE 5 (inutile)
 
 data_clean_IMC_freqJA <- data %>% filter(!is.na(qb07abcdef1) & !is.na(q18imc))
 

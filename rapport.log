@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.2)  3 APR 2025 21:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.2)  3 APR 2025 22:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -446,64 +446,68 @@ Package pdftex.def Info: Images/tableau_jeuA_PCSper-1.png  used on input line 99
 <Images/P2/JA_IMC.png, id=140, 596.2275pt x 348.30125pt>
 File: Images/P2/JA_IMC.png Graphic file (type png)
 <use Images/P2/JA_IMC.png>
-Package pdftex.def Info: Images/P2/JA_IMC.png  used on input line 53.
+Package pdftex.def Info: Images/P2/JA_IMC.png  used on input line 57.
 (pdftex.def)             Requested size: 449.55322pt x 262.61772pt.
  [8
 
 
 
 ]
-<Images/P2/JAfreqsimp_IMC.png, id=146, 677.53125pt x 376.40625pt>
-File: Images/P2/JAfreqsimp_IMC.png Graphic file (type png)
-<use Images/P2/JAfreqsimp_IMC.png>
-Package pdftex.def Info: Images/P2/JAfreqsimp_IMC.png  used on input line 71.
-(pdftex.def)             Requested size: 449.55322pt x 249.76137pt.
+<Images/P2/JA_freqsimp_joueurs_IMC.png, id=146, 617.80812pt x 376.40625pt>
+File: Images/P2/JA_freqsimp_joueurs_IMC.png Graphic file (type png)
+<use Images/P2/JA_freqsimp_joueurs_IMC.png>
+Package pdftex.def Info: Images/P2/JA_freqsimp_joueurs_IMC.png  used on input line 75.
+(pdftex.def)             Requested size: 449.55322pt x 273.90126pt.
  [9 <./Images/P2/JA_IMC.png>]
 <Images/P2/JV_IMC.png, id=153, 560.59438pt x 353.82187pt>
 File: Images/P2/JV_IMC.png Graphic file (type png)
 <use Images/P2/JV_IMC.png>
-Package pdftex.def Info: Images/P2/JV_IMC.png  used on input line 87.
+Package pdftex.def Info: Images/P2/JV_IMC.png  used on input line 95.
 (pdftex.def)             Requested size: 449.55322pt x 283.74893pt.
- [10 <./Images/P2/JAfreqsimp_IMC.png (PNG copy)>]
-<Images/P2/JVfreqsimp2_IMC.png, id=159, 651.93562pt x 353.82187pt>
-File: Images/P2/JVfreqsimp2_IMC.png Graphic file (type png)
-<use Images/P2/JVfreqsimp2_IMC.png>
-Package pdftex.def Info: Images/P2/JVfreqsimp2_IMC.png  used on input line 99.
-(pdftex.def)             Requested size: 449.55322pt x 243.99158pt.
- [11 <./Images/P2/JV_IMC.png> <./Images/P2/JVfreqsimp2_IMC.png (PNG copy)>] [12]
+ [10 <./Images/P2/JA_freqsimp_joueurs_IMC.png (PNG copy)>]
+<Images/P2/JV_freqsimp_joueurs_IMC.png, id=159, 635.37375pt x 353.82187pt>
+File: Images/P2/JV_freqsimp_joueurs_IMC.png Graphic file (type png)
+<use Images/P2/JV_freqsimp_joueurs_IMC.png>
+Package pdftex.def Info: Images/P2/JV_freqsimp_joueurs_IMC.png  used on input line 107.
+(pdftex.def)             Requested size: 449.55322pt x 250.35146pt.
+ [11 <./Images/P2/JV_IMC.png> <./Images/P2/JV_freqsimp_joueurs_IMC.png (PNG copy)>] [12]
 <Images/P2/JA&PS&sans_sport.png, id=172, 701.62125pt x 357.335pt>
 File: Images/P2/JA&PS&sans_sport.png Graphic file (type png)
 <use Images/P2/JA&PS&sans_sport.png>
-Package pdftex.def Info: Images/P2/JA&PS&sans_sport.png  used on input line 128.
+Package pdftex.def Info: Images/P2/JA&PS&sans_sport.png  used on input line 138.
 (pdftex.def)             Requested size: 449.55322pt x 228.96078pt.
-File: Images/P2/JA&PS&sans_sport.png Graphic file (type png)
-<use Images/P2/JA&PS&sans_sport.png>
-Package pdftex.def Info: Images/P2/JA&PS&sans_sport.png  used on input line 152.
-(pdftex.def)             Requested size: 449.55322pt x 228.96078pt.
+<Images/P2/JV_sport.png, id=173, 662.475pt x 376.40625pt>
+File: Images/P2/JV_sport.png Graphic file (type png)
+<use Images/P2/JV_sport.png>
+Package pdftex.def Info: Images/P2/JV_sport.png  used on input line 166.
+(pdftex.def)             Requested size: 449.55322pt x 255.42445pt.
  [13 <./Images/P2/JA&PS&sans_sport.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 157--164
-
- []
-
-File: Images/P2/JA&PS&sans_sport.png Graphic file (type png)
-<use Images/P2/JA&PS&sans_sport.png>
-Package pdftex.def Info: Images/P2/JA&PS&sans_sport.png  used on input line 173.
-(pdftex.def)             Requested size: 449.55322pt x 228.96078pt.
-[14]
-File: Images/P2/JA&PS&sans_sport.png Graphic file (type png)
-<use Images/P2/JA&PS&sans_sport.png>
-Package pdftex.def Info: Images/P2/JA&PS&sans_sport.png  used on input line 184.
-(pdftex.def)             Requested size: 449.55322pt x 228.96078pt.
-) [15] [16]
+<Images/P2/JVfreqsimp_sport.png, id=180, 635.37375pt x 376.40625pt>
+File: Images/P2/JVfreqsimp_sport.png Graphic file (type png)
+<use Images/P2/JVfreqsimp_sport.png>
+Package pdftex.def Info: Images/P2/JVfreqsimp_sport.png  used on input line 180.
+(pdftex.def)             Requested size: 449.55322pt x 266.33134pt.
+ [14 <./Images/P2/JV_sport.png> <./Images/P2/JVfreqsimp_sport.png>]
+<Images/P2/JA_medecin.png, id=189, 865.73438pt x 376.40625pt>
+File: Images/P2/JA_medecin.png Graphic file (type png)
+<use Images/P2/JA_medecin.png>
+Package pdftex.def Info: Images/P2/JA_medecin.png  used on input line 194.
+(pdftex.def)             Requested size: 449.55322pt x 195.45668pt.
+<Images/P2/JV_medecin.png, id=190, 865.73438pt x 376.40625pt>
+File: Images/P2/JV_medecin.png Graphic file (type png)
+<use Images/P2/JV_medecin.png>
+Package pdftex.def Info: Images/P2/JV_medecin.png  used on input line 208.
+(pdftex.def)             Requested size: 449.55322pt x 195.45668pt.
+) [15 <./Images/P2/JA_medecin.png> <./Images/P2/JV_medecin.png>] [16]
 \openout2 = `Sections/p3.aux'.
 
  (Sections/p3.tex
-<Images/scoreADRSdistrib.pdf, id=195, 788.9475pt x 415.5525pt>
+<Images/scoreADRSdistrib.pdf, id=204, 788.9475pt x 415.5525pt>
 File: Images/scoreADRSdistrib.pdf Graphic file (type pdf)
 <use Images/scoreADRSdistrib.pdf>
 Package pdftex.def Info: Images/scoreADRSdistrib.pdf  used on input line 22.
 (pdftex.def)             Requested size: 359.64394pt x 189.43176pt.
-<Images/Etatsante_JV.png, id=196, 865.73438pt x 526.96875pt>
+<Images/Etatsante_JV.png, id=205, 865.73438pt x 526.96875pt>
 File: Images/Etatsante_JV.png Graphic file (type png)
 <use Images/Etatsante_JV.png>
 Package pdftex.def Info: Images/Etatsante_JV.png  used on input line 36.
@@ -513,18 +517,18 @@ Package pdftex.def Info: Images/Etatsante_JV.png  used on input line 36.
 
 
  <./Images/scoreADRSdistrib.pdf>]
-<Images/Etatsante_JA.png, id=207, 865.73438pt x 451.6875pt>
+<Images/Etatsante_JA.png, id=216, 865.73438pt x 451.6875pt>
 File: Images/Etatsante_JA.png Graphic file (type png)
 <use Images/Etatsante_JA.png>
 Package pdftex.def Info: Images/Etatsante_JA.png  used on input line 43.
 (pdftex.def)             Requested size: 359.64394pt x 187.63979pt.
  [18 <./Images/Etatsante_JV.png (PNG copy)> <./Images/Etatsante_JA.png (PNG copy)>] [19]
-<Images/JV_prioritaire_ADRS.pdf, id=222, 788.9475pt x 415.5525pt>
+<Images/JV_prioritaire_ADRS.pdf, id=231, 788.9475pt x 415.5525pt>
 File: Images/JV_prioritaire_ADRS.pdf Graphic file (type pdf)
 <use Images/JV_prioritaire_ADRS.pdf>
 Package pdftex.def Info: Images/JV_prioritaire_ADRS.pdf  used on input line 84.
 (pdftex.def)             Requested size: 359.64394pt x 189.43176pt.
-<Images/JV_prioritaire_etat_sante.pdf, id=224, 788.9475pt x 415.5525pt>
+<Images/JV_prioritaire_etat_sante.pdf, id=233, 788.9475pt x 415.5525pt>
 File: Images/JV_prioritaire_etat_sante.pdf Graphic file (type pdf)
 <use Images/JV_prioritaire_etat_sante.pdf>
 Package pdftex.def Info: Images/JV_prioritaire_etat_sante.pdf  used on input line 98.
@@ -556,20 +560,20 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: ED6C76F104F9686086FED38F83F479AE;3217.
+(rerunfilecheck)             Checksum: 3CB4B49B9D9070B8B3CA58480B741A1C;3217.
  ) 
 Here is how much of TeX's memory you used:
- 13274 strings out of 474486
- 225694 string characters out of 5741868
+ 13304 strings out of 474486
+ 226741 string characters out of 5741868
  1933542 words of memory out of 5000000
- 35296 multiletter control sequences out of 15000+600000
+ 35325 multiletter control sequences out of 15000+600000
  569782 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,15n,79p,464b,572s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk>
-Output written on rapport.pdf (25 pages, 423044 bytes).
+Output written on rapport.pdf (25 pages, 494435 bytes).
 PDF statistics:
- 641 PDF objects out of 1000 (max. 8388607)
- 59 named destinations out of 1000 (max. 500000)
- 183 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 650 PDF objects out of 1000 (max. 8388607)
+ 60 named destinations out of 1000 (max. 500000)
+ 203 words of extra memory for PDF output out of 10000 (max. 10000000)
 

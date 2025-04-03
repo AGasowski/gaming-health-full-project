@@ -10,6 +10,6 @@
 \contentsline {subsection}{\numberline {3.1}ADRS et Etat de santé auto déclaré}{17}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Pratique du jeu vidéo prioritaire et santé mentale}{20}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Conclusion de la Troisième Partie}{21}{subsection.3.3}%
-\contentsline {section}{Conclusion}{22}{section*.18}%
-\contentsline {section}{Bibliographie}{23}{section*.19}%
-\contentsline {section}{Annexes}{24}{section*.21}%
+\contentsline {section}{Conclusion}{22}{section*.19}%
+\contentsline {section}{Bibliographie}{23}{section*.20}%
+\contentsline {section}{Annexes}{24}{section*.22}%

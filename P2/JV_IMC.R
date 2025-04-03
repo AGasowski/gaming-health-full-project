@@ -180,3 +180,45 @@ ggplot(data_pourc_etatsante_freqJA_100, aes(x = IMC, y = pct, fill = QB02)) +
        y = "Pourcentage",
        fill = "Fréquence de jeux vidéo") +
   theme_minimal()
+
+
+
+
+
+
+
+
+
+
+# GRAPHIQUE 4 : Fréquence de JV simplifiée (joueurs seulement)
+data_clean <- data %>% filter(!is.na(QB02) & !is.na(q18imc) & QB02!="Jamais")
+
+print(data_clean$QB02)
+
+data_clean <- data_clean %>% 
+  mutate(QB02 = case_when(
+    QB02 == "Une fois par mois ou moins" |
+      QB02 == "2-3 fois par mois" ~ "Moins d'une fois par semaine",
+    QB02 == "Une fois par semaine" |
+      QB02 == "Plusieurs fois par semaine" ~ "Au moins une fois par semaine",
+    QB02 == "Tous les jours ou presque" ~ "Au quotidien" ,
+  ))
+
+
+data_pourc_etatsante_freqJA_100 <- data_clean %>%
+  count(IMC, QB02) %>%
+  group_by(IMC) %>%
+  mutate(pct = n / sum(n) * 100)
+
+data_pourc_etatsante_freqJA_100$QB02 <- factor(data_pourc_etatsante_freqJA_100$QB02, 
+                                               levels = c("Moins d'une fois par semaine", "Au moins une fois par semaine", "Au quotidien"))
+
+
+ggplot(data_pourc_etatsante_freqJA_100, aes(x = IMC, y = pct, fill = QB02)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
+  labs(title = "Répartition de la fréquence de jeux vidéo des joueurs par catégorie d'IMC",
+       x = "Catégorie d'IMC",
+       y = "Pourcentage",
+       fill = "Fréquence de jeux vidéo") +
+  theme_minimal()
