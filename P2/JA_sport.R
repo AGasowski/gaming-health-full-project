@@ -309,3 +309,4 @@ ggplot(data_filter_sportPS, aes(x = Q20, y = pct, fill = QB07C1)) +
        y = "Pourcentage",
        fill = "Fréquence de paris sportifs") +
   theme_minimal()
+

@@ -5,11 +5,11 @@
 \contentsline {subsection}{\numberline {1.2}Quels sont les profils sociodémographiques des joueurs ?}{6}{subsection.1.2}%
 \contentsline {section}{\numberline {2}Liens entre la santé physique et la consommation de jeux}{8}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Etat de santé et jeux}{8}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Comportement des joueurs vis à vis de leur santé}{12}{subsection.2.2}%
-\contentsline {section}{\numberline {3}Troisième partie}{15}{section.3}%
-\contentsline {subsection}{\numberline {3.1}ADRS et Etat de santé auto déclaré}{15}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Pratique du jeu vidéo prioritaire et santé mentale}{18}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Conclusion de la Troisième Partie}{19}{subsection.3.3}%
-\contentsline {section}{Conclusion}{20}{section*.18}%
-\contentsline {section}{Bibliographie}{21}{section*.19}%
-\contentsline {section}{Annexes}{22}{section*.21}%
+\contentsline {subsection}{\numberline {2.2}Comportement des joueurs vis à vis de leur santé}{13}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Troisième partie}{17}{section.3}%
+\contentsline {subsection}{\numberline {3.1}ADRS et Etat de santé auto déclaré}{17}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Pratique du jeu vidéo prioritaire et santé mentale}{20}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Conclusion de la Troisième Partie}{21}{subsection.3.3}%
+\contentsline {section}{Conclusion}{22}{section*.18}%
+\contentsline {section}{Bibliographie}{23}{section*.19}%
+\contentsline {section}{Annexes}{24}{section*.21}%

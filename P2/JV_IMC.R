@@ -158,8 +158,8 @@ data_clean <- data_clean %>%
     QB02 == "Une fois par mois ou moins" |
       QB02 == "2-3 fois par mois" ~ "Rarement",
     QB02 == "Une fois par semaine" |
-      QB02 == "Plusieurs fois par semaine" |
-      QB02 == "Tous les jours ou presque" ~ "Au moins une fois par semaine" ,
+      QB02 == "Plusieurs fois par semaine" ~ "Chaque semaine",
+    QB02 == "Tous les jours ou presque" ~ "Tous les jours ou presque" ,
   ))
 
 
@@ -169,7 +169,7 @@ data_pourc_etatsante_freqJA_100 <- data_clean %>%
   mutate(pct = n / sum(n) * 100)
 
 data_pourc_etatsante_freqJA_100$QB02 <- factor(data_pourc_etatsante_freqJA_100$QB02, 
-                                                      levels = c("Jamais", "Rarement", "Au moins une fois par semaine"))
+                                                      levels = c("Jamais", "Rarement", "Chaque semaine", "Tous les jours ou presque"))
 
 
 ggplot(data_pourc_etatsante_freqJA_100, aes(x = IMC, y = pct, fill = QB02)) +

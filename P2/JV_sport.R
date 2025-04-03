@@ -38,7 +38,6 @@ data$QB02 <- factor(labels_frequencejeu[data$QB02], levels = labels_frequencejeu
 
 data$Q20 <- factor(labels_sport[data$Q20], levels = labels_sport)
 
-
 data <- data %>% 
   mutate(Q20 = case_when(
     Q20 == "4 à 6 fois par semaine" |
@@ -51,13 +50,22 @@ data <- data %>%
     Q20 == "Une fois par semaine" ~ "Une fois par semaine"
   ))
 
+data$Q20 <- factor(data$Q20, 
+                levels = c("Jamais ou presque jamais", "Une fois par semaine", "Plusieurs fois par semaine", "Chaque jour"))
 
-data$Q20 <- factor(data$Q20, levels = labels_sportred)
+
+data <- data %>%
+  mutate(QB02 = case_when(
+    QB02 == "Jamais" ~ "Pas joueur",  # Si c'est "Jamais", on laisse "Jamais"
+    TRUE ~ "Joueur"  # Sinon, on met "Joueur"
+  ))
+
 
 
 
 # GRAPHIQUE 1 : Freq JV en fonction du sport
 data_clean_sport_freqJV <- data %>% filter(!is.na(Q20) & !is.na(QB02))
+
 # Calculer les pourcentages par groupe de sportifs
 data_pourc_sport_freqJV <- data_clean_sport_freqJV %>%
   count(Q20, QB02) %>%
