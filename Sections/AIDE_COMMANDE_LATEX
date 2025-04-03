@@ -12,3 +12,25 @@ Code pour insérer une image:
     \label{fig: Nom de la figure (il n'est pas affiché dans le pdf)}
 \end{figure}
 Cela permet notamment de numéroter les figures correctement tout le long
+
+
+Code pour insérer un tableau (exemple):
+\begin{table}[ht]
+    \centering
+    \captionsetup{justification=centering}
+    \begin{tabular}{lccc}
+          \hline
+          Etat de santé & Population générale & \makecell{Joueurs
+          quotidiens\\de jeux vidéo} & \makecell{Joueurs quotidiens\\de jeux
+          d'argent}\\ 
+          \hline
+          Très ou plutôt\\satisfaisant & 91,3\% & 86,9\% & 70,6\% \\
+          \hline
+          \makecell{Peu ou pas du\\tout satisfaisant} & 8,7\% & 13,1\% & 29,4\%
+          \\ 
+    
+    \end{tabular}
+    \vskip 10pt \caption{Titre du tableau\\
+    \textit{Source: Source des données (Enquête ESCAPAD 2022)}}
+    \label{fig: Nom du tableau (il n'est pas écrit sur le pdf)}
+\end{table}
