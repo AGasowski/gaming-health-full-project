@@ -18,16 +18,6 @@ data <- datainitial %>%
 
 
 
-###SANTE
-
-data <- data %>% 
-  mutate(IMC = case_when(
-    q18imc < 18.5 ~ "Insuffisance pondérale",
-    q18imc > 30 ~ "Obésité",
-    q18imc > 25 ~ "Surpoids",
-    TRUE ~ "Corpulence normale"
-  ))
-
 
 # Création d'un vecteur de correspondance
 labels_frequencejeu <- c("Jamais", "Une fois par mois ou moins", 
@@ -42,26 +32,13 @@ labels_sport <- c("Chaque jour", "4 à 6 fois par semaine", "3 fois par semaine"
 labels_sportred <- c("Jamais ou presque jamais", "Une fois par semaine",
                      "Plusieurs fois par semaine", "Chaque jour")
 
-labels_non_oui <- c("Non", "Oui")
-
 
 # Remplacement des valeurs numériques par les catégories
 data$QB02 <- factor(labels_frequencejeu[data$QB02], levels = labels_frequencejeu)
-data$qb07abcdef1 <- factor(labels_frequencejeu[data$qb07abcdef1], levels = labels_frequencejeu)
-data$QB07C1 <- factor(labels_frequencejeu[data$QB07C1], levels = labels_frequencejeu)
 
 data$Q20 <- factor(labels_sport[data$Q20], levels = labels_sport)
 
 
-
-
-ordre_IMC <- c("Insuffisance pondérale", "Corpulence normale", 
-               "Surpoids", "Obésité")
-data$IMC <- factor(data$IMC, levels = ordre_IMC)
-
-
-
-print(data$Q20)
 data <- data %>% 
   mutate(Q20 = case_when(
     Q20 == "4 à 6 fois par semaine" |
@@ -74,16 +51,12 @@ data <- data %>%
     Q20 == "Une fois par semaine" ~ "Une fois par semaine"
   ))
 
-data <- data %>% 
-  mutate(Q21A = case_when(
-    Q21A == 1 ~ "Non",
-    Q21A == 2 ~ "Oui"
-  ))
 
 data$Q20 <- factor(data$Q20, levels = labels_sportred)
 
 
-# GRAPHIQUE 2
+
+# GRAPHIQUE 1 : Freq JV en fonction du sport
 data_clean_sport_freqJV <- data %>% filter(!is.na(Q20) & !is.na(QB02))
 # Calculer les pourcentages par groupe de sportifs
 data_pourc_sport_freqJV <- data_clean_sport_freqJV %>%
