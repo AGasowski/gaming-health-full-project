@@ -265,3 +265,104 @@ ggplot(data_pourcentage_4, aes(x = IMC_categorie, y = pct, fill = jours_joué_pa
 #
 #
 #
+### graphique fréquence de jeu video
+# Créer un dataframe avec les intitulés des modalités
+labels <- c("jamais", "1 fois par mois ou moins", "2-3 fois par mois", "1 fois par semaine", "plusieurs fois par semaine", "tous les jours ou presque")
+
+# Filtrer les valeurs NA dans QB01A
+filtered_data <- data %>%
+  filter(!is.na(QB02))
+
+# Calculer le nombre total de réponses valides
+total_responses <- nrow(filtered_data)
+
+# Calculer les proportions pour chaque catégorie
+proportions <- filtered_data %>%
+  count(QB02) %>%
+  mutate(proportion = n / total_responses * 100)
+
+
+# Créer le graphique en barres
+ggplot(proportions, aes(x = factor(QB02, levels = 1:6, labels = labels), y = proportion)) +
+  geom_bar(stat = "identity", fill = "skyblue") +
+  labs(
+    title = "Fréquence de consommation du jeu vidéo",
+    x = "Fréquence de consommation",
+    y = "Pourcentage"
+  ) +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    plot.title = element_text(hjust = 0.5)
+  )
+tab <- sum(data$QB02 %in%c(5,6), na.rm = T)
+tab
+tab <- sum(data$QB02 %in% c(1,2,3,4,5,6), na.rm = T)
+tab
+
+## répartition homme femme
+# Charger les bibliothèques nécessaires
+# Charger les bibliothèques nécessaires
+library(ggplot2)
+library(dplyr)
+library(tidyr)
+
+# Créer un dataframe avec les intitulés des modalités
+modalites <- c("jamais", "une fois par mois ou moins", "2-3 fois par mois",
+               "une fois par semaine", "plusieurs fois par semaine", "tous les jours ou presque")
+
+# Regrouper les variables QBO7abcdef1 et QB02 dans un seul dataframe
+variables <- c("qbO7abcdef1","QB02")
+
+# Filtrer les valeurs NA et regrouper les données
+data_long <- data %>%
+  select(all_of(variables), Q03) %>%
+  pivot_longer(cols = all_of(variables), names_to = "variable", values_to = "modalite") %>%
+  filter(!is.na(modalite)) %>%
+  mutate(modalite = factor(modalite, levels = 1:2, labels = modalites))
+
+# Calculer les proportions pour chaque catégorie en fonction du sexe
+proportions <- data_long %>%
+  group_by(variable, modalite, Q03) %>%
+  summarise(count = n(), .groups = 'drop') %>%
+  mutate(proportion = count / sum(count))
+
+# Créer le graphique en barres empilées
+ggplot(proportions, aes(x = variable, y = proportion, fill = factor(Q03, labels = c("Homme", "Femme")))) +
+  geom_bar(stat = "identity", position = "dodge") +
+  facet_wrap(~ modalite, scales = "free_x") +
+  labs(
+    title = "Fréquence des activités par sexe",
+    x = "Variable",
+    y = "Pourcentage",
+    fill = "Sexe"
+  ) +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    plot.title = element_text(hjust = 0.5)
+  )
+
+# Filtrer les valeurs NA et regrouper les données pour QB02
+data_long_qb02 <- data %>%
+  select(QB02, Q03) %>%
+  filter(!is.na(QB02)) %>%
+  mutate(modalite = factor(QB02, levels = 1:6, labels = modalites))
+
+# Calculer les proportions pour chaque catégorie en fonction du sexe pour QB02
+proportions_qb02 <- data_long_qb02 %>%
+  group_by(modalite, Q03) %>%
+  summarise(count = n(), .groups = 'drop') %>%
+  mutate(proportion = count / sum(count))
+
+# Créer le graphique en barres empilées pour QB02
+ggplot(proportions_qb02, aes(x = modalite, y = proportion, fill = factor(Q03, labels = c("Homme", "Femme")))) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(
+    title = "Fréquence des activités (QB02) par sexe",
+    x = "Modalité",
+    y = "Pourcentage",
+    fill = "Sexe"
+  ) +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    plot.title = element_text(hjust = 0.5)
+  )
