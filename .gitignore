@@ -4,15 +4,5 @@
 .Ruserdata
 
 # Fichiers LaTeX à ignorer
-rapport.aux
-rapport.log
-rapport.toc
-rapport.out
-rapport.synctex.gz
-rapport.fls
-rapport.fdb_latexmk
-rapport.blg
-rapport.bbl
-rapport.nav
-rapport.snm
-rapport.vrb
+rapport.*
+!rapport.tex
