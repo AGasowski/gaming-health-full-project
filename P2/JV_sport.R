@@ -38,6 +38,8 @@ data$QB02 <- factor(labels_frequencejeu[data$QB02], levels = labels_frequencejeu
 
 data$Q20 <- factor(labels_sport[data$Q20], levels = labels_sport)
 
+
+
 data <- data %>% 
   mutate(Q20 = case_when(
     Q20 == "4 à 6 fois par semaine" |
@@ -75,6 +77,80 @@ data_pourc_sport_freqJV <- data_clean_sport_freqJV %>%
 
 # Création du graphique à barres empilées (100%)
 ggplot(data_pourc_sport_freqJV, aes(x = Q20, y = pct, fill = QB02)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
+  labs(title = "Répartition de la fréquence de jeux vidéo par fréquence d'activité sportive",
+       x = "Fréquence de pratique sportive",
+       y = "Pourcentage",
+       fill = "Fréquence de jeux vidéo") +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = 0.5))  # Centrer le titre
+
+
+
+
+
+
+
+
+
+# GRAPHIQUE 2 : Freq JV simplifiée en fonction du sport
+data_clean_sport_freqJV <- data %>% filter(!is.na(Q20) & !is.na(QB02) & QB02!="Jamais")
+
+data_clean_sport_freqJV <- data_clean_sport_freqJV %>% 
+  mutate(QB02 = case_when(
+    QB02 == "Une fois par mois ou moins" |
+      QB02 == "2-3 fois par mois" ~ "Moins d'une fois par semaine",
+    QB02 == "Une fois par semaine" |
+      QB02 == "Plusieurs fois par semaine" ~ "Au moins une fois par semaine",
+    QB02 == "Tous les jours ou presque" ~ "Au quotidien" ,
+  ))
+
+# Calculer les pourcentages par groupe de sportifs
+data_pourc_sport_freqJV <- data_clean_sport_freqJV %>%
+  count(Q20, QB02) %>%
+  group_by(Q20) %>%
+  mutate(pct = n / sum(n) * 100)
+
+
+data_pourc_sport_freqJV$QB02 <- factor(data_pourc_sport_freqJV$QB02, 
+                                               levels = c("Moins d'une fois par semaine", "Au moins une fois par semaine", "Au quotidien"))
+
+
+
+# Création du graphique à barres empilées (100%)
+ggplot(data_pourc_sport_freqJV, aes(x = Q20, y = pct, fill = QB02)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
+  labs(title = "Répartition de la fréquence de jeux vidéo par fréquence d'activité sportive",
+       x = "Fréquence de pratique sportive",
+       y = "Pourcentage",
+       fill = "Fréquence de jeux vidéo") +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = 0.5))  # Centrer le titre
+
+
+
+
+
+
+
+
+# GRAPHIQUE 3 : Prop de JV en fonction de sport
+data_clean_sport_freqJV <- data %>% filter(!is.na(Q20) & !is.na(QB02))
+
+data_clean_sport_freqJV <- data_clean_sport_freqJV %>%
+  mutate(QB02simp = ifelse(QB02 == "Jamais", "Non joueur", "Joueur"))
+
+# Calculer les pourcentages par groupe de sportifs
+data_pourc_sport_freqJV <- data_clean_sport_freqJV %>%
+  count(Q20, QB02simp) %>%
+  group_by(Q20) %>%
+  mutate(pct = n / sum(n) * 100)
+
+
+# Création du graphique à barres empilées (100%)
+ggplot(data_pourc_sport_freqJV, aes(x = Q20, y = pct, fill = fct_rev(QB02simp))) +
   geom_bar(stat = "identity") +
   geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
   labs(title = "Répartition de la fréquence de jeux vidéo par fréquence d'activité sportive",
