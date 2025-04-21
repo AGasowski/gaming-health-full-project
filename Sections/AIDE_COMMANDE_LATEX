@@ -34,3 +34,9 @@ Code pour insérer un tableau (exemple):
     \textit{Source: Source des données (Enquête ESCAPAD 2022)}}
     \label{fig: Nom du tableau (il n'est pas écrit sur le pdf)}
 \end{table}
+
+
+
+
+Code pour souligner du texte
+\uline{Texte à souligner}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.2)  21 APR 2025 10:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.2)  21 APR 2025 12:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -287,49 +287,66 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip54
+) (C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex/latex/ulem\ulem.sty
+\UL@box=\box55
+\UL@hyphenbox=\box56
+\UL@skip=\skip55
+\UL@hook=\toks26
+\UL@height=\dimen177
+\UL@pe=\count308
+\UL@pixel=\dimen178
+\ULC@box=\box57
+Package: ulem 2019/11/18
+\ULdepth=\dimen179
 ) (C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count308
-\l__pdf_internal_box=\box55
+\l__color_backend_stack_int=\count309
+\l__pdf_internal_box=\box58
 ) (rapport.aux (Sections/intro.aux) (Sections/p1.aux) (Sections/p2.aux) (Sections/p3.aux) (Sections/conclusion.aux) (Sections/Bibliographie.aux) (Sections/annexes.aux))
 \openout1 = `rapport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Info: Redefining \degres on input line 19.
-LaTeX Info: Redefining \up on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Info: Redefining \degres on input line 20.
+LaTeX Info: Redefining \up on input line 20.
  (C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count309
-\scratchdimen=\dimen177
-\scratchbox=\box56
-\nofMPsegments=\count310
-\nofMParguments=\count311
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count312
-\MPscratchDim=\dimen178
-\MPnumerator=\count313
-\makeMPintoPDFobject=\count314
-\everyMPtoPDFconversion=\toks27
+\scratchcounter=\count310
+\scratchdimen=\dimen180
+\scratchbox=\box59
+\nofMPsegments=\count311
+\nofMParguments=\count312
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count313
+\MPscratchDim=\dimen181
+\MPnumerator=\count314
+\makeMPintoPDFobject=\count315
+\everyMPtoPDFconversion=\toks28
 ) (C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+ (C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
  (C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
@@ -372,15 +389,15 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 19.
+Package hyperref Info: Link coloring OFF on input line 20.
 (rapport.out) (rapport.out)
 \@outlinefile=\write3
 \openout3 = `rapport.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 34.
+(Font)              <14.4> on input line 35.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 34.
+(Font)              <7> on input line 35.
  [1
 
 {C:/Users/Alexandre/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (rapport.toc
@@ -398,7 +415,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.63 \newpage
+l.64 \newpage
               [1]
 \openout2 = `Sections/intro.aux'.
 
@@ -408,140 +425,142 @@ l.63 \newpage
 \openout2 = `Sections/p1.aux'.
 
  (Sections/p1.tex
-<Images/Frequence_conso_jeuxA.pdf, id=92, 627.34375pt x 386.44376pt>
+<Images/Frequence_conso_jeuxA.pdf, id=98, 627.34375pt x 386.44376pt>
 File: Images/Frequence_conso_jeuxA.pdf Graphic file (type pdf)
 <use Images/Frequence_conso_jeuxA.pdf>
-Package pdftex.def Info: Images/Frequence_conso_jeuxA.pdf  used on input line 19.
+Package pdftex.def Info: Images/Frequence_conso_jeuxA.pdf  used on input line 24.
 (pdftex.def)             Requested size: 449.55322pt x 276.93613pt.
  [3
 
 
 
  <./Images/Frequence_conso_jeuxA.pdf>]
-Overfull \hbox (17.90672pt too wide) in paragraph at lines 42--48
+Overfull \hbox (17.58043pt too wide) in paragraph at lines 53--60
  [][] 
  []
 
-<Images/Fréquence_conso_jeuV2.pdf, id=104, 627.34375pt x 386.44376pt>
+<Images/Fréquence_conso_jeuV2.pdf, id=110, 627.34375pt x 386.44376pt>
 File: Images/Fréquence_conso_jeuV2.pdf Graphic file (type pdf)
 <use Images/Fréquence_conso_jeuV2.pdf>
-Package pdftex.def Info: Images/Fréquence_conso_jeuV2.pdf  used on input line 56.
+Package pdftex.def Info: Images/Fréquence_conso_jeuV2.pdf  used on input line 70.
 (pdftex.def)             Requested size: 449.55322pt x 276.93613pt.
 [4 <./Images/Fréquence_conso_jeuV2.pdf>] [5]
-Overfull \hbox (297.92107pt too wide) in paragraph at lines 71--75
-\T1/cmr/m/n/12 femmes. Pour les jeux d'ar-gent par exemple, l'�tude $[]$
- []
-
-<Images/freq_par_sexe.pdf, id=122, 578.16pt x 386.44376pt>
+<Images/freq_par_sexe.pdf, id=128, 578.16pt x 386.44376pt>
 File: Images/freq_par_sexe.pdf Graphic file (type pdf)
 <use Images/freq_par_sexe.pdf>
-Package pdftex.def Info: Images/freq_par_sexe.pdf  used on input line 77.
+Package pdftex.def Info: Images/freq_par_sexe.pdf  used on input line 108.
 (pdftex.def)             Requested size: 449.55322pt x 300.48145pt.
-) [6 <./Images/freq_par_sexe.pdf>]
+ [6 <./Images/freq_par_sexe.pdf>] [7]
+<P2/ACM.png, id=143, 790.45313pt x 451.6875pt>
+File: P2/ACM.png Graphic file (type png)
+<use P2/ACM.png>
+Package pdftex.def Info: P2/ACM.png  used on input line 148.
+(pdftex.def)             Requested size: 449.55322pt x 256.88559pt.
+ [8 <./P2/ACM.png>]) [9]
 \openout2 = `Sections/p2.aux'.
 
  (Sections/p2.tex
-<Images/P2/JA_IMC.png, id=133, 596.2275pt x 348.30125pt>
+<Images/P2/JA_IMC.png, id=154, 596.2275pt x 348.30125pt>
 File: Images/P2/JA_IMC.png Graphic file (type png)
 <use Images/P2/JA_IMC.png>
 Package pdftex.def Info: Images/P2/JA_IMC.png  used on input line 57.
 (pdftex.def)             Requested size: 449.55322pt x 262.61772pt.
- [7
+ [10
 
 
 
 ]
-<Images/P2/JA_freqsimp_joueurs_IMC.png, id=139, 617.80812pt x 376.40625pt>
+<Images/P2/JA_freqsimp_joueurs_IMC.png, id=160, 617.80812pt x 376.40625pt>
 File: Images/P2/JA_freqsimp_joueurs_IMC.png Graphic file (type png)
 <use Images/P2/JA_freqsimp_joueurs_IMC.png>
 Package pdftex.def Info: Images/P2/JA_freqsimp_joueurs_IMC.png  used on input line 75.
 (pdftex.def)             Requested size: 449.55322pt x 273.90126pt.
- [8 <./Images/P2/JA_IMC.png>]
-<Images/P2/JV_IMC.png, id=146, 560.59438pt x 353.82187pt>
+ [11 <./Images/P2/JA_IMC.png>]
+<Images/P2/JV_IMC.png, id=167, 560.59438pt x 353.82187pt>
 File: Images/P2/JV_IMC.png Graphic file (type png)
 <use Images/P2/JV_IMC.png>
 Package pdftex.def Info: Images/P2/JV_IMC.png  used on input line 95.
 (pdftex.def)             Requested size: 449.55322pt x 283.74893pt.
- [9 <./Images/P2/JA_freqsimp_joueurs_IMC.png (PNG copy)>]
-<Images/P2/JV_freqsimp_joueurs_IMC.png, id=152, 635.37375pt x 353.82187pt>
+ [12 <./Images/P2/JA_freqsimp_joueurs_IMC.png (PNG copy)>]
+<Images/P2/JV_freqsimp_joueurs_IMC.png, id=174, 635.37375pt x 353.82187pt>
 File: Images/P2/JV_freqsimp_joueurs_IMC.png Graphic file (type png)
 <use Images/P2/JV_freqsimp_joueurs_IMC.png>
 Package pdftex.def Info: Images/P2/JV_freqsimp_joueurs_IMC.png  used on input line 107.
 (pdftex.def)             Requested size: 449.55322pt x 250.35146pt.
- [10 <./Images/P2/JV_IMC.png> <./Images/P2/JV_freqsimp_joueurs_IMC.png (PNG copy)>] [11]
-<Images/P2/JA&PS&sans_sport.png, id=164, 701.62125pt x 357.335pt>
+ [13 <./Images/P2/JV_IMC.png> <./Images/P2/JV_freqsimp_joueurs_IMC.png (PNG copy)>] [14]
+<Images/P2/JA&PS&sans_sport.png, id=186, 701.62125pt x 357.335pt>
 File: Images/P2/JA&PS&sans_sport.png Graphic file (type png)
 <use Images/P2/JA&PS&sans_sport.png>
 Package pdftex.def Info: Images/P2/JA&PS&sans_sport.png  used on input line 138.
 (pdftex.def)             Requested size: 449.55322pt x 228.96078pt.
-<Images/P2/JV_sport.png, id=165, 662.475pt x 376.40625pt>
+<Images/P2/JV_sport.png, id=187, 662.475pt x 376.40625pt>
 File: Images/P2/JV_sport.png Graphic file (type png)
 <use Images/P2/JV_sport.png>
 Package pdftex.def Info: Images/P2/JV_sport.png  used on input line 166.
 (pdftex.def)             Requested size: 449.55322pt x 255.42445pt.
- [12 <./Images/P2/JA&PS&sans_sport.png>]
-<Images/P2/JVfreqsimp_sport.png, id=173, 635.37375pt x 376.40625pt>
+ [15 <./Images/P2/JA&PS&sans_sport.png>]
+<Images/P2/JVfreqsimp_sport.png, id=194, 635.37375pt x 376.40625pt>
 File: Images/P2/JVfreqsimp_sport.png Graphic file (type png)
 <use Images/P2/JVfreqsimp_sport.png>
 Package pdftex.def Info: Images/P2/JVfreqsimp_sport.png  used on input line 180.
 (pdftex.def)             Requested size: 449.55322pt x 266.33134pt.
- [13 <./Images/P2/JV_sport.png> <./Images/P2/JVfreqsimp_sport.png>]
-<Images/P2/JA_medecin.png, id=182, 865.73438pt x 376.40625pt>
+ [16 <./Images/P2/JV_sport.png> <./Images/P2/JVfreqsimp_sport.png>]
+<Images/P2/JA_medecin.png, id=203, 865.73438pt x 376.40625pt>
 File: Images/P2/JA_medecin.png Graphic file (type png)
 <use Images/P2/JA_medecin.png>
 Package pdftex.def Info: Images/P2/JA_medecin.png  used on input line 194.
 (pdftex.def)             Requested size: 449.55322pt x 195.45668pt.
-<Images/P2/JV_medecin.png, id=183, 865.73438pt x 376.40625pt>
+<Images/P2/JV_medecin.png, id=204, 865.73438pt x 376.40625pt>
 File: Images/P2/JV_medecin.png Graphic file (type png)
 <use Images/P2/JV_medecin.png>
 Package pdftex.def Info: Images/P2/JV_medecin.png  used on input line 208.
 (pdftex.def)             Requested size: 449.55322pt x 195.45668pt.
-) [14 <./Images/P2/JA_medecin.png> <./Images/P2/JV_medecin.png>] [15]
+) [17 <./Images/P2/JA_medecin.png> <./Images/P2/JV_medecin.png>] [18]
 \openout2 = `Sections/p3.aux'.
 
  (Sections/p3.tex
-<Images/scoreADRSdistrib.pdf, id=197, 788.9475pt x 415.5525pt>
+<Images/scoreADRSdistrib.pdf, id=219, 788.9475pt x 415.5525pt>
 File: Images/scoreADRSdistrib.pdf Graphic file (type pdf)
 <use Images/scoreADRSdistrib.pdf>
 Package pdftex.def Info: Images/scoreADRSdistrib.pdf  used on input line 16.
 (pdftex.def)             Requested size: 359.64394pt x 189.43176pt.
-<Images/Etatsante_JV.png, id=198, 865.73438pt x 526.96875pt>
+<Images/Etatsante_JV.png, id=220, 865.73438pt x 526.96875pt>
 File: Images/Etatsante_JV.png Graphic file (type png)
 <use Images/Etatsante_JV.png>
 Package pdftex.def Info: Images/Etatsante_JV.png  used on input line 25.
 (pdftex.def)             Requested size: 359.64394pt x 218.91309pt.
- [16
+ [19
 
 
 
  <./Images/scoreADRSdistrib.pdf>]
-<Images/Etatsante_JA.png, id=209, 865.73438pt x 451.6875pt>
+<Images/Etatsante_JA.png, id=231, 865.73438pt x 451.6875pt>
 File: Images/Etatsante_JA.png Graphic file (type png)
 <use Images/Etatsante_JA.png>
 Package pdftex.def Info: Images/Etatsante_JA.png  used on input line 32.
 (pdftex.def)             Requested size: 359.64394pt x 187.63979pt.
- [17 <./Images/Etatsante_JV.png (PNG copy)> <./Images/Etatsante_JA.png (PNG copy)>] [18]
-<Images/JV_prioritaire_ADRS.pdf, id=224, 788.9475pt x 415.5525pt>
+ [20 <./Images/Etatsante_JV.png (PNG copy)> <./Images/Etatsante_JA.png (PNG copy)>] [21]
+<Images/JV_prioritaire_ADRS.pdf, id=245, 788.9475pt x 415.5525pt>
 File: Images/JV_prioritaire_ADRS.pdf Graphic file (type pdf)
 <use Images/JV_prioritaire_ADRS.pdf>
 Package pdftex.def Info: Images/JV_prioritaire_ADRS.pdf  used on input line 67.
 (pdftex.def)             Requested size: 359.64394pt x 189.43176pt.
-<Images/JV_prioritaire_etat_sante.pdf, id=226, 788.9475pt x 415.5525pt>
+<Images/JV_prioritaire_etat_sante.pdf, id=247, 788.9475pt x 415.5525pt>
 File: Images/JV_prioritaire_etat_sante.pdf Graphic file (type pdf)
 <use Images/JV_prioritaire_etat_sante.pdf>
 Package pdftex.def Info: Images/JV_prioritaire_etat_sante.pdf  used on input line 81.
 (pdftex.def)             Requested size: 359.64394pt x 189.43176pt.
- [19 <./Images/JV_prioritaire_ADRS.pdf> <./Images/JV_prioritaire_etat_sante.pdf>]) [20]
+ [22 <./Images/JV_prioritaire_ADRS.pdf> <./Images/JV_prioritaire_etat_sante.pdf>]) [23]
 \openout2 = `Sections/conclusion.aux'.
 
- (Sections/conclusion.tex) [21
+ (Sections/conclusion.tex) [24
 
 
 
 ]
 \openout2 = `Sections/Bibliographie.aux'.
 
- (Sections/Bibliographie.tex) [22
+ (Sections/Bibliographie.tex) [25
 
 
 
@@ -549,12 +568,12 @@ Package pdftex.def Info: Images/JV_prioritaire_etat_sante.pdf  used on input lin
 \openout2 = `Sections/annexes.aux'.
 
  (Sections/annexes.tex
-<Images/tableau_jeuA_PCSper-1.png, id=260, 372.55185pt x 97.20316pt>
+<Images/tableau_jeuA_PCSper-1.png, id=282, 372.55185pt x 97.20316pt>
 File: Images/tableau_jeuA_PCSper-1.png Graphic file (type png)
 <use Images/tableau_jeuA_PCSper-1.png>
 Package pdftex.def Info: Images/tableau_jeuA_PCSper-1.png  used on input line 4.
 (pdftex.def)             Requested size: 449.55322pt x 117.29877pt.
-) [23
+) [26
 
 
 
@@ -564,20 +583,20 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: C82073AE9C51AA0D88FC74275ACA4CCB;3205.
+(rerunfilecheck)             Checksum: 235124DEE377A36E86D95128471543DD;3702.
  ) 
 Here is how much of TeX's memory you used:
- 13303 strings out of 474486
- 226734 string characters out of 5741868
+ 13446 strings out of 474486
+ 229062 string characters out of 5741868
  1933542 words of memory out of 5000000
- 35325 multiletter control sequences out of 15000+600000
- 569782 words of font info for 60 fonts, out of 8000000 for 9000
+ 35454 multiletter control sequences out of 15000+600000
+ 569888 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,15n,79p,669b,572s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,15n,79p,605b,572s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1440.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1440.pk> <C:\Users\Alexandre\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk>
-Output written on rapport.pdf (24 pages, 495557 bytes).
+Output written on rapport.pdf (27 pages, 524001 bytes).
 PDF statistics:
- 647 PDF objects out of 1000 (max. 8388607)
- 59 named destinations out of 1000 (max. 500000)
- 203 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 679 PDF objects out of 1000 (max. 8388607)
+ 64 named destinations out of 1000 (max. 500000)
+ 216 words of extra memory for PDF output out of 10000 (max. 10000000)
 

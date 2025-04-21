@@ -126,6 +126,9 @@ INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\
 INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
 INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
 INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex\latex\ulem\ulem.sty
+INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex\latex\ulem\ulem.sty
+INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy6.tfm
 INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT .\rapport.aux
@@ -158,6 +161,8 @@ INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\sup
 INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex\latex\grfext\grfext.sty
+INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex\latex\grfext\grfext.sty
 INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\Alexandre\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
@@ -224,6 +229,13 @@ INPUT .\Images\freq_par_sexe.pdf
 INPUT .\Images\freq_par_sexe.pdf
 INPUT .\Images\freq_par_sexe.pdf
 INPUT .\Images\freq_par_sexe.pdf
+INPUT .\P2\ACM.png
+INPUT .\P2\ACM.png
+INPUT .\P2\ACM.png
+INPUT .\P2\ACM.png
+INPUT .\P2\ACM.png
+INPUT .\P2\ACM.png
+INPUT .\P2\ACM.png
 INPUT .\Sections\p2.tex
 OUTPUT Sections\p2.aux
 INPUT .\Sections\p2.tex
