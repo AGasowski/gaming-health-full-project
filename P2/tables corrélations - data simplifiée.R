@@ -68,5 +68,5 @@ for (ligne in vars_lignes) {
 tableau_final <- do.call(rbind, resultats)
 
 # Écrire dans un fichier Excel
-write_xlsx(tableau_final, "resultats_chi2é.xlsx")
+write_xlsx(tableau_final, "resultats_chi2_avecmise.xlsx")
 
