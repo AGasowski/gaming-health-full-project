@@ -2,3 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
+
+# Fichiers LaTeX à ignorer
+rapport.*
+!rapport.tex

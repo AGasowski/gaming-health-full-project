@@ -7,9 +7,13 @@
 \usepackage{float}
 \usepackage{multirow}
 \usepackage{blindtext}
-\usepackage{hyperref}
 \usepackage[a4paper, top=2cm,bottom=2cm,margin=3cm, left=2.6cm, right=2.6cm]{geometry}
 \usepackage{setspace}
+\usepackage{makecell}
+\usepackage{hyperref}
+\usepackage[normalem]{ulem}
+
+\renewcommand{\thefigure}{\arabic{figure}}  % Utiliser la numérotation globale des figures
 
 
 
@@ -37,7 +41,7 @@ Grégoire \textsc{WEBER}\\
 
 \begin{flushright} \large
 \emph{\underline{Tuteur:}} \\ \vspace{0.2cm}
-Prénom \textsc{Nom} \\ \vspace{0.6cm}
+Nadège \textsc{JULLIARD} \\ \vspace{0.6cm}
 \end{flushright}
 
 \vfill
@@ -55,9 +59,10 @@ Prénom \textsc{Nom} \\ \vspace{0.6cm}
 
 \newpage
 \singlespacing
-\tableofcontents 
+\tableofcontents
 
 \newpage
+
 
 \include{Sections/intro.tex}
 
