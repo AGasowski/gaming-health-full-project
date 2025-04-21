@@ -12,12 +12,22 @@ datainitial <- read.csv("data_simplifiee.csv", header = TRUE)
 data <- datainitial %>% 
   filter(!is.na(QB01A) & !is.na(QB01B)  & !is.na(QB01C)  & !is.na(QB01D))
 
+datasansNA <- datainitial %>% 
+  filter(!is.na(QB01A) & !is.na(QB01B) & !is.na(QB01C) & !is.na(QB07A1) & !is.na(QB07B1) & 
+           !is.na(QB07D1) & !is.na(QB07E1) & !is.na(QB07F1) & !is.na(freqJA) & !is.na(QB08A) & 
+           !is.na(QB08B) & !is.na(QB08C) & !is.na(QB08D) & !is.na(QB08E) & !is.na(QB08F) & 
+           !is.na(QB08G) & !is.na(QB08H) & !is.na(QB08I) & !is.na(JoueurJV) & !is.na(JoueurJA) & 
+           !is.na(freqSport) & !is.na(freqMedecin) & !is.na(ADRS_cat) & !is.na(Q21C) & !is.na(Q21E) & 
+           !is.na(Q22A) & !is.na(Q22B) & !is.na(Q22C) & !is.na(Q22D) & !is.na(Q22E) & 
+           !is.na(Q22F) & !is.na(Q22G) & !is.na(Q22H) & !is.na(Q22I) & !is.na(Q22J) & 
+           !is.na(Q23) & !is.na(Q24))
+
 # Définir les variables à mettre en lignes et en colonnes
-vars_lignes <- c("QB07A1", "QB07B1", "QB07C1", "QB07D1", "QB07E1", "QB07F1", "qb07abcdef1",  
+vars_lignes <- c("QB07A1", "QB07B1", "QB07C1", "QB07D1", "QB07E1", "QB07F1", "freqJA",  
                  "QB08A", "QB08B", "QB08C", "QB08D", "QB08E", "QB08F", "QB08G", "QB08H", "QB08I",
                  "JoueurJV", "JoueurJA")
 
-vars_colonnes <- c("Q20", "Q21A", "ADRS_cat", "Q21C", "Q21E", "Q22A", "Q22B", "Q22C",  
+vars_colonnes <- c("freqSport", "freqMedecin", "ADRS_cat", "Q21C", "Q21E", "Q22A", "Q22B", "Q22C",  
                    "Q22D", "Q22E", "Q22F", "Q22G", "Q22H", "Q22I", "Q22J", "Q23", "Q24")
 
 
@@ -68,5 +78,66 @@ for (ligne in vars_lignes) {
 tableau_final <- do.call(rbind, resultats)
 
 # Écrire dans un fichier Excel
-write_xlsx(tableau_final, "resultats_chi2_avecmise.xlsx")
+write_xlsx(tableau_final, "resultats_chi2.xlsx")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#SANS NA
+# Boucle sur toutes les combinaisons ligne x colonne
+for (ligne in vars_lignes) {
+  for (colonne in vars_colonnes) {
+    # Créer une table de contingence
+    tab <- table(datasansNA[[ligne]], datasansNA[[colonne]])
+    
+    # Faire le test du chi²
+    test <- chisq.test(tab)
+    
+    # Calcul du V de Cramer
+    N <- sum(tab)  # Taille de l'échantillon
+    k <- min(nrow(tab), ncol(tab))  # Plus petit nombre de catégories
+    V_Cramer <- sqrt(test$statistic / (N * (k - 1)))
+    
+    # Déterminer l'interprétation du test
+    interpretation <- ifelse(test$p.value <= 0.05, "Il y a un lien", "Il y a indépendance")
+    
+    # Déterminer la force du lien
+    force_lien <- case_when(
+      V_Cramer < 0.1 ~ "Très faible",
+      V_Cramer < 0.3 ~ "Faible",
+      V_Cramer < 0.5 ~ "Modéré",
+      TRUE ~ "Fort"
+    )
+    
+    # Sauvegarder les résultats
+    nom <- paste(ligne, "vs", colonne)
+    resultats[[nom]] <- data.frame(
+      Variable_Ligne = ligne,
+      Variable_Colonne = colonne,
+      Chi2 = as.numeric(test$statistic),
+      p_value = as.numeric(test$p.value),
+      Degre_liberté = as.numeric(test$parameter),
+      Interpretation = interpretation,
+      V_Cramer = as.numeric(V_Cramer),
+      Force_Lien = force_lien
+    )
+  }
+}
+
+# Combiner tous les résultats dans un seul data frame
+tableau_final <- do.call(rbind, resultats)
+
+# Écrire dans un fichier Excel
+write_xlsx(tableau_final, "resultats_chi2_sansNA.xlsx")
 
