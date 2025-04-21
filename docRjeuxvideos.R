@@ -3,6 +3,7 @@ rm(list=ls())
 install.packages("dplyr")
 install.packages("vcd")
 install.packages("ggplot2")
+install.packages("bbplot")
 
 library(ggplot2)
 library(vcd)
@@ -285,8 +286,9 @@ proportions <- filtered_data %>%
 # Créer le graphique en barres
 ggplot(proportions, aes(x = factor(QB02, levels = 1:6, labels = labels), y = proportion)) +
   geom_bar(stat = "identity", fill = "skyblue") +
+  geom_text(aes(label = round(proportion, 1)), vjust = -0.3, color = "black") +
   labs(
-    title = "Fréquence de consommation du jeu vidéo",
+    title = "Répartition de la population selon sa consommation de jeux vidéo",
     x = "Fréquence de consommation",
     y = "Pourcentage"
   ) +
