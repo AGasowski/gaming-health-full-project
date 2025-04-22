@@ -8,6 +8,7 @@ library(writexl)
 library(tidyverse)
 library(readr)
 
+setwd("C:/Users/Alexandre/Desktop/ENSAI/Projet_Stat/projetstat")
 datainitial <- read.csv2("Enquête 2022-20250104/bdd_2022.csv", header = TRUE)
 
 # data contient tous les individus qui ont répondu
@@ -153,13 +154,17 @@ data <- data %>%
   mutate(JoueurJA = ifelse(qb07abcdef1 == "Jamais", "Non joueur", "Joueur"))
 data <- data %>%
   mutate(JoueurJV = ifelse(QB02 == "Jamais", "Non joueur", "Joueur"))
+data <- data %>% 
+  mutate(JoueurPS = ifelse(QB07C1 == "Jamais", "Non joueur", "Joueur"))
+data <- data %>% 
+  mutate(Sportif = ifelse(Q20 == "Jamais ou presque jamais", "Non sportif", "Sportif"))
 
 
 
 # Renommer les variables pour l'ACM
 data <- data %>%
   rename(freqJA = qb07abcdef1, freqJV = QB02, freqSport = Q20, freqMedecin = Q21A,
-         )
+         Etat_sante = Q17)
 
 
 
