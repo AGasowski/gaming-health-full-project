@@ -25,6 +25,25 @@ data <- data %>%
   ))
 
 
+#Catégorie de parieur (en mise habituelle et maximale)
+data <- data %>%
+  mutate(mise_habituelle = case_when(
+    QB10B > 0 & QB10B <= 10 ~ 1,           # 1 pour 0-10
+    QB10B > 10 & QB10B <= 25 ~ 2,          # 2 pour 10-25
+    QB10B > 25 & QB10B <= 50 ~ 3,          # 3 pour 25-50
+    QB10B > 50 ~ 4,                        # 4 pour + de 50
+  ))
+
+data <- data %>%
+  mutate(mise_maximale = case_when(
+    QB11 > 0 & QB11 <= 10 ~ 1,           # 1 pour 0-10
+    QB11 > 10 & QB11 <= 25 ~ 2,          # 2 pour 10-25
+    QB11 > 25 & QB11 <= 50 ~ 3,          # 3 pour 25-50
+    QB11 > 50 ~ 4,                       # 4 pour + de 50
+  ))
+
+
+
 # Réduction jeux d'argent
 data <- data %>%
   mutate(qb07abcdef1 = case_when(
@@ -139,7 +158,8 @@ data <- data %>%
 
 # Renommer les variables pour l'ACM
 data <- data %>%
-  rename(freqJA = qb07abcdef1, freqJV = QB02, freqSport = Q20, freqMedecin = Q21A)
+  rename(freqJA = qb07abcdef1, freqJV = QB02, freqSport = Q20, freqMedecin = Q21A,
+         )
 
 
 

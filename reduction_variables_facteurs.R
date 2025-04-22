@@ -8,6 +8,7 @@ library(writexl)
 library(tidyverse)
 library(readr)
 
+setwd("C:/Users/Alexandre/Desktop/ENSAI/Projet_Stat/projetstat")
 datainitial <- read.csv2("Enquête 2022-20250104/bdd_2022.csv", header = TRUE)
 
 # data contient tous les individus qui ont répondu
@@ -16,6 +17,9 @@ data <- datainitial %>%
   filter(!is.na(QB01A) & !is.na(QB01B)  & !is.na(QB01C)  & !is.na(QB01D))
 
 
+# Création de variables 
+
+# Catégories d'IMC
 data <- data %>% 
   mutate(IMC = case_when(
     q18imc < 18.5 ~ 1,
@@ -23,6 +27,24 @@ data <- data %>%
     q18imc > 25 ~ 3,
     TRUE ~ 4
   ))
+
+#Catégorie de parieur (en mise maximale)
+table(data$QB10B)
+summary(data$QB10B)
+print(data$QB10B)
+sum(is.na(data$QB10B))
+max(data$QB10B)
+data$QB10B[!is.na(data$QB10B)]
+
+data <- data %>%
+  mutate(mise_cat = case_when(
+    QB10B > 0 & QB10B <= 10 ~ 1,           # 1 pour 0-10
+    QB10B > 10 & QB10B <= 25 ~ 2,          # 2 pour 10-25
+    QB10B > 25 & QB10B <= 50 ~ 3,          # 3 pour 25-50
+    QB10B > 50 ~ 4,                        # 4 pour + de 50
+  ))
+
+
 
 
 # Réduction jeux d'argent
