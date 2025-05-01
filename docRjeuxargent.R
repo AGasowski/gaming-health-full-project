@@ -425,7 +425,7 @@ proportions <- filtered_data %>%
 
 # Créer le graphique en barres avec les pourcentages sur les barres
 ggplot(proportions, aes(x = factor(qb07abcdef1, levels = 1:6, labels = labels), y = proportion)) +
-  geom_bar(stat = "identity", fill = "skyblue") +
+  geom_bar(stat = "identity") +
   geom_text(aes(label = round(proportion, 1)), vjust = -0.3, color = "black") + # Ajouter les pourcentages
   labs(
     title = "Répartition de la population selon sa consommation de jeux d'argent",
@@ -440,8 +440,8 @@ ggplot(proportions, aes(x = factor(qb07abcdef1, levels = 1:6, labels = labels), 
 
 
 # Créer un dataframe avec les intitulés des modalités
-modalites <- c("jamais", "une fois par mois ou moins", "2-3 fois par mois",
-               "une fois par semaine", "plusieurs fois par semaine", "tous les jours ou presque")
+modalites <- c("jamais", "1 fois par mois ou moins", "2-3 fois par mois",
+               "1 fois par semaine", "plusieurs fois par semaine", "tous les jours ou presque")
 
 # Regrouper les données pour qb07abcdef1 et QB02, en excluant les NA
 data_long <- data %>%
@@ -476,6 +476,7 @@ ggplot(proportions, aes(x = modalite, y = proportion, fill = factor(Q03, labels 
     y = "Pourcentage des joueurs par sexe",
     fill = "Sexe"
   ) +
+  scale_fill_few() +
   theme(
     axis.text.x = element_text(angle = 45, hjust = 1),
     plot.title = element_text(hjust = 0.5)
@@ -512,32 +513,77 @@ tableau_croise <- data_filtered %>%
 # Afficher le tableau croisé
 print(tableau_croise)
 
+#### graphique joueur et non joueurs de poker paris sportif et ticket
+# Supprimer les valeurs NA
+data_filtered <- data_filtered %>%
+  filter(!is.na(QB07B1) & !is.na(QB07C1) & !is.na(QB07E1))
 
-###graphique des différents jeux d'argent
+# Créer une fonction pour transformer les données
+transform_data <- function(data, var_name) {
+  data %>%
+    select(!!sym(var_name)) %>%
+    mutate(category = case_when(
+      .data[[var_name]] == 1 ~ "Non joueur",
+      .data[[var_name]] %in% 2:6 ~ "Joueur"
+    )) %>%
+    group_by(category) %>%
+    summarise(count = n()) %>%
+    mutate(percentage = count / sum(count) * 100)
+}
+
+# Appliquer la transformation aux trois variables
+tickets <- transform_data(data_filtered, "QB07B1")
+paris_sportifs <- transform_data(data_filtered, "QB07C1")
+poker <- transform_data(data_filtered, "QB07E1")
+
+# Combiner les données
+combined_data <- bind_rows(
+  tickets %>% mutate(variable = "tickets à gratter"),
+  paris_sportifs %>% mutate(variable = "paris sportifs"),
+  poker %>% mutate(variable = "poker")
+)
+
+ggplot(combined_data, aes(x = variable, y = percentage, fill = category)) +
+  geom_bar(stat = "identity", position = "stack") +
+  geom_text(aes(label = paste0(round(percentage, 1), "%")),
+            position = position_stack(vjust = 0.5)) +
+  scale_fill_few() +
+  labs(title = "Pratique des individus selon le jeu d'argent",
+       x = "Jeux d'argent",
+       y = "Part des individus",
+       fill = "Catégorie") +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = 0.5))
 
 
+
+#### Pour ces 3 jeux à quelle fréquence
 # Créer un dataframe avec les intitulés des modalités
-modalites <- c("jamais", "une fois par mois ou moins", "2-3 fois par mois",
+modalites <- c("jamais", "1 fois par mois ou moins", "2-3 fois par mois",
                "une fois par semaine", "plusieurs fois par semaine", "tous les jours ou presque")
 
 # Exemple de données (à remplacer par vos données réelles)
 data_filtered <- data %>%
   filter(!is.na(QB07C1) & !is.na(QB07B1) & !is.na(QB07E1)) %>%
   mutate(
-    ticket = factor(QB07B1, levels = 1:6, labels = modalites),
-    paris_sportif = factor(QB07C1, levels = 1:6, labels = modalites),
-    poker = factor(QB07E1, levels = 1:6, labels = modalites)
+    ticket = factor(QB07B1, levels = 1:6, labels = c(modalites)),
+    paris_sportif = factor(QB07C1, levels = 1:6, labels = c(modalites)),
+    poker = factor(QB07E1, levels = 1:6, labels = c(modalites))
   )
 
 # Transformer les données en format long
 data_long <- data_filtered %>%
   pivot_longer(cols = c(ticket, paris_sportif, poker), names_to = "variable", values_to = "modalite")
 
+# Filtrer pour exclure la modalité "jamais" (1)
+data_long <- data_long %>%
+  filter(modalite != "jamais")
+
 # Calculer le nombre d'occurrences pour chaque modalité
 data_counts <- data_long %>%
   count(variable, modalite)
 
-# Calculer le nombre total d'occurrences pour chaque variable
+# Calculer le nombre total d'occurrences pour chaque variable (pour les modalités 2 à 6)
 total_counts <- data_counts %>%
   group_by(variable) %>%
   summarise(total = sum(n))
@@ -547,83 +593,26 @@ data_percentages <- data_counts %>%
   left_join(total_counts, by = "variable") %>%
   mutate(percentage = (n / total) * 100)
 
+# Renommer les variables pour un affichage plus lisible
+data_percentages <- data_percentages %>%
+  mutate(variable = recode(variable, "paris_sportif" = "paris sportifs"))%>%
+  mutate(variable = recode(variable, "ticket" = "tickets à gratter"))
+         
+
 # Créer le graphique en barres empilées avec les pourcentages
-ggplot(data_percentages, aes(x = modalite[2:6], y = percentage, fill = variable)) +
+ggplot(data_percentages, aes(x = modalite, y = percentage, fill = variable)) +
   geom_bar(stat = "identity", position = "dodge") +
   labs(
-    title = "Pourcentage d'occurrences pour chaque modalité",
-    x = "Modalité",
-    y = "Pourcentage d'occurrences",
+    title = "Fréquence de jeu pour les joueurs de poker,\n paris sportifs et tickets à gratter",
+    x = "Fréquence de jeu",
+    y = "Part des joueurs pour chaque jeu",
     fill = "Variable"
   ) +
-  scale_fill_manual(values = c("ticket" = "blue", "paris_sportif" = "green", "poker" = "red")) +
+  scale_fill_few() +  # Utiliser une palette de couleurs
+  geom_text(aes(label = round(percentage, 1)), position = position_dodge(width = 0.9), vjust = -0.3, color = "black") + # Ajouter les pourcentages
   theme_minimal() +
   theme(
     axis.text.x = element_text(angle = 45, hjust = 1),
     plot.title = element_text(hjust = 0.5)
   )
-
-
-##########
-# Charger les bibliothèques nécessaires
-library(dplyr)
-library(tidyr)
-library(ggplot2)
-
-# Créer un dataframe avec les intitulés des modalités
-modalites <- c("jamais", "une fois par mois ou moins", "2-3 fois par mois",
-               "une fois par semaine", "plusieurs fois par semaine", "tous les jours ou presque")
-
-# Exemple de données (à remplacer par vos données réelles)
-data_filtered <- data %>%
-  filter(!is.na(QB07C1) & !is.na(QB07B1) & !is.na(QB07E1)) %>%
-  mutate(
-    ticket = factor(QB07B1, levels = 1:6, labels = modalites),
-    paris_sportif = factor(QB07C1, levels = 1:6, labels = modalites),
-    poker = factor(QB07E1, levels = 1:6, labels = modalites)
-  )
-
-# Transformer les données en format long
-data_long <- data_filtered %>%
-  pivot_longer(cols = c(ticket, paris_sportif, poker), names_to = "variable", values_to = "modalite")
-
-# Calculer le nombre d'occurrences pour chaque modalité
-data_counts <- data_long %>%
-  count(variable, modalite)
-
-# Calculer le nombre total d'occurrences pour chaque variable
-total_counts <- data_counts %>%
-  group_by(variable) %>%
-  summarise(total = sum(n))
-
-# Calculer le pourcentage d'occurrences pour chaque modalité
-data_percentages <- data_counts %>%
-  left_join(total_counts, by = "variable") %>%
-  mutate(percentage = (n / total) * 100)
-
-# Filtrer pour exclure la modalité "jamais" du graphique
-data_percentages <- data_percentages %>%
-  filter(modalite != "jamais")
-
-# Renommer les variables pour un affichage plus lisible
-data_percentages <- data_percentages %>%
-  mutate(variable = recode(variable, "paris_sportif" = "paris sportif"))
-
-# Créer le graphique en barres empilées avec les pourcentages
-
-ggplot(data_percentages, aes(x = modalite, y = percentage, fill = variable)) +
-  geom_bar(stat = "identity", position = "dodge") +
-  labs(
-    title = "Fréquence à laquelle 3 jeux d'argent sont consommés",
-    x = "Fréquence ('jamais' n'apparaît pas)",
-    y = "Pourcentage",
-    fill = "Variable"
-  ) +
-  scale_fill_few() +  # Utiliser la palette few_pal de ggthemes
-  geom_text(aes(label = round(percentage, 1)), position = position_dodge(width = 0.9), vjust = -0.3, color = "black") + # Ajouter les pourcentages
-  theme_minimal() +
-  theme(
-    axis.text.x = element_text(angle = 45, hjust = 1),
-    plot.title = element_text(hjust = 0.5))
-
 
