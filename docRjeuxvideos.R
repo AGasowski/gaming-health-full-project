@@ -267,12 +267,23 @@ ggplot(data_pourcentage_4, aes(x = IMC_categorie, y = pct, fill = jours_joué_pa
 #
 #
 ### graphique fréquence de jeu video
-# Créer un dataframe avec les intitulés des modalités
-labels <- c("jamais", "1 fois par mois ou moins", "2-3 fois par mois", "1 fois par semaine", "plusieurs fois par semaine", "tous les jours ou presque")
+library(dplyr)
+library(ggplot2)
+library(ggthemes)
 
-# Filtrer les valeurs NA dans QB01A
+# Créer un dataframe avec les intitulés des modalités
+modalite <- c("jamais", "1 fois par mois ou moins", "2-3 fois par mois", "une fois par semaine", "plusieurs fois par semaine", "tous les jours ou presque")
+
+# Filtrer les valeurs NA dans QB02
 filtered_data <- data %>%
   filter(!is.na(QB02))
+
+# Regrouper les modalités "une fois par semaine" et "plusieurs fois par semaine" en "toutes les semaines"
+filtered_data <- filtered_data %>%
+  mutate(QB02 = case_when(
+    QB02 %in% c(4, 5) ~ "toutes les semaines",
+    TRUE ~ as.character(QB02)
+  ))
 
 # Calculer le nombre total de réponses valides
 total_responses <- nrow(filtered_data)
@@ -282,16 +293,20 @@ proportions <- filtered_data %>%
   count(QB02) %>%
   mutate(proportion = n / total_responses * 100)
 
+# Définir l'ordre des niveaux de la variable QB02
+proportions <- proportions %>%
+  mutate(QB02 = factor(QB02, levels = c("1", "2", "3", "toutes les semaines", "6")))
 
-# Créer le graphique en barres
-ggplot(proportions, aes(x = factor(QB02, levels = 1:6, labels = labels), y = proportion)) +
-  geom_bar(stat = "identity", fill = "skyblue") +
-  geom_text(aes(label = round(proportion, 1)), vjust = -0.3, color = "black") +
+# Créer le graphique en barres avec les pourcentages sur les barres
+ggplot(proportions, aes(x = QB02, y = proportion)) +
+  geom_bar(stat = "identity", fill = "#FBB258") + # Utiliser une couleur de la palette scale_fill_few
+  geom_text(aes(label = round(proportion, 1)), vjust = -0.3) + # Ajouter les pourcentages
   labs(
     title = "Répartition de la population selon sa consommation de jeux vidéo",
     x = "Fréquence de consommation",
-    y = "Pourcentage"
+    y = "Part des individus (%)"
   ) +
+  scale_x_discrete(labels = c("jamais", "1 fois par mois ou moins", "2-3 fois par mois", "toutes les semaines", "tous les jours ou presque")) +
   theme(
     axis.text.x = element_text(angle = 45, hjust = 1),
     plot.title = element_text(hjust = 0.5)
