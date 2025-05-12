@@ -1,3 +1,4 @@
+#ACM P2
 rm(list=ls())
 
 install.packages("FactoMineR")
@@ -31,4 +32,14 @@ data_selec[] <- lapply(data_selec, as.factor)
 
 
 acm <- MCA(data_selec, graph = FALSE)
+
+
+#Graphique des valeurs propres
+fviz_screeplot(acm, addlabels = TRUE, ylim = c(0, 25))
+
+
+#Afficher les valeurs propres
+eig <- get_eigenvalue(acm)
+print(eig)
+
 fviz_mca_var(acm, repel = TRUE)

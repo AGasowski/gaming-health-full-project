@@ -169,7 +169,8 @@ data <- data %>%
 
 # Renommer les variables pour l'ACM
 data <- data %>%
-  rename(freqJA = qb07abcdef1, freqJV = QB02, freqSport = Q20, freqMedecin = Q21A)
+  rename(freqJA = qb07abcdef1, freqJV = QB02, freqSport = Q20, freqMedecin = Q21A,
+         jeuPbSante = QB08F, critique = QB08G, pbArgent = QB08H, culpabilite= QB08I)
 
 
 
