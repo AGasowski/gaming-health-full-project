@@ -41,7 +41,86 @@ fviz_screeplot(acm, addlabels = TRUE, ylim = c(0, 25))
 eig <- get_eigenvalue(acm)
 print(eig)
 
-#Afficher l'ACM
-fviz_mca_var(acm, repel = TRUE)
 
-fviz_mca_var(acm, axes = c(1, 3), repel = TRUE, title = "Dim 1 vs Dim 3")
+
+# Extraire les modalités
+var <- get_mca_var(acm)
+modalites <- rownames(var$coord)
+
+
+# Définir les couleurs
+# Recréer proprement le vecteur couleurs aligné avec les modalités
+couleurs <- sapply(modalites, function(mod) {
+  if (grepl("^ADRS_cat_", mod)) {
+    return(case_when(
+      mod == "ADRS_cat_0" ~ "#66BB6A",
+      mod == "ADRS_cat_1" ~ "#FB8C00",
+      mod == "ADRS_cat_2" ~ "#E53935",
+      TRUE ~ "black"
+    ))
+  } else if (grepl("^jeuPbSante_", mod)) {
+    return(case_when(
+      mod == "jeuPbSante_1" ~ "#66BB6A",
+      mod == "jeuPbSante_2" ~ "#C0CA33",
+      mod == "jeuPbSante_3" ~ "#FB8C00",
+      mod == "jeuPbSante_4" ~ "#E53935",
+      TRUE ~ "black"
+    ))
+  } else if (grepl("^critique_", mod)) {
+    return(case_when(
+      mod == "critique_1" ~ "#66BB6A",
+      mod == "critique_2" ~ "#C0CA33",
+      mod == "critique_3" ~ "#FB8C00",
+      mod == "critique_4" ~ "#E53935",
+      TRUE ~ "black"
+    ))
+  } else if (grepl("^pbArgent_", mod)) {
+    return(case_when(
+      mod == "pbArgent_1" ~ "#66BB6A",
+      mod == "pbArgent_2" ~ "#C0CA33",
+      mod == "pbArgent_3" ~ "#FB8C00",
+      mod == "pbArgent_4" ~ "#E53935",
+      TRUE ~ "black"
+    ))
+  } else if (grepl("^culpabilite_", mod)) {
+    return(case_when(
+      mod == "culpabilite_1" ~ "#66BB6A",
+      mod == "culpabilite_2" ~ "#C0CA33",
+      mod == "culpabilite_3" ~ "#FB8C00",
+      mod == "culpabilite_4" ~ "#E53935",
+      TRUE ~ "black"
+    ))
+  } else {
+    return("black")
+  }
+})
+
+
+# Extraire les coordonnées
+var <- get_mca_var(acm)
+
+# Juste pour vérif : que les couleurs sont dans le bon ordre
+stopifnot(length(couleurs) == length(modalites))
+
+
+# Créer un data.frame temporaire pour forcer le mapping
+groups <- as.factor(modalites)  # chaque modalité devient son propre "groupe"
+
+# Replot en forçant chaque modalité comme groupe distinct
+p <- fviz_mca_var(acm,
+                  repel = TRUE,
+                  col.var = groups) +  # on triche ici : un groupe = une modalité
+  scale_color_manual(values = couleurs) +
+  theme_minimal()
+
+print(p)
+
+
+p2 <- fviz_mca_var(acm,
+                  axes = c(1, 3),   # ← ici !
+                  repel = TRUE,
+                  col.var = groups) +
+  theme_minimal()
+  
+print(p2)
+

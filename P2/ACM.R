@@ -42,4 +42,73 @@ fviz_screeplot(acm, addlabels = TRUE, ylim = c(0, 25))
 eig <- get_eigenvalue(acm)
 print(eig)
 
-fviz_mca_var(acm, repel = TRUE)
+
+# Extraire les modalités
+var <- get_mca_var(acm)
+modalites <- rownames(var$coord)
+
+
+# Définir les couleurs
+# Recréer proprement le vecteur couleurs aligné avec les modalités
+couleurs <- sapply(modalites, function(mod) {
+  if (grepl("^ADRS_cat_", mod)) {
+    return(case_when(
+      mod == "ADRS_cat_0" ~ "#66BB6A",
+      mod == "ADRS_cat_1" ~ "#FB8C00",
+      mod == "ADRS_cat_2" ~ "#E53935",
+      TRUE ~ "black"
+    ))
+  } else if (grepl("^freqMedecin_", mod)) {
+    return(case_when(
+      mod == "freqMedecin_1" ~ "#42A5F5",
+      mod == "freqMedecin_2" ~ "#42A5F5",
+      TRUE ~ "black"
+    ))
+  } else if (grepl("^freqJA_", mod)) {
+    return(case_when(
+      mod == "freqJA_1" ~ "#66BB6A",
+      mod == "freqJA_2" ~ "#C0CA33",
+      mod == "freqJA_3" ~ "#FB8C00",
+      mod == "freqJA_4" ~ "#E53935",
+      TRUE ~ "black"
+    ))
+  } else if (grepl("^freqJV_", mod)) {
+    return(case_when(
+      mod == "freqJV_1" ~ "#66BB6A",
+      mod == "freqJV_2" ~ "#C0CA33",
+      mod == "freqJV_3" ~ "#FB8C00",
+      mod == "freqJV_4" ~ "#E53935",
+      TRUE ~ "black"
+    ))
+  } else if (grepl("^freqSport_", mod)) {
+    return(case_when(
+      mod == "freqSport_1" ~ "#66BB6A",
+      mod == "freqSport_2" ~ "#C0CA33",
+      mod == "freqSport_3" ~ "#FB8C00",
+      mod == "freqSport_4" ~ "#E53935",
+      TRUE ~ "black"
+    ))
+  } else {
+    return("black")
+  }
+})
+
+
+# Extraire les coordonnées
+var <- get_mca_var(acm)
+
+# Juste pour vérif : que les couleurs sont dans le bon ordre
+stopifnot(length(couleurs) == length(modalites))
+
+
+# Créer un data.frame temporaire pour forcer le mapping
+groups <- as.factor(modalites)  # chaque modalité devient son propre "groupe"
+
+# Replot en forçant chaque modalité comme groupe distinct
+p <- fviz_mca_var(acm,
+                  repel = TRUE,
+                  col.var = groups) +  # on triche ici : un groupe = une modalité
+  scale_color_manual(values = couleurs) +
+  theme_minimal()
+
+print(p)
