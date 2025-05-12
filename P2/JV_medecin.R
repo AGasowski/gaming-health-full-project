@@ -58,6 +58,7 @@ data_pourc_medJV <- data_clean_medecin_JV %>%
 ggplot(data_pourc_medJV, aes(x = QB02, y = pct, fill = Q21A)) +
   geom_bar(stat = "identity") +
   geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
+  scale_fill_manual(values = c("#A6CEE3", "#B2DF8A", "#FDBF6F", "#FB9A99")) +
   labs(title = "Part des individus ayant été chez le médecin au cours de l'année pour chaque catégorie de joueur",
        x = "Fréquence de jeux vidéo",
        y = "Pourcentage",

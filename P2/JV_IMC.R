@@ -133,6 +133,7 @@ data_100 <- data_clean %>%
 ggplot(data_100, aes(x = IMC, y = pct, fill = fct_rev(QB02simp))) +
   geom_bar(stat = "identity") +
   geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
+  scale_fill_manual(values = c("#A6CEE3", "#B2DF8A", "#FDBF6F", "#FB9A99")) +
   labs(title = "Proportion de joueurs de jeux vidéo par catégorie d'IMC",
        x = "Catégorie d'IMC",
        y = "Pourcentage",
@@ -217,6 +218,7 @@ data_pourc_etatsante_freqJA_100$QB02 <- factor(data_pourc_etatsante_freqJA_100$Q
 ggplot(data_pourc_etatsante_freqJA_100, aes(x = IMC, y = pct, fill = QB02)) +
   geom_bar(stat = "identity") +
   geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
+  scale_fill_manual(values = c("#A6CEE3", "#B2DF8A", "#FDBF6F", "#FB9A99")) +
   labs(title = "Répartition de la fréquence de jeux vidéo des joueurs par catégorie d'IMC",
        x = "Catégorie d'IMC",
        y = "Pourcentage",

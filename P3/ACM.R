@@ -117,10 +117,13 @@ print(p)
 
 
 p2 <- fviz_mca_var(acm,
-                  axes = c(1, 3),   # ← ici !
-                  repel = TRUE,
-                  col.var = groups) +
+                   axes = c(1, 3),
+                   repel = TRUE,
+                   col.var = groups) +
+  scale_color_manual(values = couleurs) +   # ← cette ligne est essentielle
   theme_minimal()
-  
+
 print(p2)
+  
+  
 

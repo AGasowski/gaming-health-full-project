@@ -56,16 +56,18 @@ data$Q20 <- factor(data$Q20,
                 levels = c("Jamais ou presque jamais", "Une fois par semaine", "Plusieurs fois par semaine", "Chaque jour"))
 
 
+
+
+
+
+
+# GRAPHIQUE 1 : Freq JV en fonction du sport
 data <- data %>%
   mutate(QB02 = case_when(
     QB02 == "Jamais" ~ "Pas joueur",  # Si c'est "Jamais", on laisse "Jamais"
     TRUE ~ "Joueur"  # Sinon, on met "Joueur"
   ))
 
-
-
-
-# GRAPHIQUE 1 : Freq JV en fonction du sport
 data_clean_sport_freqJV <- data %>% filter(!is.na(Q20) & !is.na(QB02))
 
 # Calculer les pourcentages par groupe de sportifs
@@ -79,6 +81,7 @@ data_pourc_sport_freqJV <- data_clean_sport_freqJV %>%
 ggplot(data_pourc_sport_freqJV, aes(x = Q20, y = pct, fill = QB02)) +
   geom_bar(stat = "identity") +
   geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
+  scale_fill_manual(values = c("#A6CEE3", "#B2DF8A", "#FDBF6F", "#FB9A99")) +
   labs(title = "Répartition de la fréquence de jeux vidéo par fréquence d'activité sportive",
        x = "Fréquence de pratique sportive",
        y = "Pourcentage",
@@ -122,6 +125,7 @@ data_pourc_sport_freqJV$QB02 <- factor(data_pourc_sport_freqJV$QB02,
 ggplot(data_pourc_sport_freqJV, aes(x = Q20, y = pct, fill = QB02)) +
   geom_bar(stat = "identity") +
   geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
+  scale_fill_manual(values = c("#A6CEE3", "#B2DF8A", "#FDBF6F", "#FB9A99")) +
   labs(title = "Répartition de la fréquence de jeux vidéo par fréquence d'activité sportive",
        x = "Fréquence de pratique sportive",
        y = "Pourcentage",
@@ -153,6 +157,7 @@ data_pourc_sport_freqJV <- data_clean_sport_freqJV %>%
 ggplot(data_pourc_sport_freqJV, aes(x = Q20, y = pct, fill = fct_rev(QB02simp))) +
   geom_bar(stat = "identity") +
   geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
+  scale_fill_manual(values = c("#A6CEE3", "#B2DF8A", "#FDBF6F", "#FB9A99")) +
   labs(title = "Répartition de la fréquence de jeux vidéo par fréquence d'activité sportive",
        x = "Fréquence de pratique sportive",
        y = "Pourcentage",

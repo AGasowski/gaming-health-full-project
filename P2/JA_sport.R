@@ -194,6 +194,7 @@ ggplot(data_pourc_sport_freq_100_total, aes(x = JAsansPS, y = pct, fill = Q20)) 
   geom_bar(stat = "identity", position = "fill") +  # Empilement normalisé à 100%
   geom_text(aes(label = paste0(round(pct, 1), "%")), 
             position = position_fill(vjust = 0.5)) +  # Texte centré sur chaque barre
+  scale_fill_manual(values = c("#A6CEE3", "#B2DF8A", "#FDBF6F", "#FB9A99")) +
   facet_wrap(~Type) +  # Séparer jeux d'argent et paris sportifs
   labs(title = "Répartition des sportifs et non-sportifs parmi les joueurs et non-joueurs",
        x = "Jeux d'argent",
