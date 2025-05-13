@@ -279,3 +279,58 @@ ggplot(df, aes(x = IMC, y = Frequence, fill = Residual)) +
         axis.text.x = element_text(color = "black", size = 12, face = "bold")) + # Modalités en noir
   labs(x = "Catégorie d'IMC",
        y = "Fréquence des jeux vidéo")
+
+
+
+
+
+
+
+
+
+
+
+
+
+# GRAPHIQUE 4 : Fréquence de JV simplifiée (joueurs seulement) avec ADRS
+data_clean <- data %>% filter(!is.na(QB02) & !is.na(ADRS_cat) & QB02!="Jamais")
+
+data_clean <- data_clean %>%
+  mutate(ADRS_cat= case_when(
+    ADRS_cat == 0 ~ "Sans risque",
+    ADRS_cat == 1 ~ "Risque modéré",
+    ADRS_cat == 2 ~ "Risque élevé"
+  )) %>% 
+  mutate(ADRS_cat = factor(ADRS_cat,
+                           levels = c("Sans risque", "Risque modéré", "Risque élevé"),
+                           ordered = TRUE))
+
+print(data_clean$QB02)
+
+data_clean <- data_clean %>% 
+  mutate(QB02 = case_when(
+    QB02 == "Une fois par mois ou moins" |
+      QB02 == "2-3 fois par mois" ~ "Moins d'une fois par semaine",
+    QB02 == "Une fois par semaine" |
+      QB02 == "Plusieurs fois par semaine" ~ "Au moins une fois par semaine",
+    QB02 == "Tous les jours ou presque" ~ "Au quotidien" ,
+  ))
+
+
+data_pourc_etatsante_freqJA_100 <- data_clean %>%
+  count(IMC, QB02) %>%
+  group_by(IMC) %>%
+  mutate(pct = n / sum(n) * 100)
+
+data_pourc_etatsante_freqJA_100$QB02 <- factor(data_pourc_etatsante_freqJA_100$QB02, 
+                                               levels = c("Moins d'une fois par semaine", "Au moins une fois par semaine", "Au quotidien"))
+
+
+ggplot(data_pourc_etatsante_freqJA_100, aes(x = IMC, y = pct, fill = QB02)) +
+  geom_bar(stat = "identity") +
+  geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
+  scale_fill_few() +
+  labs(x = "Catégorie d'IMC",
+       y = "Pourcentage",
+       fill = "Fréquence de jeux vidéo") +
+  theme_minimal()
