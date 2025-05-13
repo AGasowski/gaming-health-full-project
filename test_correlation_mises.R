@@ -28,8 +28,6 @@ data <- data %>%
     mise_habituelle == 4 ~ "+ de 50€",
   ))
 
-table_cont <- table(data$freqJA, data$mise_habituelle)
-table_cont
 
 data <- data %>% 
   filter(freqJA != "Jamais")
@@ -66,7 +64,7 @@ ggplot(df, aes(x = Mise, y = Frequence, fill = Residual)) +
   # Couleur du texte en fonction de la valeur du résidu
   geom_text(aes(label = round(Residual, 2), 
                 color = ifelse(abs(Residual) > 2, "white", "black"))) +  
-  scale_fill_gradient2(low = "red", mid = "white", high = "blue", midpoint = 0) +  # Gradient pour les résidus
+  scale_fill_gradient2(low = "#E6550D", mid = "white", high = "#3182BD", midpoint = 0) +  # Gradient pour les résidus
   scale_color_identity() +  # Pour utiliser les couleurs définies dynamiquement
   theme_minimal() +
   theme(axis.text.y = element_text(color = "black", size = 12, face = "bold"), # Modalités en noir

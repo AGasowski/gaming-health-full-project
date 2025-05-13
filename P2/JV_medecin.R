@@ -50,6 +50,16 @@ data <- data %>%
 
 # GRAPHIQUE 1 : 
 data_clean_medecin_JV <- data %>% filter(!is.na(Q21A) & !is.na(QB02))
+
+
+
+table_cont <- table(data_clean_medecin_JV$Q21A, data_clean_medecin_JV$QB02)
+table_cont
+chisq.test(table_cont)
+
+assocstats(table_cont)
+
+
 # Calculer les pourcentages par groupe de joueurs
 data_pourc_medJV <- data_clean_medecin_JV %>%
   count(QB02, Q21A) %>%
