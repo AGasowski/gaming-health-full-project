@@ -65,22 +65,34 @@ de jeu d’argent ne concerne pas une grande partie de la population.
 
 \end{figure}
 
-\vskip10pt Outre la fréquence de jeu, on peut percevoir l'intensité de la
-consommation de jeux à travers les mises pariées. La médiane des mises
-habituelles renseignées par les sondés est de 10€. Les mises annuelles de
-certains représentent donc d’importantes sommes pour les joueurs réguliers.
-C'est d’autant plus le cas pusque plus un joueur pari, plus les sommes pariées
-sont en moyenne importantes (Tableau \ref{mises paris}). Un test du chi2
-(71,213) nous confirme qu'il y a effectivement un lien entre la fréquence de jeu
-d'argent et la mise habituelle. (voir \hyperref[ann:correlation]{Annexe C})
+\vskip10pt 
 
+Outre la fréquence de jeu, on peut percevoir l'intensité de la consommation de
+jeux à travers les mises pariées. La médiane des mises habituelles renseignées
+par les sondés est de 10€. Les mises annuelles de certains représentent donc
+d’importantes sommes pour les joueurs réguliers. C'est d’autant plus le cas
+puisque plus un joueur pari, plus les sommes pariées sont en moyenne
+importantes (Tableau \ref{mises paris}). Un test du chi2 ($p-value = 8,8 \times
+10^{-12}$) nous confirme qu'il y a effectivement un lien statistique entre la
+fréquence de jeu d'argent et la mise habituelle (voir
+\hyperref[ann:correlation]{Annexe C}). Cependant, le calcul du V de cramer nous
+indique que l'intensité de cette association est faible (V = 0,177).
+
+Le graphique des résidus (Figure \ref{Résidus mises}) nous permet d'affiner
+l'interprétation de l'association. En effet, on observe que les joueurs
+occasionnels sont significativement plus nombreux que prévu à miser des faibles
+montants (0-10€). Par ailleurs, les joueurs quotidiens se distinguent avec une
+proportion notable de mises très élevées (+50€), dépassant largement les
+attentes théoriques.
+
+\vskip 10pt
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{Images/Residus/res_JA_mise.png}
     \caption{Taleau des résidus standardisés entre les variables de fréquence
     de jeux vidéo et la mise habituelle}
-    \label{Répartition de la population selon sa consommation de jeux vidéo}
+    \label{Résidus mises}
     \textit{Note de lecture: }\\
     \textit{Source: Enquête ESCAPAD 2022.}
 
