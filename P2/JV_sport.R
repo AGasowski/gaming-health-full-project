@@ -8,6 +8,7 @@ install.packages("ggplot2")
 library(vcd)
 library(dplyr)
 library(ggplot2)
+library(ggthemes)
 
 datainitial <- read.csv2("Enquête 2022-20250104/bdd_2022.csv", header = TRUE)
 
@@ -81,9 +82,8 @@ data_pourc_sport_freqJV <- data_clean_sport_freqJV %>%
 ggplot(data_pourc_sport_freqJV, aes(x = Q20, y = pct, fill = QB02)) +
   geom_bar(stat = "identity") +
   geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
-  scale_fill_manual(values = c("#A6CEE3", "#B2DF8A", "#FDBF6F", "#FB9A99")) +
-  labs(title = "Répartition de la fréquence de jeux vidéo par fréquence d'activité sportive",
-       x = "Fréquence de pratique sportive",
+  scale_fill_few() +
+  labs(x = "Fréquence de pratique sportive",
        y = "Pourcentage",
        fill = "Fréquence de jeux vidéo") +
   theme_minimal() +
@@ -125,9 +125,8 @@ data_pourc_sport_freqJV$QB02 <- factor(data_pourc_sport_freqJV$QB02,
 ggplot(data_pourc_sport_freqJV, aes(x = Q20, y = pct, fill = QB02)) +
   geom_bar(stat = "identity") +
   geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
-  scale_fill_manual(values = c("#A6CEE3", "#B2DF8A", "#FDBF6F", "#FB9A99")) +
-  labs(title = "Répartition de la fréquence de jeux vidéo par fréquence d'activité sportive",
-       x = "Fréquence de pratique sportive",
+  scale_fill_few() +
+  labs(x = "Fréquence de pratique sportive",
        y = "Pourcentage",
        fill = "Fréquence de jeux vidéo") +
   theme_minimal() +
@@ -157,9 +156,8 @@ data_pourc_sport_freqJV <- data_clean_sport_freqJV %>%
 ggplot(data_pourc_sport_freqJV, aes(x = Q20, y = pct, fill = fct_rev(QB02simp))) +
   geom_bar(stat = "identity") +
   geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
-  scale_fill_manual(values = c("#A6CEE3", "#B2DF8A", "#FDBF6F", "#FB9A99")) +
-  labs(title = "Répartition de la fréquence de jeux vidéo par fréquence d'activité sportive",
-       x = "Fréquence de pratique sportive",
+  scale_fill_few() +
+  labs(x = "Fréquence de pratique sportive",
        y = "Pourcentage",
        fill = "Fréquence de jeux vidéo") +
   theme_minimal() +

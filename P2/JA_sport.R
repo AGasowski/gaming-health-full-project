@@ -8,6 +8,7 @@ install.packages("ggplot2")
 library(vcd)
 library(dplyr)
 library(ggplot2)
+library(ggthemes)
 
 datainitial <- read.csv2("Enquête 2022-20250104/bdd_2022.csv", header = TRUE)
 
@@ -194,10 +195,9 @@ ggplot(data_pourc_sport_freq_100_total, aes(x = JAsansPS, y = pct, fill = Q20)) 
   geom_bar(stat = "identity", position = "fill") +  # Empilement normalisé à 100%
   geom_text(aes(label = paste0(round(pct, 1), "%")), 
             position = position_fill(vjust = 0.5)) +  # Texte centré sur chaque barre
-  scale_fill_manual(values = c("#A6CEE3", "#B2DF8A", "#FDBF6F", "#FB9A99")) +
+  scale_fill_few() +
   facet_wrap(~Type) +  # Séparer jeux d'argent et paris sportifs
-  labs(title = "Répartition des sportifs et non-sportifs parmi les joueurs et non-joueurs",
-       x = "Jeux d'argent",
+  labs(x = "Jeux d'argent",
        y = "Pourcentage",
        fill = "Pratique sportive") +
   scale_y_continuous(labels = scales::percent) +  # Afficher en pourcentage

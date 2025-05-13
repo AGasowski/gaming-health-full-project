@@ -9,6 +9,7 @@ library(vcd)
 library(dplyr)
 library(ggplot2)
 library(forcats)
+library(ggthemes)
 
 datainitial <- read.csv2("Enquête 2022-20250104/bdd_2022.csv", header = TRUE)
 
@@ -67,9 +68,8 @@ data_100 <- data_clean %>%
 ggplot(data_100, aes(x = IMC, y = pct, fill = fct_rev(qb07simp))) +
   geom_bar(stat = "identity") +
   geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
-  scale_fill_manual(values = c("#A6CEE3", "#B2DF8A", "#FDBF6F", "#FB9A99")) +
-  labs(title = "Proportion de joueurs de jeux d'argent par catégorie d'IMC",
-       x = "Catégorie d'IMC",
+  scale_fill_few() +
+  labs(x = "Catégorie d'IMC",
        y = "Pourcentage",
        fill = "Jeux d'argent") +
   theme_minimal() +
@@ -168,9 +168,8 @@ data_pourc_etatsante_freqJA_100$qb07abcdef1 <- factor(data_pourc_etatsante_freqJ
 ggplot(data_pourc_etatsante_freqJA_100, aes(x = IMC, y = pct, fill = qb07abcdef1)) +
   geom_bar(stat = "identity") +
   geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
-  scale_fill_manual(values = c("#A6CEE3", "#B2DF8A", "#FDBF6F", "#FB9A99")) +
-  labs(title = "Répartition de la fréquence de jeux d'argent des joueurs par catégorie d'IMC",
-       x = "Catégorie d'IMC",
+  scale_fill_few() +
+  labs(x = "Catégorie d'IMC",
        y = "Pourcentage",
        fill = "Fréquence de jeux d'argent") +
   theme_minimal()

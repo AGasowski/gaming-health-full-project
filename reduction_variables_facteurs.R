@@ -157,6 +157,14 @@ data <- data %>%
     Q20 == "Jamais ou presque jamais" ~ 1
   ))
 
+data <- data %>%
+  mutate(QB06B = case_when(
+    QB06B == 1 ~ "Jamais",
+    Q20 == 2 |
+      Q20 == 3 ~ "Parfois",
+    Q20 == 4 ~ "Assez ouvent",
+    Q20 == 5 ~ "Très souvent"
+  ))
 
 
 # Ajout de variables Joueur/Non joueur

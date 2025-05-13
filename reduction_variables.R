@@ -148,6 +148,18 @@ data <- data %>%
   ))
 
 
+# Pratique du JV prioritaire
+
+data <- data %>%
+  mutate(QB06B = case_when(
+    QB06B == 1 ~ "Jamais",
+    QB06B == 2 |
+      QB06B == 3 ~ "Parfois",
+    QB06B == 4 ~ "Assez ouvent",
+    QB06B == 5 ~ "Très souvent"
+  ))
+
+
 
 # Ajout de variables Joueur/Non joueur
 data <- data %>%

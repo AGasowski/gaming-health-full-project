@@ -8,6 +8,7 @@ install.packages("ggplot2")
 library(vcd)
 library(dplyr)
 library(ggplot2)
+library(ggthemes)
 
 datainitial <- read.csv2("Enquête 2022-20250104/bdd_2022.csv", header = TRUE)
 
@@ -57,9 +58,8 @@ data_pourc_med <- data_clean_medecinJA %>%
 ggplot(data_pourc_med, aes(x = qb07abcdef1, y = pct, fill = Q21A)) +
   geom_bar(stat = "identity") +
   geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
-  scale_fill_manual(values = c("#A6CEE3", "#B2DF8A", "#FDBF6F", "#FB9A99")) +
-  labs(title = "Part des individus ayant été chez le médecin au cours de l'année pour chaque catégorie de joueur",
-       x = "Fréquence de jeux d'argent",
+  scale_fill_few() +
+  labs(x = "Fréquence de jeux d'argent",
        y = "Pourcentage",
        fill = "A été chez le médecin") +
   theme_minimal()
