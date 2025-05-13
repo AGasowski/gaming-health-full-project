@@ -49,6 +49,14 @@ data <- data %>%
 
 # GRAPHIQUE 1 : Part qui a vu un médecin en fonction JA
 data_clean_medecinJA <- data %>% filter(!is.na(Q21A) & !is.na(qb07abcdef1))
+
+
+table_cont <- table(data_clean_medecinJA$Q21A, data_clean_medecinJA$qb07abcdef1)
+table_cont
+chisq.test(table_cont)
+
+assocstats(table_cont)
+
 # Calculer les pourcentages par groupe de joueurs
 data_pourc_med <- data_clean_medecinJA %>%
   count(qb07abcdef1, Q21A) %>%
@@ -63,3 +71,4 @@ ggplot(data_pourc_med, aes(x = qb07abcdef1, y = pct, fill = Q21A)) +
        y = "Pourcentage",
        fill = "A été chez le médecin") +
   theme_minimal()
+
