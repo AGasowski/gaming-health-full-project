@@ -118,7 +118,7 @@ ggplot(data_filter_etatsanteJV, aes(x = IMC, y = pct, fill = QB02)) +
 
 
 
-# GRAPHIQUE 3 : Prop de joueur par IMC
+# GRAPHIQUE 31 : Prop de joueur par IMC
 
 #qui prend en compte seulement les joueurs, pour avoir un total à 100%
 data_clean <- data %>% filter(!is.na(QB02) & !is.na(q18imc))
@@ -131,6 +131,8 @@ data_100 <- data_clean %>%
   group_by(IMC) %>%
   mutate(pct = n / sum(n) * 100)
 
+library(forcats)
+
 ggplot(data_100, aes(x = IMC, y = pct, fill = fct_rev(QB02simp))) +
   geom_bar(stat = "identity") +
   geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
@@ -140,6 +142,16 @@ ggplot(data_100, aes(x = IMC, y = pct, fill = fct_rev(QB02simp))) +
        fill = "Jeux vidéo") +
   theme_minimal() +
   theme(plot.title = element_text(hjust = 0.5))  # Centrer le titre
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -191,6 +203,10 @@ ggplot(data_pourc_etatsante_freqJA_100, aes(x = IMC, y = pct, fill = QB02)) +
 
 
 
+
+
+
+
 # GRAPHIQUE 4 : Fréquence de JV simplifiée (joueurs seulement)
 data_clean <- data %>% filter(!is.na(QB02) & !is.na(q18imc) & QB02!="Jamais")
 
@@ -223,3 +239,43 @@ ggplot(data_pourc_etatsante_freqJA_100, aes(x = IMC, y = pct, fill = QB02)) +
        y = "Pourcentage",
        fill = "Fréquence de jeux vidéo") +
   theme_minimal()
+
+
+
+
+
+#Résidus
+
+
+data_clean$QB02 <- factor(data_clean$QB02,
+                      levels = c("Au quotidien",
+                                  "Au moins une fois par semaine", 
+                                  "Moins d'une fois par semaine"))
+
+table_cont <- table(data_clean$QB02, data_clean$IMC)
+table_cont
+
+chi_result <- chisq.test(table_cont)
+
+
+residus <- chi_result$stdres
+print(residus)
+corrplot(residus, is.cor = FALSE, method = "color", addCoef.col = "black")
+
+
+df <- as.data.frame(as.table(residus))
+names(df) <- c("Frequence", "IMC", "Residual")
+
+# Graphique des résidus avec ggplot2
+ggplot(df, aes(x = IMC, y = Frequence, fill = Residual)) +
+  geom_tile(color = "white") +  # Carreaux avec contour blanc
+  # Couleur du texte en fonction de la valeur du résidu
+  geom_text(aes(label = round(Residual, 2), 
+                color = ifelse(abs(Residual) > 2, "white", "black"))) +  
+  scale_fill_gradient2(low = "#E6550D", mid = "white", high = "#3182BD", midpoint = 0) +  # Gradient pour les résidus
+  scale_color_identity() +  # Pour utiliser les couleurs définies dynamiquement
+  theme_minimal() +
+  theme(axis.text.y = element_text(color = "black", size = 12, face = "bold"), # Modalités en noir
+        axis.text.x = element_text(color = "black", size = 12, face = "bold")) + # Modalités en noir
+  labs(x = "Catégorie d'IMC",
+       y = "Fréquence des jeux vidéo")
