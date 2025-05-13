@@ -130,9 +130,10 @@ pratique de jeux vidéos.
 En revanche, la différence est plus visible lorsqu'il s'agit de la fréquence de
 jeu. D'après le test du khi\textsuperscript{2}, il existe un lien entre la
 fréquence de la pratique de jeux vidéo et l'IMC ($p-value = 1,51 \times
-10^{-5}$\hyperref[ann:correlation]{Annexe C}). Le V de Cramer indique une 
-intensité d'association très faible. Une étude plus précise, avec le calcul 
-des résidus a été faite (\hyperref[ann:correlation]{Annexe C})
+10^{-5}$\hyperref[ann:correlation]{Annexe C}). Le V de Cramer indique une
+intensité d'association très faible. Une étude plus précise, avec le calcul des
+résidus a été faite (\hyperref[ann:residus_IMC]{Annexe D}), nous indiquant un
+écart important entre certains effectifs théoriques et observés.
 
 \begin{figure}[H]
     \centering
@@ -142,7 +143,7 @@ des résidus a été faite (\hyperref[ann:correlation]{Annexe C})
     \textit{Source: Enquête ESCAPAD 2022.}
 \end{figure}
 
-Presqu'un tier (31,4\%) des joueurs obèses jouent tous les jours , c'est plus
+Presqu'un tier (31,4\%) des joueurs obèses jouent tous les jours, c'est plus
 que toute autre catégorie d'IMC. Ce sont ensuite les joueurs en insuffisance
 pondérale qui jouent le plus au quotidien (25,2\% d'entre eux). Ce résultat est
 différent de celui qui concerne les jeux d'argent, puisque les individus en
@@ -154,19 +155,17 @@ Il est également intéressant de noter que ce sont les individus de corpulence
 normale qui jouent le moins au quotidien.
 
 
-
-
 \newpage
 
 
 \subsection{Comportement des joueurs vis à vis de leur santé}
 
 Le comportement des joueurs vis à vis de leur santé est un élément d'étude
-important, car au-delà d'un simple constat sur l'état de santé d'un individu,
-il donne des habitudes de vie que l'on peut mettre en relation avec des
-habitudes de jeu. D'après le test du chi2, il y a bien un lien de corrélation
-entre la pratique sportive et la consommations de jeux (voir
-\hyperref[ann:correlation]{Annexe C}).
+important, car au-delà d'un simple constat sur l'état de santé d'un individu à
+un instant donné, il donne des habitudes de vie que l'on peut mettre en
+relation avec des habitudes de jeu. D'après le test du khi\textsuperscript{2},
+il y a bien une dépendance entre la pratique sportive et la consommation de
+jeux ($p-value = 4,18 \times 10^{-5}$\hyperref[ann:correlation]{Annexe C}).
 
 \begin{figure}[H]
     \centering
@@ -176,23 +175,26 @@ entre la pratique sportive et la consommations de jeux (voir
     \textit{Source: Enquête ESCAPAD 2022.}
 \end{figure}
 
-Un individu jouant aux jeux d'argent est plus susceptible de faire du sport
-(71,3\%) qu'un individu de jouant pas (63,9\%) (Figure
+Un individu jouant aux jeux d'argent est un peu plus susceptible de faire du
+sport (71,3\%) qu'un individu de jouant pas (63,9\%) (Figure
 \ref{fig:freq_joueur_JA_sport}). On remarque ainsi que ces deux activités sont
-liées.
+faiblement liées, ce que confirme la valeur du V de Cramer ($V = 4,99 \times
+10^{-2}$\hyperref[ann:correlation]{Annexe C}).
 
 \vskip 10pt
 
 En poussant la recherche, on se rend compte qu'en réalité, ce sont les paris
-sportifs qui influencent largement ce résultat. En effet, 83,4\% des individus
-jouant aux paris sportifs font du sport (Figure
+sportifs qui influencent largement le résultat précédent. En effet, 83,4\% des
+individus jouant aux paris sportifs font du sport (Figure
 \ref{fig:freq_joueur_JA_sport}).
 
 Ce résultat semble montrer qu'au-delà du lien entre la pratique des jeux
 d'argent et la pratique sportive, il y a un lien bien plus fort entre la
 pratique de paris sportifs et la pratique sportive. Ce résultat semble nous
 dire que les deux activités sont liées, ce qui semble intuitif puisqu'elles
-s'intéressent toutes les deux au sport.
+s'intéressent toutes les deux au sport. Les individus ayant une attirance pour
+le sport la manifestent à la fois dans la pratique elle-même, mais aussi par le
+biais de paris, révélateurs de leur attrait pour le sport médiatisé.
 
 \vskip 10pt
 
@@ -207,12 +209,14 @@ sportive, ceux-ci sont moins évidents à établir.
     \textit{Source: Enquête ESCAPAD 2022.}
 \end{figure}
 
-Les sportifs quotidiens sont de nouveau ceux qui jouent le plus aux jeux vidéo
-(85,6\% d'entre eux jouent). A l'opposé, les non sportifs comptent moins de
-joueurs parmis eux (76,5\%) (Figure \ref{fig:prop_JV_sport}), mais une grande
-partie d'entre eux sont des joueurs très réguliers: 20,3\% des non sportifs
-jouent quotidiennement aux jeux vidéo (Figure \ref{fig:freq_joueur_JV_sport}).
-C'est la plus grande part de joueurs quotidiens parmi les quatre catégories de
+Les tests du khi\textsuperscript{2} (\hyperref[ann:correlation]{Annexe C}) nous
+indiquent un lien entre la pratique sportive et de jeux vidéo. Les sportifs
+quotidiens sont de nouveau ceux qui jouent le plus aux jeux vidéo (85,6\%
+d'entre eux jouent). A l'opposé, les non sportifs comptent moins de joueurs
+parmis eux (76,5\%) (Figure \ref{fig:prop_JV_sport}), mais une grande partie
+d'entre eux sont des joueurs très réguliers: 20,3\% des non sportifs jouent
+quotidiennement aux jeux vidéo (Figure \ref{fig:freq_joueur_JV_sport}). C'est
+la plus grande part de joueurs quotidiens parmi les quatre catégories de
 sportifs.
 
 \begin{figure}[H]
@@ -240,11 +244,11 @@ ESCAPAD 2022). Ce chiffre varie si on étudie chaque catégorie de joueurs.
 
 Les plus gros joueurs de jeux d'argent sont allé moins souvent chez le médecin
 que le reste de la population. 79,4\% y sont allé, ce qui est au moins 7 points
-de moins que tout autre catégorie (Figure \ref{fig:freq_medJV}). Si on
-considère que les quatre catégories ont des états de santé similaires en
-moyenne, alors ils devraient consulter de la même manière un professionnel de
-santé. On pourrait déduire de cette observation que les joueurs quotidiens de
-jeux d'argent prennent moins soin de leur santé.
+de moins que tout autre catégorie (Figure \ref{fig:freq_medJV}). Si l'on
+considère que les six catégories de joueurs ont des états de santé similaires
+en moyenne, alors ils devraient consulter de la même manière un professionnel
+de santé. On pourrait déduire de cette observation que les joueurs quotidiens
+de jeux d'argent prennent moins soin de leur santé. 
 
 
 \begin{figure}[H]
@@ -255,10 +259,12 @@ jeux d'argent prennent moins soin de leur santé.
     \textit{Source: Enquête ESCAPAD 2022.}
 \end{figure}
 
-Le même constat, mais moins prononcé, est visible en ce qui concerne les gros
-joueurs de jeux vidéo. Cette fois-ci, on voit une légère augmentation de la
-part de visites chez le médecin avec la diminution de la fréquence de jeux
-vidéos. Les joueurs quotidiens se rapprochent cette fois du comportement du
-reste de la population puisque 84,6\% d'entre eux se sont rendus chez le
-médecin, ce qui est 2 points de moins que pour l'ensemble de la population
-(86,8\%).
+Un constat similaire, mais très léger, est visible en ce qui concerne les
+joueurs quotidiens de jeux vidéo. D'un point de vue statistique, il y a
+indépendance des deux variables (résultat du test du khi\textsuperscript{2} en
+\hyperref[ann:correlation]{Annexe C}). Cette fois-ci, on observe une légère
+augmentation de la part de visites chez le médecin avec la diminution de la
+fréquence de jeux vidéos. Les joueurs quotidiens se comportent comme l'ensemble
+de la population puisque 84,6\% d'entre eux se sont rendus chez le médecin, ce
+qui est 2 points de moins que pour l'ensemble de la population (86,8\%), et
+donc totalement négligeable.
