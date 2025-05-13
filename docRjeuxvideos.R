@@ -8,7 +8,7 @@ install.packages("bbplot")
 library(ggplot2)
 library(vcd)
 library(dplyr)
-
+library(ggthemes)
 
 datainitial <- read.csv2("Enquête 2022-20250104/bdd_2022.csv", header = TRUE)
 
@@ -67,13 +67,12 @@ data_ADRS <- data_ADRS %>%
 ggplot(data_ADRS, aes(x = factor(score_ADRS), y = proportion, fill = cut(score_ADRS, breaks = c(-1, 3, 6, 11), labels = c("Peu de risque d’EDC", "Risque d’EDC modéré", "Risque d’EDC important")))) +
   geom_bar(stat = "identity") +
   geom_text(aes(label = paste0(round(proportion * 100), "%")), vjust = -0.5, position = position_dodge(width = 0.9)) +
-  scale_fill_manual(values = c("lightgreen", "yellow", "orange")) +
-  labs(title = "Proportions de chaque score ADRS",
-       x = "Score ADRS",
-       y = "Proportion",
+  scale_fill_few() +
+  labs(x = "Score ADRS",
+       y = "Pourcentage",
        fill = "Catégorie de risque") +
   theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  theme(axis.text.x = element_text(angle = 0, hjust = 1))
 
 #Création data_réduit qui contient uniquement les variables crées et modifiées
 data_reduit <- data[, c("score_ADRS", "score_ADRS_categorie", "Etat_de_santé", "IMC", "IMC_categorie")]

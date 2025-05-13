@@ -22,16 +22,16 @@ data <- datainitial %>%
 # Pratique du JV prioritaire
 
 data <- data %>%
-  mutate(QB06B = case_when(
-    QB06B == 1 ~ "Jamais",
-    QB06B == 2 |
-      QB06B == 3 ~ "Parfois",
-    QB06B == 4 |
-      QB06B == 5 ~ "Souvent"
+  mutate(QB06A = case_when(
+    QB06A == 1 ~ "Jamais",
+    QB06A == 2 |
+      QB06A == 3 ~ "Parfois",
+    QB06A == 4 |
+      QB06A == 5 ~ "Souvent"
   )) %>% 
-  mutate(QB06B = factor(QB06B,
-                      levels = c("Jamais", "Parfois", "Souvent"),
-                      ordered = TRUE))
+  mutate(QB06A = factor(QB06A,
+                        levels = c("Jamais", "Parfois", "Souvent"),
+                        ordered = TRUE))
 
 
 
@@ -43,21 +43,21 @@ data <- data %>%
     ADRS_cat == 2 ~ "Risque élevé"
   )) %>% 
   mutate(ADRS_cat = factor(ADRS_cat,
-                      levels = c("Sans risque", "Risque modéré", "Risque élevé"),
-                      ordered = TRUE))
+                           levels = c("Sans risque", "Risque modéré", "Risque élevé"),
+                           ordered = TRUE))
 
 
 #Graphique
-data_clean <- data %>% filter(!is.na(ADRS_cat) & !is.na(QB06B))
+data_clean <- data %>% filter(!is.na(ADRS_cat) & !is.na(QB06A))
 
 # Calculer les pourcentages par groupe de santé physique
 pourc <- data_clean %>%
-  count(ADRS_cat, QB06B) %>%
+  count(ADRS_cat, QB06A) %>%
   group_by(ADRS_cat) %>%
   mutate(pct = n / sum(n) * 100)
 
 # Création du graphique à barres empilées (100%)
-ggplot(pourc, aes(x = ADRS_cat, y = pct, fill = QB06B)) +
+ggplot(pourc, aes(x = ADRS_cat, y = pct, fill = QB06A)) +
   geom_bar(stat = "identity") +
   geom_text(aes(label = paste0(round(pct, 1), "%")), position = position_stack(vjust = 0.5)) +
   scale_fill_few() +
