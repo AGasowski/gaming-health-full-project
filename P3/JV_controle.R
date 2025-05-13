@@ -50,6 +50,13 @@ data <- data %>%
 #Graphique
 data_clean <- data %>% filter(!is.na(ADRS_cat) & !is.na(QB06A))
 
+table_cont <- table(data_clean$ADRS_cat, data_clean$QB06A)
+table_cont
+chisq.test(table_cont)
+
+assocstats(table_cont)
+
+
 # Calculer les pourcentages par groupe de santé physique
 pourc <- data_clean %>%
   count(ADRS_cat, QB06A) %>%

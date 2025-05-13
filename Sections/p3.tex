@@ -1,6 +1,6 @@
-\section{Liens entre la santé mentale et les jeux}
+\section{Liens entre la santé mentale et la consommation de jeux}
 
-Un esprit sain dans un corps sain. Après s'être intéressé au lien entre la
+"Un esprit sain dans un corps sain". Après s'être intéressé au lien entre la
 consommation de jeux et la santé physique, intéressons-nous maintenant à la
 santé mentale.
 
@@ -16,6 +16,9 @@ distribution des risques de dépression parmi la population sondée.
     \includegraphics[width=0.8\textwidth]{Images/P3/scoreADRSdistrib.png}
     \caption{Proportions de chaque score ADRS.}
     \label{fig:adrs}
+    \textit{Note de lecture: les individus ayant obtenu un score ADRS de 1
+    représentent 17\% de la population.}\\
+    \textit{Source: Enquête ESCAPAD 2022.}
 \end{figure}
 
 
@@ -40,7 +43,8 @@ Dépressif Caractérisé.
     de consommation de jeux vidéo.}
     \label{jv_EDC}
     \textit{Note de lecture: 33,4\% des individus présentant des risques élevés
-    d'EDC jouent aux jeux vidéo toutes les semaines}
+    d'EDC jouent aux jeux vidéo toutes les semaines}\\
+    \textit{Source: Enquête ESCAPAD 2022.}
 \end{figure}
 
 Mais l'addiction n'est pas seulement caractérisée par la fréquence de
@@ -50,7 +54,11 @@ d'addiction et de mal être.
 Nous entendrons par pratique du jeu prioritaire l'occurrence à laquelle les
 individus ont "accordé une priorité plus importante aux jeux vidéo par rapport
 aux autres intérêts de la vie et aux activités quotidiennes" (ESCAPAD, 2022).
-Ces occurrences sont catégorisées de "jamais" à "souvent".
+Ces occurrences sont catégorisées de "jamais" à "souvent". Il existe bien un
+lien statistique entre cette variable et la catégorie ADRS, d'après le test du
+khi\textsuperscript{2} en \hyperref[ann:correlation]{Annexe C}. Même si le V de
+Cramer nous indique une très faible intensité de l'association, nous arrivons
+à observer certaines tendances.
 
 
 \begin{figure}[H]
@@ -59,7 +67,8 @@ Ces occurrences sont catégorisées de "jamais" à "souvent".
     \caption{Répartition des individus selon la pratique du jeu vidéo prioritaire selon le risque d'EDC}
     \label{jv_priorite}
     \textit{Note de lecture: 16,2\% des individus présentant un risque d'EDC
-    élevé accordent une priorité plus importante aux jeux vidéo qu'au reste}
+    élevé accordent une priorité plus importante aux jeux vidéo qu'au reste}\\
+    \textit{Source: Enquête ESCAPAD 2022.}
 \end{figure}
 
 
@@ -73,7 +82,8 @@ Ces occurrences sont catégorisées de "jamais" à "souvent".
     \label{jv_controle}
     \textit{Note de lecture: 65,9\% des individus ayant parfois des difficultés
     à contrôler leur consommation de jeux vidéo ne présentent aucun risque
-    d'EDC}
+    d'EDC}\\
+    \textit{Source: Enquête ESCAPAD 2022.}
 \end{figure}
 
 La part d'individus dont la pratique du jeu vidéo a "parfois" pris la priorité
@@ -114,13 +124,13 @@ consommation de jeux vidéo et le risque d'Episode Dépressif Caractérisé.
 Les jeux d'argent peuvent causer des problèmes de santé, des problèmes
 financiers, des critiques de la part de l'entourage ou même un sentiment de
 culpabilité. Ces conséquences sont liées à la santé mentale de l'individu. En
-effet, d'après la Recherche en santé mentale Canada (RSMC), les problèmes
-économiques affectent négativement la santé mentale. La culpabilité est
-elle-même un facteur de dépression, d'après la Haute Autorité de Santé. Il
-semble donc pertinent de réaliser une étude du lien entre toutes ces
-conséquences de la pratique de jeux d'argent. Ici notre but n'est pas d'établir
-des relations de causalité. Nous constatons simplement des liens, s'ils
-existent, entre différents éléments.
+effet, d'après la Recherche en santé mentale Canada (Le Vecteur, 2025
+\cite{CCSM2025}), les problèmes économiques affectent négativement la santé
+mentale. La culpabilité est elle-même un facteur de dépression, d'après la
+Haute Autorité de Santé (2017 \cite{HAS2017}). Il semble donc pertinent de
+réaliser une étude du lien entre toutes ces conséquences de la pratique de jeux
+d'argent. Ici notre but n'est pas d'établir des relations de causalité. Nous
+constatons simplement des liens, s'ils existent, entre différents éléments.
 
 
 Pour cela, nous étudions l'ACM ci-dessous. Les variables suivantes ont été
@@ -131,7 +141,7 @@ sélectionnées:
     \item Les habitudes de jeu ont été critiquées par d'autres personnes
     (critique)
     \item Le jeu a causé des difficultés financières (pbArgent)
-    \item \item Les habitudes de jeu ont causées un sentiment de culpabilité
+    \item Les habitudes de jeu ont causées un sentiment de culpabilité
     (culpabilite)
     \item La catégorie ADRS (ADRS\_cat)
 \end{itemize}
@@ -154,11 +164,13 @@ Pour le score ADRS, nous rappelons:
     \includegraphics[width=1\textwidth]{Images/P3/ACM1_dim12.png}
     \caption{Interactions entre les conséquences des jeux d'argent et la santé mentale}
     \label{fig: ACMP3}
+    \textit{Source: Enquête ESCAPAD 2022.}
 \end{figure}
 
 Les axes de cette ACM ne résument qu'une partie limitée de l'information
 (31,9\% au total). Nous aurions pu prendre en considération la dimension 3,
-mais celle-ci n'améliore pas notre analyse.
+d'après le critère du coude (\hyperref[ann:coude2]{Annexe F}), mais celle-ci
+n'améliore pas notre analyse (voir \hyperref[ann:dim13]{Annexe G}).
 
 \vskip 10pt
 
