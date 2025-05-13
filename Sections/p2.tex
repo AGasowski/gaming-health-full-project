@@ -13,8 +13,10 @@ intéressant à des marqueurs de cette santé.
 Chaque individu a répondu au questionnaire en évaluant son état de santé. En
 réalisant un test du khi\textsuperscript{2} entre la variable qualifiant l'état
 de santé et la fréquence de jeu (voir \hyperref[ann:correlation]{Annexe C}), on
-remarque qu'elles ont un lien. Un V de Celui-ci est observable dans le tableau
-ci-dessous.
+montre qu'elles ont un lien statistique. Celui-ci est observable dans le
+tableau ci-dessous (Tableau \ref{fig:satis_sante}). Même si le V de Cramer nous
+indique une intensité d'association très faible, nous avons y avons dégagé une
+observation intéressante.
 
 \begin{table}[ht]
     \centering
@@ -36,28 +38,29 @@ ci-dessous.
     \label{fig:satis_sante}
 \end{table}
 
-\vspace{1em}
+\vskip 10pt
 
 Parmi l'ensemble des individus interrogés, 8,7\% ne sont pas satisfaits par
 leur état de santé. Chez les joueurs quotidiens de jeux vidéo, on voit une
-différence de l'état de santé général, puisque 13,1\% déclarent leur état de
-santé comme n'étant pas satisfaisant. Les individus jouant aux jeux vidéo
-semblent donc avoir un état de santé moins satisfaisant que la population
+différence notable de l'état de santé général, puisque 13,1\% déclarent leur
+état de santé comme n'étant pas satisfaisant. Les individus jouant aux jeux
+vidéo semblent donc avoir un état de santé moins satisfaisant que la population
 générale.
 
-\vspace{1em}
+\vskip 10pt
 
 De leur côté, les joueurs quotidiens de jeux d'argent sont encore moins
-satisfaits de leur état de santé. En effet, 29,4\% de cette catégorie de
-joueurs déclare ne pas être satisfait de son état de santé. La différence de
-21,7 points de pourcentage avec la population générale est très significative.
+satisfaits par leur état de santé. En effet, 29,4\% des individus de cette
+catégorie de joueurs déclarent ne pas être satisfait de leur état de santé. La
+différence de 21,7 points de pourcentage avec la population générale est très
+significative.
 
-\vspace{1em}
+\vskip 10pt
 
 L'IMC est également un marqueur de la santé physique, faisant le lien entre la
 taille et le poids pour donner un aperçu de la morphologie. L'OMS classe les
-individus en 4 grandes catégories d'IMC: insuffisance pondérale, corpulence
-normale, surpoids, obésité.
+individus en 4 grandes catégories d'IMC \cite{OMS2025}: insuffisance pondérale,
+corpulence normale, surpoids, obésité.
 
 Pour cette analyse, tous les types de jeux d'argent ont été regroupés. On a
 seulement pris en compte les individus ayant déjà joué dans cette étude.
@@ -70,17 +73,15 @@ seulement pris en compte les individus ayant déjà joué dans cette étude.
     \textit{Source: Enquête ESCAPAD 2022.}
 \end{figure}
 
-Les test d'indépendance du chi2 nous indique qu'il n'y a pas de lien entre
-l'IMC et la fréquence de jeux d'argent (voir \hyperref[ann:correlation]{Annexe
-C}). On remarque en effet une augmentation négligeable de la pratique de jeux
-d'argent des individus en obésité. Ces derniers comptent 30,5\% de joueurs
-parmi eux. A l'opposé, les individus en insuffisance pondéral sont ceux qui
-jouent le moins avec 27,3\% de joueurs. Entre les deux se trouvent les
-individus à la corpulance normale et en surpoids, avec respectivement 27,9\% et
-28,4\% de joueurs (Tableau \ref{fig:JA_IMC}). L'écart entre ces pourcentage
-n'est pas significatif et ne nous indique aucun lien entre l'IMC d'un individu
-et sa pratique de jeux d'argent. En ce qui concerne la fréquence de jeu, on
-observe qu'elle augmente très légèrement avec l'IMC.
+Le test d'indépendance du khi\textsuperscript{2} (p-value = 0,536) nous indique
+qu'il n'y a pas de lien entre l'IMC et pratique de jeux d'argent (voir
+\hyperref[ann:correlation]{Annexe C}). On remarque en effet une augmentation
+négligeable de la pratique de jeux d'argent des individus en obésité. Ces
+derniers comptent 30,5\% de joueurs parmi eux. A l'opposé, les individus en
+insuffisance pondéral sont ceux qui jouent le moins avec 27,3\% de joueurs
+(Tableau \ref{fig:JA_IMC}). L'écart entre ces pourcentage n'est pas
+significatif et ne nous indique aucun lien entre l'IMC d'un individu et sa
+consommation, ou non, de jeux d'argent.
 
 \begin{figure}[H]
     \centering
@@ -90,19 +91,25 @@ observe qu'elle augmente très légèrement avec l'IMC.
     \textit{Source: Enquête ESCAPAD 2022.}
 \end{figure}
 
-Les pourcentages de joueurs quotidiens sont trop faibles pour pouvoir en tirer
-une réelle observation. En revanche, En ce qui concerne les joueurs
-hebdomadaires et quotidiens, on peut dire qu'ils sont plus présents parmi les
-individus en surpoids (19,6\% au total) et les individus en obésité (17,6\% au
-total), que parmi les individus en insuffisance pondérale (9,6\% au total) ou
-de corpulence normale (14,9\% au total) (Figure \ref{fig:freq_JA_IMC}).
 
-\vspace{1em}
+L'IMC et la fréquence de jeu sont également indépendants d'après le test du
+khi\textsuperscript{2} (p-value = 0,12, \hyperref[ann:correlation]{Annexe C}).
+Nous avons quand même souhaité réaliser un graphique liant ces deux variables.
+Les pourcentages de joueurs quotidiens sont en effet trop faibles pour pouvoir
+en tirer une réelle observation. En revanche, en ce qui concerne les joueurs
+hebdomadaires et quotidiens, on peut observer qu'ils sont un peu plus présents
+parmi les individus en surpoids (19,6\% au total) et les individus en obésité
+(17,6\% au total), que parmi les individus en insuffisance pondérale (9,6\% au
+total) ou de corpulence normale (14,9\% au total) (Figure
+\ref{fig:freq_JA_IMC}). D'un point de vue statistique, nous ne concluerons pas
+à un lien entre la fréquence de jeux d'argent et l'IMC.
+
+\vskip 10pt
 
 Une étude similaire a été réalisée en ce qui concerne la pratique de jeux
-vidéo, et son lien avec l'IMC. De nouveau, le test du chi2 nous indique une
-indépendance entre les deux variables (voir \hyperref[ann:correlation]{Annexe
-C}).
+vidéo, et son lien avec l'IMC. De nouveau, le test du khi\textsuperscript{2}
+nous indique une indépendance entre les deux variables (voir
+\hyperref[ann:correlation]{Annexe C}).
 
 \begin{figure}[H]
     \centering
@@ -114,15 +121,18 @@ C}).
 
 On remarque que les plus grands joueurs de jeux vidéo sont les personnes en
 obésité, qui jouent pour 84,7\% d'entre elles. La différence avec les autres
-catégories d'IMC, qui se situent entre 80,2\% et 81,7\% est plutôt faible
-(Figure \ref{fig:JV_IMC}). On ne remarque pas de corrélation intéressante.
-L'IMC et la pratique de jeux vidéos ne semblent donc pas liés.
+catégories d'IMC, qui se situent entre 80,2\% et 81,7\% est très faible (Figure
+\ref{fig:JV_IMC}). On ne remarque donc pas de corrélation entre l'IMC et la
+pratique de jeux vidéos.
 
-\vspace{1em}
+\vskip 10pt
 
 En revanche, la différence est plus visible lorsqu'il s'agit de la fréquence de
-jeu. D'après le test du chi2, il existe un lien entre la fréquence de la
-pratique de jeux vidéo et l'IMC (voir \hyperref[ann:correlation]{Annexe C}).
+jeu. D'après le test du khi\textsuperscript{2}, il existe un lien entre la
+fréquence de la pratique de jeux vidéo et l'IMC ($p-value = 1,51 \times
+10^{-5}$\hyperref[ann:correlation]{Annexe C}). Le V de Cramer indique une 
+intensité d'association très faible. Une étude plus précise, avec le calcul 
+des résidus a été faite (\hyperref[ann:correlation]{Annexe C})
 
 \begin{figure}[H]
     \centering
@@ -171,7 +181,7 @@ Un individu jouant aux jeux d'argent est plus susceptible de faire du sport
 \ref{fig:freq_joueur_JA_sport}). On remarque ainsi que ces deux activités sont
 liées.
 
-\vspace{1em}
+\vskip 10pt
 
 En poussant la recherche, on se rend compte qu'en réalité, ce sont les paris
 sportifs qui influencent largement ce résultat. En effet, 83,4\% des individus
@@ -184,7 +194,7 @@ pratique de paris sportifs et la pratique sportive. Ce résultat semble nous
 dire que les deux activités sont liées, ce qui semble intuitif puisqu'elles
 s'intéressent toutes les deux au sport.
 
-\vspace{1em}
+\vskip 10pt
 
 En ce qui concerne les liens entre la pratique de jeux vidéo et la pratique
 sportive, ceux-ci sont moins évidents à établir.

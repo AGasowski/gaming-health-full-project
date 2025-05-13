@@ -15,14 +15,14 @@ datainitial <- read.csv2("Enquête 2022-20250104/bdd_2022.csv", header = TRUE)
 
 # Filtrer les individus ayant répondu aux questions
 data <- datainitial %>% 
-  filter(!is.na(QB01A) & !is.na(QB01B)  & !is.na(QB01C)  & !is.na(QB02) & !is.na(Q17))
+  filter(!is.na(QB01A) & !is.na(QB01B)  & !is.na(QB01C)  & !is.na(qb07abcdef1) & !is.na(Q17))
 
 data <- data %>%
-  mutate(QB02 = case_when(
-    QB02 == 1 ~ "Jamais",            # 1 pour Jamais, 4 pour Au quotidien
-    QB02 == 2 ~ "Moins d'une fois par semaine",
-    QB02 == 3 ~ "Au moins une fois par semaine",  
-    QB02 == 4 ~ "Au quotidien", 
+  mutate(qb07abcdef1 = case_when(
+    qb07abcdef1 == 1 ~ "Jamais",            # 1 pour Jamais, 4 pour Au quotidien
+    qb07abcdef1 == 2 ~ "Moins d'une fois par semaine",
+    qb07abcdef1 == 3 ~ "Au moins une fois par semaine",  
+    qb07abcdef1 == 4 ~ "Au quotidien", 
   ))
 
 data <- data %>%
