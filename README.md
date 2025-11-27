@@ -46,7 +46,7 @@ This repository reflects the **group's complete project submission**.
 My individual contribution, including my personal R scripts and analysis, is
 available here:
 
-**[https://github.com/AGasowski/gaming-health-my-contribution]**
+[My contribution repository](https://github.com/AGasowski/gaming-health-my-contribution)
 
 
 ## License
